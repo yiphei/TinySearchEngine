@@ -8,8 +8,8 @@ To get started,
  * copy the `https` URL shown in the box in the middle of the screen.
  * go to your terminal, log into `flume` or one of the other CS Unix hosts.
  * `cd cs50/labs`
- * `git clone URL`   # here, paste the URL you copied above
- * `cd lab4`
+ * `git clone URL tse`   # here, paste the URL you copied above, and give `tse` as the local directory name
+ * `cd tse`
 
 See [Lab 4 instructions](http://www.cs.dartmouth.edu/~cs50/Labs/Lab4.html)
 for more information.
