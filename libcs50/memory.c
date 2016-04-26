@@ -8,7 +8,7 @@
  * 2. Variants that 'assert' the result is non-NULL;
  *    if NULL occurs, kick out an error and die.
  *
- * David Kotz, April 2016
+ * David Kotz, April 2016, 2017
  */
 
 #include <stdio.h>
@@ -57,8 +57,20 @@ void *
 count_malloc(size_t size)
 {
   void *ptr = malloc(size);
-  if (ptr != NULL)
+  if (ptr != NULL) {
     nmalloc++;
+  }
+  return ptr;
+}
+
+/**************** count_calloc_assert() ****************/
+/* Just like calloc() but track the number of successful allocations
+ */
+void *
+count_calloc_assert(size_t nmemb, size_t size, char *message)
+{
+  void *ptr = assertp(calloc(nmemb, size), message);
+  nmalloc++;
   return ptr;
 }
 
@@ -69,8 +81,9 @@ void *
 count_calloc(size_t nmemb, size_t size)
 {
   void *ptr = calloc(nmemb, size);
-  if (ptr != NULL)
+  if (ptr != NULL) {
     nmalloc++;
+  }
   return ptr;
 }
 
