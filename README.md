@@ -9,7 +9,9 @@ To get started,
  * go to your terminal, log into `flume` or one of the other CS Unix hosts.
  * `cd cs50/labs`
  * `git clone URL tse`   # here, paste the URL you copied above, and give `tse` as the local directory name
- * `cd tse`
+ * `cd tse`  
+	 * if `cd` fails, did you forget to name your repo `tse`?  `mv Lab4 tse` then `cd tse`
+ * explore the files, and start writing crawler!
 
 See [Lab 4 instructions](http://www.cs.dartmouth.edu/~cs50/Labs/Lab4.html)
 for more information.
