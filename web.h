@@ -16,7 +16,8 @@
 #ifndef WEB_H
 #define WEB_H
 
-#include <stdbool.h>
+#include <stdbool.h> // bool type
+#include <stddef.h> // size_t
 
 static const int INTERVAL_PER_FETCH = 1;   // seconds between fetches
 
