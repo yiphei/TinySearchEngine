@@ -1,6 +1,6 @@
 # Makefile TEMPLATE for 'crawler' module
 #
-# David Kotz, April 2016
+# David Kotz, December 2016
 
 PROG = crawler
 OBJS = crawler.o web.o
