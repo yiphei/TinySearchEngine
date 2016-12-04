@@ -4,7 +4,8 @@ To get started,
 
  * click the "Fork" button above; this should create a copy of this project in your Gitlab account. 
  * 	ensure that your new project is marked *PRIVATE*.
- * grant "Master" access to your new project for Professor Kotz `dfkotz`, head TA Chuankai `An`, and your section leader.
+ * grant "Master" access to your new project to Professor and all TAs.
+ * if you see SSH above, click to pick HTTPS instead.
  * copy the `https` URL shown in the box in the middle of the screen.
  * go to your terminal, log into `flume` or one of the other CS Unix hosts.
  * `cd cs50/labs`
