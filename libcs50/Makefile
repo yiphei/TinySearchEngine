@@ -38,7 +38,7 @@ webpage_fetch.o:  webpage.h webpage_internal.h
 
 # list all the sources and docs in this directory.
 sourcelist:
-	@echo Makefile *.md $(OBJS:.o=.[ch])
+	@echo Makefile *.md $(OBJS:.o=.[ch]) webpage_internal.h
 
 # clean up after our compilation
 clean:
