@@ -27,14 +27,17 @@ See [Lab 4 instructions](http://www.cs.dartmouth.edu/~cs50/Labs/Lab4.html)
 for more information.
 
 ## A replacement README
+Replace this README.md with the following, and add more information as needed.
+
 ```
-# Tiny Search Engine
+# CS50 Tiny Search Engine
 
 My Name - April 2017
-
-Computer Science 50 
 
 To build, run `make`.
 
 To clean up, run `make clean`.
+
+The CS50 playground is in 
+http://old-www.cs.dartmouth.edu/~cs50/data/tse
 ```

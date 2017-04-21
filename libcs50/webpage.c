@@ -398,13 +398,20 @@ bool NormalizeURL(char *url)
     strcat(url, tmp.fragment);
   }
 
-  // remove trailing slash [DFK 2017]
+#ifdef REMOVE_SLASH
+  // Remove trailing slash [DFK 2017].
+  // This code allows crawler to realize that
+  //    http://www.cs.dartmouth.edu == http://www.cs.dartmouth.edu/
+  // but doing so actually prevents the crawler from following the 
+  // server's implicit redirect to http://www.cs.dartmouth.edu/index.html
+  // So, I've decided not to include it.
   if (*url != '\0') {
     char *last = url + strlen(url) - 1;
     if (*last == '/'){
       *last = '\0';
     }
   }
+#endif // REMOVE_SLASH
 
  cleanup:                                     // cleanup memory
   if (tmp.scheme) { free(tmp.scheme); }
