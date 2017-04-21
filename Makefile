@@ -1,9 +1,7 @@
-# Makefile for Tiny Search Engine
+# Makefile for CS50 Tiny Search Engine
 #
-# David Kotz, April 2016, 2017
+# David Kotz - April 2016, 2017
 
-C = common
-L = libcs50
 MAKE = make
 .PHONY: all valgrind clean
 
@@ -22,13 +20,13 @@ valgrind: all
 	$(MAKE) -C querier valgrind
 
 ############### TAGS for emacs users ##########
-TAGS: 
-	etags Makefile */Makefile */*.c */*.h */*.md */*.sh
+TAGS:  Makefile */Makefile */*.c */*.h */*.md */*.sh
+	etags $^
 
 ############## clean  ##########
 clean:
 	rm -f *~
-	rm -f $(SHARE)
+	rm -f TAGS
 	$(MAKE) -C libcs50 clean
 	$(MAKE) -C common clean
 	$(MAKE) -C crawler clean
