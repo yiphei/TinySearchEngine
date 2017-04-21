@@ -39,7 +39,7 @@ char *readuntil(FILE *fp, int (*stopfunc)(int c) );
  */
 char *readfilep(FILE *fp);
 
-/**************** readline ****************/
+/**************** readlinep ****************/
 /* 
  * Read a line from the file into a null-terminated string,
  * and return a pointer to it; caller must later free() the pointer.
@@ -49,7 +49,7 @@ char *readfilep(FILE *fp);
  */
 char *readlinep(FILE *fp);
 
-/**************** readword ****************/
+/**************** readwordp ****************/
 /* 
  * Read a word from the file into a null-terminated string,
  * and return a pointer to it; caller must later free() the pointer.
