@@ -361,7 +361,6 @@ bool NormalizeURL(char *url)
 	}
       }
     }
-
   }
 
   // clear url
@@ -397,6 +396,14 @@ bool NormalizeURL(char *url)
 
   if (tmp.fragment) {                       // fragment
     strcat(url, tmp.fragment);
+  }
+
+  // remove trailing slash [DFK 2017]
+  if (*url != '\0') {
+    char *last = url + strlen(url) - 1;
+    if (*last == '/'){
+      *last = '\0';
+    }
   }
 
  cleanup:                                     // cleanup memory
