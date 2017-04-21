@@ -37,8 +37,8 @@ webpage_fetch.o:  webpage.h webpage_internal.h
 .PHONY: clean sourcelist
 
 # list all the sources and docs in this directory.
-sourcelist:
-	@echo Makefile *.md $(OBJS:.o=.[ch]) webpage_internal.h
+sourcelist: Makefile *.md *.c *.h
+	@echo $^
 
 # clean up after our compilation
 clean:
