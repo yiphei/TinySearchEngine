@@ -1,30 +1,36 @@
-# Makefile TEMPLATE for 'crawler' module
+# Makefile for Tiny Search Engine
 #
-# David Kotz, December 2016
+# David Kotz, April 2016, 2017
 
-PROG = crawler
-OBJS = crawler.o web.o
-LIBS = -lcurl
-LLIBS = lib/cs50ds.a
-
-CFLAGS = -Wall -pedantic -std=c11 -ggdb
-CC = gcc
+C = common
+L = libcs50
 MAKE = make
+.PHONY: all valgrind clean
 
-# build the crawler
-$(PROG): $(OBJS) $(LLIBS)
-	$(CC) $(CFLAGS) $^ $(LIBS) -o $@
+############## default: make all libs and programs ##########
+all: 
+	$(MAKE) -C libcs50
+	$(MAKE) -C common
+	$(MAKE) -C crawler
+	$(MAKE) -C indexer
+	$(MAKE) -C querier
 
-# crawler source dependencies; add others as needed
-crawler.o: web.h 
-web.o: web.h
+############## valgrind all programs ##########
+valgrind: all
+	$(MAKE) -C crawler valgrind
+	$(MAKE) -C indexer valgrind
+	$(MAKE) -C querier valgrind
 
-# build the library
-lib/cs50ds.a: 
-	cd lib; $(MAKE)
+############### TAGS for emacs users ##########
+TAGS: 
+	etags Makefile */Makefile */*.c */*.h */*.md */*.sh
 
+############## clean  ##########
 clean:
 	rm -f *~
-	rm -f *.o
-	rm -f $(PROG)
-	cd lib; $(MAKE) clean
+	rm -f $(SHARE)
+	$(MAKE) -C libcs50 clean
+	$(MAKE) -C common clean
+	$(MAKE) -C crawler clean
+	$(MAKE) -C indexer clean
+	$(MAKE) -C querier clean

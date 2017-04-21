@@ -8,12 +8,14 @@
  * 2. Variants that 'assert' the result is non-NULL;
  *    if NULL occurs, kick out an error and die.
  *
- * David Kotz, April 2016
+ * David Kotz, April 2016, 2017
  */
 
 #ifndef __MEMORY_H
 #define __MEMORY_H
 
+#include <stdio.h>
+#include <stdlib.h>
 
 /**************** assertp ****************/
 /* If pointer p is NULL, print error message and die,
@@ -32,6 +34,13 @@ void *count_malloc_assert(size_t size, char *message);
 /**************** count_malloc() ****************/
 /* Just like malloc() but track the number of successful allocations */
 void *count_malloc(size_t size);
+
+/**************** count_calloc_assert() ****************/
+/* Just like calloc() but track the number of successful allocations
+ * and, if response is NULL, print error and die.
+ * Unlike calloc(), it takes a 'message' parameter.
+ */
+void *count_calloc_assert(size_t nmemb, size_t size, char *message);
 
 /**************** count_calloc() ****************/
 /* Just like calloc() but track the number of successful allocations */
