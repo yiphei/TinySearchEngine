@@ -1,14 +1,13 @@
 /* 
- * counters.h - header file for CS50 counters module
- *
- * A "counter set" is a set of counters, each distinguished by an integer key.
- * It's a set - each key can only occur once in the set - but instead of
- * storing (key,item) pairs, it tracks a counter for each key.  It starts
- * empty. Each time `counters_add` is called on a given key, that key's
- * counter is incremented. The current counter value can be retrieved by
- * asking for the relevant key.
+ * counters.h - header file for CS50 'counters' module
  * 
- * David Kotz, April 2016, 2017
+ * A counter set is a set of counters, each distinguished by an integer key. 
+ * It’s a set - each key can only occur once in the set - but instead of storing (key,item) 
+ * pairs, it tracks a counter for each key. It starts empty. Each time counters_add 
+ * is called on a given key, that key’s counter is incremented. The current counter 
+ * value can be retrieved by asking for the relevant key.
+ *
+ * Yifei Yan
  */
 
 #ifndef __COUNTERS_H
@@ -35,9 +34,8 @@ void counters_add(counters_t *ctrs, const int key);
  */
 int counters_get(counters_t *ctrs, const int key);
 
-/* Set the current value of counter associated with the given key.
- * If the key does not yet exist, create a counter for it and initialize to
- * the given value. Ignore if ctrs is NULL, if key < 0, or count < 0.
+/* Set the current value of counter associated with the given key;
+ * ignore if ctrs is NULL or if key is negative.
  */
 void counters_set(counters_t *ctrs, const int key, int count);
 
@@ -51,9 +49,10 @@ void counters_print(counters_t *ctrs, FILE *fp);
  * If ctrs==NULL or itemfunc==NULL, do nothing.
  */
 void counters_iterate(counters_t *ctrs, void *arg, 
-		      void (*itemfunc)(void *arg, const int key, int count));
+                      void (*itemfunc)(void *arg, const int key, int count));
 
 /* Delete the whole counters. ignore NULL ctrs. */
 void counters_delete(counters_t *ctrs);
+
 
 #endif // __COUNTERS_H
