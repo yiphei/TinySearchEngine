@@ -105,6 +105,22 @@ static countersnode_t *countersnode_new(const int key){
   }
 }
 
+static countersnode_t *countersnode_newCount(const int key, int count){
+
+  countersnode_t *node = count_malloc(sizeof(countersnode_t));
+
+  if (node == NULL) {
+    // error allocating memory for node; return error
+    return NULL;
+  } else {
+
+    node->counter = count;
+    node->key = key;
+    node->next = NULL;
+    return node;
+  }
+}
+
 /***************** counters_get() ****************/
 int counters_get(counters_t *ctrs, const int key){
 
@@ -128,9 +144,22 @@ void counters_set(counters_t *ctrs, const int key, int count){
 	if (key >= 0 && ctrs != NULL && count >= 0){
 
 		countersnode_t * node = counters_getnode(ctrs,key);
-		node->counter = count;
 
-	}
+    if (node != NULL){
+      node->counter = count;
+
+    }
+    else{
+          countersnode_t *new = countersnode_newCount(key,count);
+           if (new != NULL) {
+      // add it to the head of the list
+
+            new->next = ctrs->head;
+            ctrs->head = new;
+          }
+
+    }	
+  }
 }
 
 /*************** counters_print() **********************/  //from bag.c module
