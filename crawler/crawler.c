@@ -16,20 +16,23 @@
 
 //global constants
 const int hashtableSize = 100;
+int maxDepth;
+char *directory;
+char* seed;
 
 // function prototype *declarations*
 bool directoryCheck(char * directory);
-void crawler(char * seedURL, char * directory, int maxDepth);
+void crawler(char * seedURL, int maxDepth);
 bool isBagEmpty(bag_t *bag);
 static void delete(void *item);
 bool isNumber(const char number[]);
 
 
 int main(const int argc, const char *argv[]) {
-	int maxDepth = atoi(argv[3]);   //do malloc instead
-	char seed[100];       //do malloc instead
+	maxDepth = atoi(argv[3]);   //do malloc instead
+	seed = malloc(strlen(argv[1])+1);       //do malloc instead
 	strcpy(seed,argv[1]);
-	char directory[100];    //do malloc instead
+	directory = malloc(strlen(argv[2])+1);
 	strcpy(directory,argv[2]);
 
 	if (argc != 4){
@@ -60,8 +63,9 @@ int main(const int argc, const char *argv[]) {
 		printf("seedURL is not internal\n");
 		exit (6);
 	}
-	crawler(seed, directory, maxDepth);
-
+	crawler(seed, maxDepth);
+	free(seed);
+	free(directory);
 	exit(0);
 }
 
@@ -101,23 +105,7 @@ bool directoryCheck(char * directory){
  	return false;
 }
 
-
-
-void crawler(char * seedURL, char * directory, int maxDepth){
-
-	bag_t *bag;     //free this
-	bag = bag_new();    
-	hashtable_t *ht;
-	ht = hashtable_new(hashtableSize);     //free this
-	int fileID = 1;   //id for the file output
-	webpage_t * seedPage;
-	seedPage = webpage_new(seedURL, 0, NULL); //what to put as third parameter? fre this
-	bag_insert(bag,seedPage);
-	hashtable_insert(ht, seedURL, seedURL); //check if you want seedURL as the item
-
-	while(! isBagEmpty(bag)){
-		// webpage_t *page = malloc(sizeof(webpage_t));
-		// page = bag_extract(bag);
+int crawlPage(bag_t *bag,hashtable_t *ht, int fileID) {
 
 		webpage_t *page = bag_extract(bag);
 	
@@ -134,6 +122,8 @@ void crawler(char * seedURL, char * directory, int maxDepth){
 			while ((pos = webpage_getNextURL(page, pos, &result)) > 0) {
     			printf("Found url: %s\n", result);
 
+
+    				//make a separate function
     			if (NormalizeURL(result) && IsInternalURL(result)){
 					printf("VALID Url: %s\n", result);
     				if (hashtable_insert(ht, result,result)){
@@ -144,12 +134,33 @@ void crawler(char * seedURL, char * directory, int maxDepth){
 						printf("SAVED Url: %s\n", result);
     				}
     			}
+
+    			//end here
      			free(result);
 			}
 
 		}
-		
+		webpage_delete(page);
+		return fileID;
+}
 
+
+
+void crawler(char * seedURL, int maxDepth){
+
+	bag_t *bag;     //free this
+	bag = bag_new();    
+	hashtable_t *ht;
+	ht = hashtable_new(hashtableSize);     //free this
+	int fileID = 1;   //id for the file output
+	webpage_t * seedPage;
+	seedPage = webpage_new(seedURL, 0, NULL); //what to put as third parameter? fre this
+	bag_insert(bag,seedPage);
+	hashtable_insert(ht, seedURL, seedURL); //check if you want seedURL as the item
+
+	while(! isBagEmpty(bag)){
+		fileID = crawlPage(bag,ht,fileID);
+		printf("FILEID: %d", fileID);
 	}
 	
 	hashtable_delete(ht, delete);
@@ -162,17 +173,13 @@ delete(void *item)
 {}
 
 bool isBagEmpty(bag_t *bag){
+	
 	webpage_t *page = bag_extract(bag);
-
-	if (page == NULL){
-
-		webpage_delete(page);
-		return true;
-	}
-	else{
-
+	if (page != NULL) {
 		bag_insert(bag,page);  //do i need to free it?
 		return false;
 	}
+	return true;
 }
+
 

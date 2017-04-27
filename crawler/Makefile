@@ -30,7 +30,7 @@ pagedir.o: ../common/pagedir.h ../libcs50/webpage.h
 .PHONY: test clean
 
 test: $(PROG)
-	./$(PROG) http://old-www.cs.dartmouth.edu/~cs50/ data 2
+	./$(PROG) http://old-www.cs.dartmouth.edu/~cs50/ data 1
 
 clean:
 	rm -f *~ *.o *.dSYM
