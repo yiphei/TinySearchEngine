@@ -1,0 +1,50 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/boateng-stressaware-thesis.html
+3
+<HTML>
+<HEAD>
+ <TITLE>boateng:stressaware-thesis</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+George G. Boateng.
+<b>StressAware: App for Continuously Measuring and Monitoring Stress
+Levels in Real Time on the Amulet Wearable Device</b>.
+Technical Report
+TR2016-802,
+Dartmouth Computer Science,
+May 
+2016.
+Senior Thesis.
+<p><b>Abstract:</b> Stress is the root cause of many diseases. Being able to monitor
+when and why a person is stressed could inform personal stress management as
+well as interventions when necessary. In this thesis, I present StressAware,
+an application on the Amulet wearable platform to measure the stress levels
+of individuals continuously and in real time. The app implements a stress
+detection model, continuously streams heart rate data from a commercial
+heart-rate monitor such as a Zephyr and Polar H7, classifies the stress level
+of an individual, logs the stress level and then displays it as a graph on
+the screen. I developed a stress detection model using a Linear Support
+Vector Machine. I trained my classifiers using data from 3 sources:
+PhysioNet, a public database with various physiological data, a field study,
+where subjects went about their normal daily activities and a lab study in a
+controlled environment, where subjects were exposed to various stressors. I
+used 73 data segments of stress data obtained from PhysioNet, 120 data
+segments from the field study, and 14 data segments from the lab study. I
+extracted 14 heart rate and heart rate variability features. With 10-fold
+cross validation for Radial Basis Function (RBF) SVM, I obtained an accuracy
+of 94.5 0.000000or the PhysioNet dataset and 100 0.000000or the field study dataset.
+And for the lab study, I obtained an accuracy of 64.29% with leave-one-out
+cross-validation. Testing the StressAware app revealed a projected battery
+life of up to 12 days before needing to recharge. Also, the usability
+feedback from subjects showed that the Amulet and Zephyr have a potential to
+be used by people for monitoring their stress levels. The results are
+promising, indicating that the app may be used for stress detection, and
+eventually for the development of stress-related intervention that could
+improve the health of individuals.</p>
+<p><b>Keywords:</b> mhealth, mobile, wearable</p>
+<p><a href="bibtex/boateng-stressaware-thesis.bib">BibTeX</a></p>
+<p><a target=_top href = "././boateng-stressaware-thesis.pdf">PDF</a> (2475K)</p>
+<p><b>Copyright &#169;&nbsp;2016 by the author.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

@@ -1,0 +1,45 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/boateng-activityaware.html
+3
+<HTML>
+<HEAD>
+ <TITLE>boateng:activityaware</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+George Boateng, Ryan Halter, John A. Batsis, and David Kotz.
+<b>ActivityAware: An App for Real-Time Daily Activity Level
+Monitoring on the Amulet Wrist-Worn Device</b>.
+In
+<i>IEEE International Conference on Pervasive Computing and
+Communications Workshops (PerCom Workshops)</i>,
+March 
+2017.
+IEEE.
+<p><b>Abstract:</b> Physical activity helps reduce the risk of cardiovascular
+disease, hypertension and obesity. The ability to monitor a person’s daily
+activity level can inform self-management of physical activity and related
+interventions. For older adults with obesity, the importance of regular,
+physical activity is critical to reduce the risk of long-term disability. In
+this work, we present ActivityAware, an application on the Amulet wrist-worn
+device that measures daily activity levels (sedentary, moderate and vigorous)
+of individuals, continuously and in real-time. The app implements an
+activity-level detection model, continuously collects acceleration data on
+the Amulet, classifies the current activity level, updates the day’s
+accumulated time spent at that activity level, logs the data for later
+analysis, and displays the results on the screen. We developed an
+activity-level detection model using a Support Vector Machine (SVM). We
+trained our classifiers using data from a user study, where subjects
+performed the following physical activities: sit, stand, lay down, walk and
+run. With 10-fold cross validation and leave-one-subject-out (LOSO) cross
+validation, we obtained preliminary results that suggest accuracies up to
+98%, for n=14 subjects. Testing the ActivityAware app revealed a projected
+battery life of up to 4 weeks before needing to recharge. The results are
+promising, indicating that the app may be used for activity-level monitoring,
+and eventually for the development of interventions that could improve the
+health of individuals.</p>
+<p><b>Keywords:</b> mhealth, Amulet, activity-monitoring, wearable, sensing</p>
+<p><a href="bibtex/boateng-activityaware.bib">BibTeX</a></p>
+<p>No online copy available.</p>
+<p><b>Copyright &#169;&nbsp;2017 by IEEE.</b></p>
+</BODY>
+</HTML>

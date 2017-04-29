@@ -1,0 +1,26 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/kotz-agenda.html
+3
+<HTML>
+<HEAD>
+ <TITLE>kotz:agenda</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+David Kotz, Carl A. Gunter, Santosh Kumar, and Jonathan P. Weiner.
+<b>Privacy and Security in Mobile Health&nbsp;- A Research Agenda</b>.
+<i>IEEE Computer</i>,
+49(6):22-30,
+June 
+2016.
+DOI <a href="http://dx.doi.org/10.1109/MC.2016.185">10.1109/MC.2016.185</a>.
+<p><b>Abstract:</b> Mobile health technology has great potential to increase
+healthcare quality, expand access to services, reduce costs, and improve
+personal wellness and public health. However, mHealth also raises significant
+privacy and security challenges.</p>
+<p><b>Keywords:</b> mhealth, healthcare, security, privacy, opinion, survey</p>
+<p><a href="bibtex/kotz-agenda.bib">BibTeX</a></p>
+<p><a target=_top href = "././kotz-agenda.pdf">PDF</a> (1735K)</p>
+<p><b>Copyright &#169;&nbsp;2016 by IEEE.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

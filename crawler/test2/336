@@ -1,0 +1,56 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/mare-thesis.html
+3
+<HTML>
+<HEAD>
+ <TITLE>mare:thesis</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+Shrirang Mare.
+<b>Seamless Authentication for Ubiquitous Devices</b>.
+Ph.D. Thesis,
+Dartmouth College Computer Science,
+May 
+2016.
+Available as Dartmouth Computer Science Technical Report
+TR2016-793.
+<p><b>Abstract:</b> User authentication is an integral part of our lives; we
+authenticate ourselves to personal computers and a variety of other things
+several times a day. Authentication is burdensome. When we wish to access to
+a computer or a resource, it is an additional task that we need to perform&nbsp;-
+an interruption in our workflow. In this dissertation, we study people's
+authentication behavior and attempt to make authentication to desktops and
+smartphones less burdensome for users. <P> First, we present the findings of
+a user study we conducted to understand people's authentication behavior:
+things they authenticate to, how and when they authenticate, authentication
+errors they encounter and why, and their opinions about authentication. In
+our study, participants performed about 39 authentications per day on
+average; the majority of these authentications were to personal computers
+(desktop, laptop, smartphone, tablet) and with passwords, but the number of
+authentications to other things (e.g., car, door) was not insignificant. We
+saw a high failure rate for desktop and laptop authentication among our
+participants, affirming the need for a more usable authentication method.
+Overall, we found that authentication was a noticeable part of all our
+participants' lives and burdensome for many participants, but they accepted
+it as cost of security, devising their own ways to cope with it. <P> Second,
+we propose a new approach to authentication, called bilateral authentication,
+that leverages wrist-wearable technology to enable seamless authentication
+for things that people use with their hands, while wearing a smart wristband.
+In bilateral authentication two entities (e.g., user's wristband and the
+user's phone) share their knowledge (e.g., about user's interaction with the
+phone) to verify the user's identity. Using this approach, we developed a
+seamless authentication method for desktops and smartphones. Our
+authentication method offers quick and effortless authentication, continuous
+user verification while the desktop (or smartphone) is in use, and automatic
+deauthentication after use. We evaluated our authentication method through
+four in-lab user studies, evaluating the method's usability and security from
+the system and the user's perspective. Based on the evaluation, our
+authentication method shows promise for reducing users' authentication burden
+for desktops and smartphones.</p>
+<p><b>Keywords:</b> mHealth, security, wireless</p>
+<p><a href="bibtex/mare-thesis.bib">BibTeX</a></p>
+<p><a target=_top href = "././mare-thesis.pdf">PDF</a> (5346K)</p>
+<p><b>Copyright &#169;&nbsp;2016 by Shrirang Mare.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

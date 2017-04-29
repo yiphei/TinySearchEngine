@@ -1,0 +1,47 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/prasad-thesis.html
+3
+<HTML>
+<HEAD>
+ <TITLE>prasad:thesis</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+Aarathi Prasad.
+<b>Privacy-preserving controls for sharing mHealth data</b>.
+Ph.D. Thesis,
+Dartmouth College Computer Science,
+May 
+2016.
+Available as Dartmouth Computer Science Technical Report
+TR2016-794.
+<p><b>Abstract:</b> Mobile devices allow people to collect and share health and
+health-related information with recipients such as health providers, family
+and friends, employers and insurance companies, to obtain health, emotional
+or financial benefits. People may consider certain health information
+sensitive and prefer to disclose only what is necessary. In this
+dissertation, we present our findings about factors that affect people’s
+sharing behavior, describe scenarios in which people may wish to collect and
+share their personal health-related information with others, but may be
+hesitant to disclose the information if necessary controls are not available
+to protect their privacy, and propose frameworks to provide the desired
+privacy controls. We introduce the concept of close encounters that allow
+users to share data with other people who may have been in spatio-temporal
+proximity. We developed two smartphone-based systems that leverage stationary
+sensors and beacons to determine whether users are in spatio-temporal
+proximity. The first system, ENACT, allows patients diagnosed with a
+contagious airborne disease to alert others retrospectively about their
+possible exposure to airborne virus. The second system, SPICE, allows users
+to collect sensor information, retrospectively, from others with whom they
+shared a close encounter. We present design and implementation of the two
+systems, analyse their security and privacy guarantees, and evaluate the
+systems on various performance metrics. Finally, we evaluate how Bluetooth
+beacons and Wi-Fi access points can be used in support of these systems for
+close encounters, and present our experiences and findings from a deployment
+study on Dartmouth campus.</p>
+<p><b>Keywords:</b> mHealth, security, wireless</p>
+<p><a href="bibtex/prasad-thesis.bib">BibTeX</a></p>
+<p><a target=_top href = "././prasad-thesis.pdf">PDF</a> (34094K)</p>
+<p><b>Copyright &#169;&nbsp;2016 by Aarathi Prasad.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

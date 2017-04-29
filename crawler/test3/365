@@ -1,0 +1,36 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/hester-amulet-demo.html
+3
+<HTML>
+<HEAD>
+ <TITLE>hester:amulet-demo</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+Josiah Hester, Travis Peters, Tianlong Yun, Ronald Peterson, Joseph Skinner, Bhargav Golla, Kevin Storer, Steven Hearndon, Sarah Lord, Ryan Halter, David Kotz, and Jacob Sorber.
+<b>The Amulet Wearable Platform: Demo Abstract</b>.
+In
+<i>Proceedings of the ACM Conference on Embedded Networked Sensor
+Systems (SenSys)</i>,
+pages 290-291,
+November 
+2016.
+ACM Press.
+DOI <a href="http://dx.doi.org/10.1145/2994551.2996527">10.1145/2994551.2996527</a>.
+<p><b>Abstract:</b> In this demonstration we present the Amulet Platform; a hardware
+and software platform for developing energy- and resource-efficient
+applications on multi-application wearable devices. This platform, which
+includes the Amulet Firmware Toolchain, the Amulet Runtime, the ARP-View
+graphical tool, and open reference hardware, efficiently protects
+applications from each other without MMU support, allows developers to
+interactively explore how their implementation decisions impact battery life
+without the need for hardware modeling and additional software development,
+and represents a new approach to developing long-lived wearable applications.
+We envision the Amulet Platform enabling long-duration experiments on human
+subjects in a wide variety of studies.</p>
+<p><b>Keywords:</b> amulet, mhealth, security, low-power, wearable</p>
+<p><a href="bibtex/hester-amulet-demo.bib">BibTeX</a></p>
+<p><a target=_top href = "././hester-amulet-demo.pdf">PDF</a> (1515K)</p>
+<p><b>Copyright &#169;&nbsp;2016 by ACM.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

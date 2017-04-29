@@ -1,0 +1,25 @@
+http://old-www.cs.dartmouth.edu/~dfk/ILI/dapple/lectures/index.html
+4
+<HTML>
+<HEAD><TITLE>CS 15 DAPPLE Lectures</TITLE></HEAD>
+<BODY>
+<H1>CS 15 Special segment<BR>
+Winter 1995</H1>
+<h2>Introduction to Parallel programming</H2>
+<h2>David Kotz</h2>
+
+In this special segment of <A HREF="/courseguide/undergrad/cs_15.html"> CS 15</A> we will learn about Parallel Programming with the <A HREF="../overview.html"> DAPPLE</A> programming language. 
+<OL>
+<LI><A HREF="1/index.html"> February 24, 1995</A>
+<LI><A HREF="2/index.html"> February 27, 1995</A>
+<LI><A HREF="3/index.html"> February 28, 1995</A>
+<LI><A HREF="4/index.html"> March 1, 1995</A>
+</OL>
+
+<A HREF="homework.html"> Homework</a>
+
+<HR>
+Back to the <A HREF="../overview.html"> DAPPLE</A> top level. 
+
+</BODY>
+</HTML>

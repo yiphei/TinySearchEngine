@@ -1,0 +1,23 @@
+http://old-www.cs.dartmouth.edu/~dfk/ILI/dapple/reference.html
+4
+<HTML>
+<HEAD><TITLE>DAPPLE Programmer's Reference</TITLE></HEAD>
+<BODY>
+<H1> DAPPLE Programmer's Reference </H1>
+
+These pages provide a summary of the features and details of the
+DAPPLE language.  Some readers may prefer the full-length <A
+HREF="full/intro.html"> tutorial</A>.
+  </P><P>
+<UL>
+<LI> <A HREF="vector_summary.html"> Quick reference: Vector operations</A>
+<LI> <A HREF="matrix_summary.html"> Quick reference: Matrix operations</A>
+<LI> <A HREF="full/gotcha.html">    Details: unintuitive behavior</A>
+</UL>
+ </P>
+
+<HR>
+ <A HREF="overview.html">Back to DAPPLE top level</A>
+
+</BODY>
+</HTML>

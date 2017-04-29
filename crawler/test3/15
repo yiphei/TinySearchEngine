@@ -1,0 +1,190 @@
+http://old-www.cs.dartmouth.edu/~dfk/nils/galley/inter.html
+4
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> 
+<HTML>
+<HEAD>
+<TITLE> The Galley Parallel File System </TITLE>
+</HEAD>
+<BODY>
+<H1> Application Interface </H1>
+
+Galley provides users with a relatively simple interface.
+
+<H2> Metadata Operations </H2>
+<H3> File operations </H3>
+<DL>
+<dt> <code> int gfs_create_file(char *name, int *IOP_list, int num_iops) </code>
+<dd> Create a new file named <code>name</code>.  The application has
+the option of specifying the number of IOPs it wishes the file to be created
+on, and even which IOPs.  This call implicitly creates a subfile on each IOP.
+<p><dt> <code> int gfs_open_file(char *name) </code>
+<dd> Open a file and return either an open file ID or an error code.
+<p><dt> <code> int gfs_close_file(int file_id) </code>
+<dd> Close a file.
+<p><dt> <code> int gfs_delete_file(char *name) </code>
+<dd> Delete the file <code>name</code>.  This implicitly deletes all of
+the files subfiles and their forks.
+</DL>
+
+<H3> Fork operations </H3>
+
+<DL>
+<dt> <code> int gfs_create_fork(int file_id, int subfile, char *name) </code>
+<dd> Create a new fork named <code> name </code> in subfile <code> subfile
+</code> of the previously opened file <code> file</code>.
+<p><dt> <code> int gfs_all_create(int file_id, char *name) </code>
+<dd> Create a fork named <code> name </code> in each subfile of the open
+file <code> file_id</code>.
+<p>
+<p><dt> <code> int gfs_open_fork(int file_id, int subfile, char *name) </code>
+<dd> Open the fork <code> name </code> in subfile <code> subfile
+</code> of the previously opened file <code> file</code>.  Return either an
+open fork ID or an error code.
+<p><dt> <code> int gfs_all_open(int file_id, int *fork_ids, char *name) </code>
+<dd> Open the fork <code> name </code> in each subfile of the previously
+opened file <code> file</code>.  The array, <code> fork_ids</code>, is filled
+with fork IDs.  This call returns the number of forks opened or an error code.
+<p><dt> <code> int gfs_extend_fork(int fork_id, ulong_t size) </code>
+<dd> Extend fork <code> fork_id </code> to be <code> size </code> bytes
+long.  Explictly extending a file increases the likelihood that a file will
+have good disk locality.
+<p>
+<p><dt> <code> int gfs_close_fork(int fork_id) </code>
+<dd> Close a fork.
+<p><dt> <code> int gfs_all_close(int file_id, int *fork_ids) </code>
+<dd> Close all the forks in a file. There is an assumption that the array of
+fork IDs was returned by a <code> gfs_all_open() </code> call, but it is not
+required.
+<p>
+<p><dt> <code> int gfs_delete_fork(int file_id, int subfile, char *name) </code>
+<dd> Delete the fork <code> name </code> in subfile <code> subfile </code>
+of the open file <code> file_id</code>.
+<p><dt> <code> int gfs_all_delete(int file_id, char *name) </code>
+<dd> Delete the fork <code> name </code> in each subfile of the file <code>
+file_id</code>.
+</DL>
+
+<H2> Data Operations </H2>
+
+All data operations take a fork ID and a local buffer, and return the amount
+of data actually transferred.  Only the read operations are shown.
+
+<H3> Simple operations </H3>
+<DL>
+<dt> <code> int gfs_read(int fork_id, char *buf, ulong_t offset, ulong_t size) </code>
+<dd> This call is similar to the standard, Unix-style
+<code>read()</code>, reading a contiguous range of <code> size </code>
+bytes, and storing them in memory at <code>buf</code>.  Unlike Unix,
+however, Galley does not maintain an implicit file pointer, marking the
+location of the previous access. As a result, the application must
+explicitly indicate the starting offset of the request in the fork.
+
+<p><dt> <code> int gfs_read_block(int fork_id, char *buf, int block)
+</code> <dd> Read a single block of data from a fork.  This call was
+provided to simplify the implementation of 'I/O optimal' algorithms.
+</DL>
+
+<H3> Batch Operations </H3>
+
+These operations allow applications to issue requests for many pieces
+of data at a time, giving Galley enough information to deliver higher
+performance than is possible when each piece is requested individually
+(<em>eg</em>, with a <code>gfs_read()</code>).  Specifically, Galley is
+able to schedule disk accesses intelligently, reducing the amount of
+time that is wasted seeking from one portion of the disk to another.
+Galley is also able to reduce the number of messages that are exchanged
+between the CP and IOP.  For example, rather than sending 512 messages,
+each with 64 bytes of data, Galley can pack those pieces into a single
+32768 byte message.
+
+<DL>
+<dt> <code> 
+int gfs_read_strided(int fork_id, char *buf, ulong_t offset,
+ulong_t size, int file_stride, int mem_stride, int quant) </code>
+
+<dd> Beginning at <code>offset</code>, Galley will read
+<code>quant</code> records of <code>size</code> bytes. The offset of
+each record is <code>file_stride</code> bytes greater than the previous
+record's offset.  The records will be stored in memory at
+<code>buf</code>, with <code>mem_stride</code> bytes between each
+record.
+<p>If <code>file_stride</code> is equal to <code>size</code>,
+then data will be read contiguously from disk (as with the
+<code>gfs_read()</code> call), but will be <em> scattered </em> in
+memory.  On the other hand, if <code>mem_stride</code> is equal to
+<code>size</code>, then data will be <em> gathered </em> from disk, but
+stored contiguously in memory.  Of course, the more adventurous
+programmer may scatter and gather in the same operation.  Note also
+that either <code>file_stride</code> or <code>mem_stride</code> may be
+negative.
+
+<p><dt> <code> int gfs_read_nested(int fork_id, char *buf, ulong_t offset,
+ulong_t size, struct gfs_stride *vector, int levels) </code>
+
+<dd> This interface allows applications to make <em> nested-strided
+</em> requests, such as those seen <A HREF="../patterns/patterns.html">here</A>. The
+<code>vector</code> is a pointer to an array of <code>(file_stride,
+mem_stride, quantity)</code> triples listed from the innermost level of
+nesting to the outermost.  The number of levels of nesting is indicated
+by <code>levels</code>.  As with the <code>gfs_strided()</code> call,
+appropriate choices of <code>file_stride</code> and
+<code>mem_stride</code> allow the application a wide array of
+scatter/gather possibilities.
+
+<p><dt> <code> int gfs_read_listio(int fork_id, char *buf, struct gfs_list
+*list, int quant) </code>
+<dd> This interface allows the application to combine a number of
+simple read requests into a single request.  <code>list</code> points
+to a vector of <code>(file_offset, memory_offset, size)</code> triples,
+and <code>quant</code> indicates how many triples are in the vector.
+Unlike the previous interfaces, the <code>listio</code> interface does
+not require that the requests exhibit any sort of regularity.  Although
+this interface does not reduce the amount of work performed by the
+application (it must still calculate every offset explicitly), it does
+allow Galley to perform the same optimizations as other batched requests.
+
+
+
+</DL>
+
+<H3> Non-blocking operations </H3>
+
+Every data transfer operation has a non-blocking counterpart.  The syntax is
+nearly identical, with the addition of a <code> gfs_handle </code> as the
+first parameter of each call.  For example, a <code> gfs_read(fork_id, buf,
+offset, size) </code> becomes <code> gfs_nb_read(handle, fork_id, buf,
+offset, size)</code>.  A non-blocking call cannot return the amount of data
+transferred, since that information is not available at the time the call is
+made.  So, non-blocking calls simply return an error code if one or more
+parameters to the call are invalid.
+<P>
+There are a number of extra calls required to support non-blocking I/O.
+<DL>
+<dt> <code> gfs_handle gfs_new_handle() </code>
+<dd> Generate a new handle, used in subsequent non-blocking calls.  Handles
+may only be associated with a single outstanding call at a time, but they
+may be reused for multiple noncontemporaneous requests.
+<p><dt> <code> int gfs_test(gfs_handle handle) </code>
+<dd> Test to see if the non-blocking operation associated with handle has
+completed.
+<p><dt> <code> int gfs_wait(gfs_handle h) </code>
+<dd> Wait for the non-blocking operation associated with handle to
+complete.  Return the result of the data transfer operation (ie, the
+amount of data transferred).  The calling process must
+<code>wait()</code> for a non-blocking operation to complete before the
+handle may be reused.
+
+<p><dt> <code> int gfs_free_handle(gfs_handle h) </code>
+<dd> Release the handle and its internal resources.
+
+</DL>
+
+<hr>
+<em><A HREF="/~nils/index.html">Nils A. Nieuwejaar</A></em>
+<ADDRESS> <A HREF="mailto:nils@cs.dartmouth.edu">
+nils@cs.dartmouth.edu </A> </ADDRESS>
+
+<em>Last modified Friday, May 30, 1996</em></p>
+
+</BODY>
+</HTML>

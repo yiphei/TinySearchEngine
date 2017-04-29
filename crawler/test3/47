@@ -1,0 +1,40 @@
+http://old-www.cs.dartmouth.edu/~dfk/ILI/dapple/examples/index.html
+4
+<HTML>
+<HEAD><TITLE>Example DAPPLE programs </TITLE></HEAD>
+<BODY>
+<H1> Example DAPPLE programs  </H1>
+
+<P>
+Here is a list of existing examples, in alphabetical order:
+<UL>
+<LI> <A HREF="autom.html">autom</A>:		1-dimensional cellular automaton
+<LI> <A HREF="bisection.html">bisection</A>:	bisection method for root-finding
+<LI> <A HREF="canny.html">canny</A>:		Canny's algorithm for edge-finding in images
+<LI> <A HREF="dirichlet.html">dirichlet</A>:	Dirichlet simulation, relaxation of a potential field
+<LI> <A HREF="gauss.html">gauss</A>:		Gaussian elimination (linear-system solution)
+<LI> <A HREF="grades.html">grades</A>:	REALLY simple program
+<LI> <A HREF="life.html">life</A>:		Conway's game of Life
+<LI> <A HREF="matmul.html">matmul</A>:	matrix-matrix multiply
+<LI> <A HREF="matmul2.html">matmul2</A>:	matrix-matrix multiply, again
+<LI> <A HREF="nbody.html">nbody</A>:		gravitational N-body simulation
+<LI> <A HREF="oddeven.html">oddeven</A>:	odd-even transposition sort
+<LI> <A HREF="oddeven2.html">oddeven2</A>:	odd-even transposition sort, again
+<LI> <A HREF="pascal.html">pascal</A>:	Pascal's triangle
+<LI> <A HREF="pi.html">pi</A>:		estimating pi with numerical integration
+<LI> <A HREF="prefix.html">prefix</A>:	parallel-prefix (sum scan)
+<LI> <A HREF="prime.html">prime</A>:		finding prime numbers
+<LI> <A HREF="qsort0.html">qsort0</A>:	quicksort
+<LI> <A HREF="qsort.html">qsort</A>:		quicksort, again
+<LI> <A HREF="tester.html">tester</A>:	test of many DAPPLE features
+<LI> <A HREF="trapezoid.html">trapezoid</A>:	numerical integration by the trapezoid rule
+</UL>
+ </P>
+
+<HR>
+<UL>
+<LI> <A HREF="../overview.html">Back to DAPPLE top level</A>
+</UL>
+
+</BODY>
+</HTML>

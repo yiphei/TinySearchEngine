@@ -1,0 +1,36 @@
+http://old-www.cs.dartmouth.edu/~dfk/ILI/dapple/availability.html
+4
+<HTML>
+<HEAD><TITLE>DAPPLE availability </TITLE></HEAD>
+<BODY>
+<H1> DAPPLE availability</H1>
+
+<P>
+
+DAPPLE release 1.2 is available for the following platforms:
+<UL>
+ <LI> g++ on DECstation 5000, SGI Indy, DECstation ALPHA, perhaps others
+   <UL>
+    <LI> <A HREF="dapple.tar.Z">Grab it</A> (800K compressed tar file)
+   </UL>
+ <LI> Codewarrior C++ 7 on Macintosh
+   <UL>
+    <LI> <A HREF="DAPPLE-developers.sea.bin">Developers' package</A> (266K MacBinary self-extracting Stuffit)
+    <LI> <A HREF="DAPPLE-users.sea.bin">Users' package</A> (268K MacBinary self-extracting Stuffit)
+   </UL>
+</UL>
+ </P> <P>
+There are also two animations available (you need both pieces of each):
+<UL>
+ <LI> <A HREF="mac-animations/canny.bin">Canny's algorithm for edge detection</A>, and
+ <A HREF="mac-animations/canny.code">code</A>
+ <LI> <A HREF="mac-animations/quicksort.bin">Parallel Quicksort</A>, and 
+ <A HREF="mac-animations/quicksort.code">code</A>
+</UL>
+ </P> 
+<HR>
+ <A HREF="overview.html">Back to DAPPLE top level</A>
+<p>
+This software is deprecated and has not been tested since at least 1998.
+</BODY>
+</HTML>

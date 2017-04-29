@@ -1,0 +1,42 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/boateng-stressaware.html
+3
+<HTML>
+<HEAD>
+ <TITLE>boateng:stressaware</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+George Boateng and David Kotz.
+<b>StressAware: An App for Real-Time Stress Monitoring on the
+Amulet Wearable Platform</b>.
+In
+<i>IEEE MIT Undergraduate Research Technology Conference (URTC)</i>,
+January 
+2017.
+IEEE.
+<p><b>Abstract:</b> Stress is the root cause of many diseases and unhealthy
+behaviors. Being able to monitor when and why a person is stressed could
+inform personal stress management as well as interventions when necessary. In
+this work, we present StressAware, an application on the Amulet wearable
+platform that classifies the stress level (low, medium, high) of individuals
+continuously and in real time using heart rate (HR) and heartrate variability
+(HRV) data from a commercial heart-rate monitor. We developed our
+stress-detection model using a Support Vector Machine (SVM). We trained and
+tested our model using data from three sources and had the following
+preliminary results: PhysioNet, a public physiological database (94.5%
+accurate with 10-fold cross validation), a field study (100 0x0.07fd95a58d8bp-1022ccurate with
+10-fold cross validation) and a lab study (64.3 0x0p+0ccurate with leave-one-out
+cross-validation). Testing the StressAware app revealed a projected battery
+life of up to 12 days. Also, the usability feedback from subjects showed that
+the Amulet has a potential to be used by people for monitoring their stress
+levels. The results are promising, indicating that the app may be used for
+stress detection, and eventually for the development of stress-related
+intervention that could improve the health of individuals.</p>
+<p><b>Keywords:</b> Amulet, stress, mHealth, wearable, heart-rate,
+heart-rate-variability, sensing</p>
+<p><a href="bibtex/boateng-stressaware.bib">BibTeX</a></p>
+<p><a target=_top href = "././boateng-stressaware.pdf">PDF</a> (4077K)</p>
+<p><b>Copyright &#169;&nbsp;2017 by IEEE.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

@@ -1,0 +1,34 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/kotz-patent9595187.html
+3
+<HTML>
+<HEAD>
+ <TITLE>kotz:patent9595187</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+David Kotz, Ryan Halter, Cory Cornelius, Jacob Sorber, Minho Shin, Ronald Peterson, Shrirang Mare, Aarathi Prasad, Joseph Skinner, and Andr&eacute;s Molina-Markham.
+<b>Wearable computing device for secure control of physiological
+sensors and medical devices, with secure storage of medical records, and
+bioimpedance biometric</b>.
+U.S. Patent 9,595,187,
+March 
+2017.
+<p><b>Abstract:</b> A wearable master electronic device (Amulet) has a processor with
+memory, the processor coupled to a body-area network (BAN) radio and uplink
+radio. The device has firmware for BAN communications with wearable nodes to
+receive data, and in an embodiment, send configuration data. The device has
+firmware for using the uplink radio to download apps and configurations, and
+upload data to a server. An embodiment has accelerometers in Amulet and
+wearable node, and firmware for using accelerometer readings to determine if
+node and Amulet are worn by the same subject. Other embodiments use pulse
+sensors or microphones in the Amulet and node to both identify a subject and
+verify the Amulet and node are worn by the same subject. Another embodiment
+uses a bioimpedance sensor to identify the subject. The wearable node may be
+an insulin pump, chemotherapy pump, TENS unit, cardiac monitor, or other
+device.</p>
+<p><b>Keywords:</b> patent, mhealth, bioimpedance, biometric, wearable, sensing</p>
+<p><a href="bibtex/kotz-patent9595187.bib">BibTeX</a></p>
+<p><a target=_top href = "././kotz-patent9595187.pdf">PDF</a> (272K)</p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

@@ -1,0 +1,66 @@
+http://old-www.cs.dartmouth.edu/~dfk/nils/galley/man/man.html
+4
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> 
+<HTML>
+<HEAD>
+<TITLE> Galley man pages </TITLE>
+</HEAD>
+<BODY>
+<H1>Man Pages for the Galley Parallel File System</H1>
+
+<UL>
+
+<LI> <A HREF="iop.1.html"> iop.1 </A>
+<LI> <A HREF="gfs_all_close.3.html"> gfs_all_close.3 </A>
+<LI> <A HREF="gfs_all_create.3.html"> gfs_all_create.3 </A>
+<LI> <A HREF="gfs_all_open.3.html"> gfs_all_open.3 </A>
+<LI> <A HREF="gfs_batched.3.html"> gfs_batched.3 </A>
+<LI> <A HREF="gfs_close_file.3.html"> gfs_close_file.3 </A>
+<LI> <A HREF="gfs_close_fork.3.html"> gfs_close_fork.3 </A>
+<LI> <A HREF="gfs_create_file.3.html"> gfs_create_file.3 </A>
+<LI> <A HREF="gfs_create_fork.3.html"> gfs_create_fork.3 </A>
+<LI> <A HREF="gfs_debug.3.html"> gfs_debug.3 </A>
+<LI> <A HREF="gfs_delete_file.3.html"> gfs_delete_file.3 </A>
+<LI> <A HREF="gfs_delete_fork.3.html"> gfs_delete_fork.3 </A>
+<LI> <A HREF="gfs_error.3.html"> gfs_error.3 </A>
+<LI> <A HREF="gfs_finalize.3.html"> gfs_finalize.3 </A>
+<LI> <A HREF="gfs_flush.3.html"> gfs_flush.3 </A>
+<LI> <A HREF="gfs_fork_size.3.html"> gfs_fork_size.3 </A>
+<LI> <A HREF="gfs_get_debug_level.3.html"> gfs_get_debug_level.3 </A>
+<LI> <A HREF="gfs_init.3.html"> gfs_init.3 </A>
+<LI> <A HREF="gfs_nested.3.html"> gfs_nested.3 </A>
+<LI> <A HREF="gfs_new_handle.3.html"> gfs_new_handle.3 </A>
+<LI> <A HREF="gfs_numiops.3.html"> gfs_numiops.3 </A>
+<LI> <A HREF="gfs_numsubfiles.3.html"> gfs_numsubfiles.3 </A>
+<LI> <A HREF="gfs_open_file.3.html"> gfs_open_file.3 </A>
+<LI> <A HREF="gfs_open_fork.3.html"> gfs_open_fork.3 </A>
+<LI> <A HREF="gfs_read.3.html"> gfs_read.3 </A>
+<LI> <A HREF="gfs_read_batched.3.html"> gfs_read_batched.3 </A>
+<LI> <A HREF="gfs_read_listio.3.html"> gfs_read_listio.3 </A>
+<LI> <A HREF="gfs_read_nested.3.html"> gfs_read_nested.3 </A>
+<LI> <A HREF="gfs_read_strided.3.html"> gfs_read_strided.3 </A>
+<LI> <A HREF="gfs_set_debug_file.3.html"> gfs_set_debug_file.3 </A>
+<LI> <A HREF="gfs_set_debug_level.3.html"> gfs_set_debug_level.3 </A>
+<LI> <A HREF="gfs_simple.3.html"> gfs_simple.3 </A>
+<LI> <A HREF="gfs_strided.3.html"> gfs_strided.3 </A>
+<LI> <A HREF="gfs_sync.3.html"> gfs_sync.3 </A>
+<LI> <A HREF="gfs_test.3.html"> gfs_test.3 </A>
+<LI> <A HREF="gfs_wait.3.html"> gfs_wait.3 </A>
+<LI> <A HREF="gfs_write.3.html"> gfs_write.3 </A>
+<LI> <A HREF="gfs_write_batched.3.html"> gfs_write_batched.3 </A>
+<LI> <A HREF="gfs_write_listio.3.html"> gfs_write_listio.3 </A>
+<LI> <A HREF="gfs_write_nested.3.html"> gfs_write_nested.3 </A>
+<LI> <A HREF="gfs_write_strided.3.html"> gfs_write_strided.3 </A>
+
+</UL>
+
+These pages <A HREF="make_html"> automatically generated </A> at Mon Sep  2 13:25:07 EDT 1996.<P>
+
+The actual translation from nroff to HTML is done by
+<A HREF="ftp://ftp.cs.berkeley.edu:/ucb/people/phelps/tcltk/rman.tar.Z">
+RosettaMan v2.5a4 </A>.  The translation is not perfect, but it beats
+trying to keep the nroff and HTML consistent by hand.
+
+<P> <EM> <A HREF=/~nils/>Nils Nieuwejaar</A> </EM> <P>
+</BODY>
+</HTML>

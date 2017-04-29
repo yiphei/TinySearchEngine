@@ -1,0 +1,72 @@
+http://old-www.cs.dartmouth.edu/~dfk/charisma/more.html
+4
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> 
+<HTML>
+<HEAD><TITLE> Workload Characterization </TITLE></HEAD>
+
+<BODY>
+
+<H1> Parallel File System Workload Characterization </H1>
+
+Most parallel file systems (eg, Intel's CFS, Thinking Machines SFS) have
+been designed around the assumption that scientific applications running on
+parallel computers would exhibit behavior similar to that of scientific
+applications running on uniprocessors and vector supercomputers. <P>
+
+The primary characteristics of file access in those environments are:
+<UL>
+<LI> Files are huge - hundreds of megabytes, gigabytes, or larger.
+<LI> Files are accessed in large pieces - hundreds of kilobytes or megabytes
+at a time.
+<LI> Files are accessed sequentially.  That is, every byte in the file is
+accessed, in order, from beginning to end.
+</UL>
+
+To test the validity of that assumption, we traced the workloads of two
+different parallel file systems, on two different machines, at two different
+sites, running primarily scientific applications.  The tracing involved
+recording every single access that was made to the parallel file system over
+a period of weeks.<P>
+
+The two machines we traced were an
+<A href="http://www.intel.com">Intel iPSC/860</A> at
+<A href="http://www.arc.nasa.gov"> NASA Ames' </A>
+<A href="http://www.nas.nasa.gov">Numerical Aerodynamic Simulation </A>
+facility and a
+<A href="http://www.tmc.com">Thinking Machines CM-5</A> at the 
+<A href="http://www.ncsa.gov">National Center for Supercomputing
+Applications </A>.  All parallel file access on the iPSC was done
+through Intel's Concurrent File System.  Parallel applications on the
+CM-5 could use either the data-parallel CMF I/O library or the control
+parallel CMMD I/O library. <P>
+
+Our observations may be summarized as follows:
+
+<UL>
+<LI> Many parallel applications access files in small (64-256 bytes),
+noncontiguous pieces.
+<LI> Within a single file, these pieces tend to be regularly sized and
+spaced.
+<LI> Many parallel applications use many different files in a single run.
+<LI> There is a great deal of interprocessor sharing of files.
+<LI> There is very little interjob sharing of files.
+</UL>
+
+We examined the millions of small, noncontiguous requests in greater
+detail, and found that most of them appeared to be part of <A
+href="patterns/patterns.html"> regular, higher-level pattern. </A> <P>
+
+
+<hr>
+<em><A HREF="/~nils/index.html">Nils A. Nieuwejaar</A></em>
+<ADDRESS> <A HREF="mailto:nils@cs.dartmouth.edu">
+nils@cs.dartmouth.edu </A> </ADDRESS>
+
+Maintained by
+<address><a href="http://www.cs.dartmouth.edu/~dfk/">David Kotz &lt;dfk@cs.dartmouth.edu&gt;</a></address>
+<!-- hhmts start -->
+Last modified: Tue Dec 12 10:41:14 2000
+<!-- hhmts end -->
+
+</BODY>
+</HTML>

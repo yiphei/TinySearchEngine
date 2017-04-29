@@ -1,0 +1,88 @@
+http://old-www.cs.dartmouth.edu/~dfk/ILI/dapple/quick.html
+4
+<HTML>
+<HEAD><TITLE>DAPPLE quick look </TITLE></HEAD>
+<BODY>
+<H1> A quick look at DAPPLE programming</H1>
+
+<P>
+To give you a quick look at what DAPPLE programs look like, let's look
+at a program for computing Pascal's triangle.  First of all, here is
+Pascal's triangle:
+<LISTING>
+1
+1	1
+1	2	1
+1	3	3	1
+1	4	6	4	1
+1	5	10	10	5	1
+1	6	15	20	15	6	1
+1	7	21	35	35	21	7	1
+1	8	28	56	70	56	28	8	1
+1	9	36	84	126	126	84	36	9	1
+1	10	45	120	210	252	210	120	45	10	1
+</LISTING>
+ Each row is computed from the previous row; each entry in a new row
+is found by adding the number above it to the number above and to the
+left. 
+</P>
+
+<HR>
+
+<P>
+ Here is the beginning of a DAPPLE program to compute Pascal's triangle:
+ <LISTING>
+    const int N = 11;
+    intVector arow(N);
+</LISTING>
+ This defines an integer vector called "arow", with N elements
+numbered 0, 1, ..., N-1.  This vector will soon contain one row of the
+triangle, but for now the elements are uninitialized.  Vectors may be
+initialized as part of their definition, to a scalar, an array,
+another vector, or a function of the index.  Now we see an example of
+the latter:
+ <LISTING>
+    // defined by DAPPLE; returns i
+    extern int Identity(int i);
+
+    // which virtual processor am I?
+    const intVector VP(N, Identity);
+</LISTING>
+ This defines an N-element integer vector called "VP", initialized so
+that element i has value i. 
+ <LISTING>
+    ifp (VP == 0) {
+        arow = 1;            
+	cout << arow << endl;
+    } else                   
+      arow = 0;              
+</LISTING>
+ This uses the <EM> parallel if </EM> statement to initialize "arow".
+The "then" clause executes only for those virtual processors where the
+condition (VP == 0) is true, in this case, only virtual processor 0.
+Thus, it assigns and prints arow[0].  This one element is of course
+the entire first row of Pascal's triangle.  The "else" clause executes
+for the remaining virtual processors. 
+ <LISTING>
+    // to each element, add the element to the left
+    for (int i = 1; i <= N-1; i++) {
+	arow += shift(arow, 1);
+	ifp (VP <= i)
+	  cout << arow << endl;
+    }
+</LISTING>
+ This for loop computes and prints N-1 more rows.  Each time through
+the loop we compute a new row of the triangle, in parallel, by adding
+the current row to itself, shifted one to the right (a zero is shifted
+in at the left side).  Then, we print out the vector, but only
+elements 0 through i, i.e., the non-zero elements of "arow".  The
+output looks like that above.  </P>
+
+You can see <A HREF="examples/pascal.html"> whole program</A>, if you
+like.
+
+<HR>
+ <A HREF="overview.html">Back to DAPPLE top level</A>
+
+</BODY>
+</HTML>

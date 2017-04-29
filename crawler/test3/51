@@ -1,0 +1,40 @@
+http://old-www.cs.dartmouth.edu/~dfk/ILI/dapple/full/intro.html
+4
+<HTML>
+<HEAD><TITLE>DAPPLE introduction </TITLE></HEAD>
+<BODY>
+<H1> Full-length Introduction to DAPPLE programming</H1>
+
+<H2> Prerequisites: </H2>
+<P>
+ This introduction assumes that you already understand C++ and the
+concepts behind data-parallel computing.  Thus, it is only intended to
+tell you about programming with DAPPLE.
+ </P><P>
+ The basic idea of DAPPLE is to provide C++ classes that represent
+collections of data, and then some parallel operators and methods that
+can be applied to the collections.  DAPPLE takes its inspiration from 
+C*, NESL, and FORTRAN90.
+ </P><P>
+<UL>
+<LI> <A HREF="vector_matrix.html">  Vectors and Matrices, the core of DAPPLE</A>
+<LI> <A HREF="elementwise.html">    Elementwise operations</A>
+<LI> <A HREF="slices.html">         Matrix slices and vector pieces</A>
+<LI> <A HREF="vvmult.html">         Vector-vector multiply</A>
+<LI> <A HREF="vp.html">             Virtual processors</A>
+<LI> <A HREF="ifp.html">            Context and ifp()</A>
+<LI> <A HREF="reductions.html">     Reductions</A>
+<LI> <A HREF="scans.html">          Scans (prefix operations)</A>
+<LI> <A HREF="movement.html">       Moving data</A>
+<LI> <A HREF="io.html">             Input and output</A>
+<LI> <A HREF="gotcha.html">         Details: unintuitive behavior</A>
+<LI> <A HREF="../vector_summary.html"> Quick reference: Vector operations</A>
+<LI> <A HREF="../matrix_summary.html"> Quick reference: Matrix operations</A>
+<LI> <A HREF="../examples.html">       Lots of example programs</A>
+</UL>
+
+<HR>
+ <A HREF="../overview.html">Back to DAPPLE top level</A>
+
+</BODY>
+</HTML>

@@ -1,0 +1,84 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/liang-lighttouch.html
+3
+<HTML>
+<HEAD>
+ <TITLE>liang:lighttouch</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+Xiaohui Liang, Tianlong Yun, Ronald Peterson, and David Kotz.
+<b>LightTouch: Securely Connecting Wearables to Ambient Displays with
+User Intent</b>.
+In
+<i>IEEE International Conference on Computer Communications
+(INFOCOM)</i>,
+May 
+2017.
+Accepted for publication.
+<p><b>Abstract:</b> Wearables are small and have limited user interfaces, so they
+often wirelessly interface with a personal smartphone/computer to relay
+information from the wearable for display or other interactions. In this
+paper, we envision a new method, LightTouch, by which a wearable can
+establish a secure connection to an ambient display, such as a television or
+a computer monitor, while ensuring the user's intention to connect to the
+display. LightTouch uses standard RF methods (like Bluetooth) for
+communicating the data to display, securely bootstrapped via the
+visible-light communication (the brightness channel) from the display to the
+low-cost, low-power, ambient light sensor of a wearable. A screen `touch'
+gesture is adopted by users to ensure that the modulation of screen
+brightness can be securely captured by the ambient light sensor with
+minimized noise. Wireless coordination with the processor driving the display
+establishes a shared secret based on the brightness channel information. We
+further propose novel on-screen localization and correlation algorithms to
+improve security and reliability. Through experiments and a preliminary user
+study we demonstrate that LightTouch is compatible with current display and
+wearable designs, is easy to use (about 6 seconds to connect), is reliable
+(up to 98<HTML>
+<HEAD>
+ <TITLE>liang:lighttouch</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+Xiaohui Liang, Tianlong Yun, Ronald Peterson, and David Kotz.
+<b>LightTouch: Securely Connecting Wearables to Ambient Displays with
+User Intent</b>.
+In
+<i>IEEE International Conference on Computer Communications
+(INFOCOM)</i>,
+May 
+2017.
+Accepted for publication.
+<p><b>Abstract:</b> Wearables are small and have limited user interfaces, so they
+often wirelessly interface with a personal smartphone/computer to relay
+information from the wearable for display or other interactions. In this
+paper, we envision a new method, LightTouch, by which a wearable can
+establish a secure connection to an ambient display, such as a television or
+a computer monitor, while ensuring the user's intention to connect to the
+display. LightTouch uses standard RF methods (like Bluetooth) for
+communicating the data to display, securely bootstrapped via the
+visible-light communication (the brightness channel) from the display to the
+low-cost, low-power, ambient light sensor of a wearable. A screen `touch'
+gesture is adopted by users to ensure that the modulation of screen
+brightness can be securely captured by the ambient light sensor with
+minimized noise. Wireless coordination with the processor driving the display
+establishes a shared secret based on the brightness channel information. We
+further propose novel on-screen localization and correlation algorithms to
+improve security and reliability. Through experiments and a preliminary user
+study we demonstrate that LightTouch is compatible with current display and
+wearable designs, is easy to use (about 6 seconds to connect), is reliable
+(up to 98% success connection ratio), and is secure against attacks.</p>
+<p><b>Keywords:</b> mHealth, security, privacy, context, mobile</p>
+<p><a href="bibtex/liang-lighttouch.bib">BibTeX</a></p>
+<p><a target=_top href = "././liang-lighttouch.pdf">PDF</a> (1949K)</p>
+<p><b>Copyright &#169;&nbsp;2017 by IEEE.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>
+uccess connection ratio), and is secure against attacks.</p>
+<p><b>Keywords:</b> mHealth, security, privacy, context, mobile</p>
+<p><a href="bibtex/liang-lighttouch.bib">BibTeX</a></p>
+<p><a target=_top href = "././liang-lighttouch.pdf">PDF</a> (1949K)</p>
+<p><b>Copyright &#169;&nbsp;2017 by IEEE.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

@@ -1,0 +1,1410 @@
+http://old-www.cs.dartmouth.edu/~dfk/sasos/sasos_bib.html
+4
+<HTML>
+<HEAD><TITLE> Bibliography </TITLE></HEAD>
+<BODY>
+<DL>
+
+<DT> <A NAME="anderson:arch-os"> anderson:arch-os: </DT>
+<DD>
+Thomas E. Anderson, Henry M. Levy, Brian N. Bershad, and Edward D. Lazowska.
+<!-- newblock --> <STRONG>The interaction of architecture and operating system
+  design</STRONG>.
+<!-- newblock --> In <EM>Fourth International Conference on Architectural
+  Support for Programming Languages and Operating Systems</EM>, pages 108--120,
+  1991.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> architecture, operating
+  system </QUOTE></P>
+</DD>
+
+<DT><A NAME="bartoli:was"
+  HREF="ftp://ftp.pegasus.esprit.ec.org/pub/pegasus/paper3.ps.gz">
+  bartoli:was:</A></DT>
+<DD>
+Alberto Bartoli, Sape J. Mullender, and Martijn van der Valk.
+<!-- newblock --> <STRONG>Wide-address spaces --- exploring the design
+  space</STRONG>.
+<!-- newblock --> <EM>ACM Operating Systems Review</EM>, 27(1):11--17, January
+  1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> In an article by M.
+  Hayter and D. McAuley (see ibid., vol. 25, p.14-21, Oct. 1991), it was argued
+  that future high-performance systems trade a traditional, bus-based
+  organization for one where all components are linked together by network
+  switches (the Desk-Area Network). The authors conclude that DAN-based
+  architectures allow the exploitation of shared memory on a wider scale than
+  just a single (multi)processor. They explore how emerging 64-bit processors
+  can be used to implement shared address spaces spanning multiple machines.
+  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> large address space,
+  operating system, distributed system, shared memory, desk-area network
+  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="berrendorf:simulation"> berrendorf:simulation: </DT>
+<DD>
+R. Berrendorf.
+<!-- newblock --> <STRONG>Memory access in shared virtual memory</STRONG>.
+<!-- newblock --> In <EM>Parallel Processing: CONPAR 92-VAPP V. Second Joint
+  International Conference on Vector and Parallel Processing</EM>, pages
+  785--786, 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Shared virtual memory
+  (SVM) is a virtual memory layer with a single address space on top of a
+  distributed real memory on parallel computers. The article examines the
+  behavior and performance of SVM running a parallel program with loop-level
+  parallelism on top of it. A simulator for the underlying parallel
+  architecture can be used to examine the behavior of SVM more deeply. The
+  influence of several parameters, such as the number of processors, page size,
+  cold or warm start, and restricted page replication, is studied.
+  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="broessler:addressing"> broessler:addressing: </DT>
+<DD>
+P. Broessler, F. A. Henskens, J. L. Keedy, and J. Rosenberg.
+<!-- newblock --> <STRONG>Addressing objects in a very large distributed
+  virtual memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the IFIP WWG 10.3 Working
+  Conference</EM>, pages 105--116, 1987.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> large address space,
+  MONADS </QUOTE></P>
+</DD>
+
+<DT> <A NAME="broessler:transactions"> broessler:transactions: </DT>
+<DD>
+P. Broessler and J. Rosenberg.
+<!-- newblock --> <STRONG>Transactions in a segmented single level store
+  architecture</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architectures to Support Security and Persistance of Information</EM>, pages
+  319--338, 1990.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The authors describe
+  the integration of transactions into a computer architecture with a
+  persistent uniform virtual memory based on pages and combined with arbitrary
+  long segments. The ultimate goal is to offer implicit synchronisation of
+  parallel processes and recovery from a wide range of possible errors to a
+  large number of different applications, including the operating system,
+  without sacrificing the efficiency or the degree of parallelism. For this
+  reason it is proposed to implement transaction management at the
+  architectural level.  </QUOTE></P>
+</DD>
+
+<DT><A NAME="carter:distributed"
+  HREF="file://cs.rice.edu/public/munin/wwos-iii.ps.Z">
+  carter:distributed:</A></DT>
+<DD>
+John B. Carter, Alan L. Cox, David B. Johnson, and Willy Zwaenepoel.
+<!-- newblock --> <STRONG>Distributed operating systems based on a protected
+  global virtual address space</STRONG>.
+<!-- newblock --> In <EM>Third Workshop on Workstation Operating Systems</EM>,
+  1992.
+</DD>
+
+<DT> <A NAME="carter:global"> carter:global: </DT>
+<DD>
+John B. Carter, Alan L. Cox, David B. Johnson, and Willy Zwaenepoel.
+<!-- newblock --> <STRONG>Distributed operating systems based on a protected
+  global virtual address space</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 75--79, 1993.
+</DD>
+
+<DT> <A NAME="chase:dist"> chase:dist: </DT>
+<DD>
+Jeffrey S. Chase, Val\'erie Issarny, and Henry M. Levy.
+<!-- newblock --> <STRONG>Distribution in a single address space operating
+  system</STRONG>.
+<!-- newblock --> <EM>ACM Operating Systems Review</EM>, 27(2):61--65, April
+  1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The authors are
+  building an operating system called Opal for wide-address architectures. The
+  key feature of Opal is a single global virtual address space that extends to
+  data on long-term storage and across the network. The authors outline their
+  ideas for extending Opal to a distributed environment, focusing on the naming
+  and binding of data and services to allow uniform treatment across the
+  network. The central point is that although the meaning of names should be
+  uniform throughout the network, at a lower level the binding of names to
+  physical data or servers may vary with the node uttering the name, in order
+  to accommodate caching, replication, and migration. This principle affects
+  Opal's handling of both data names (virtual addresses) and resource names
+  (capabilities).  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> distributed computing,
+  virtual memory, distributed shared memory, large address space </QUOTE></P>
+</DD>
+
+<DT> <A NAME="chase:issues"> chase:issues: </DT>
+<DD>
+Jeff Chase, Mike Feeley, and Hank Levy.
+<!-- newblock --> <STRONG>Some issues for single address space
+  systems</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 150--154, 1993.
+</DD>
+
+<DT> <A NAME="chase:lightweight"> chase:lightweight: </DT>
+<DD>
+Jeffrey S. Chase, Henry M. Levy, Edward D. Lazowska, and Miche Baker-Harvey.
+<!-- newblock --> <STRONG>Lightweight shared objects in a 64-bit operating
+  system</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Conference on Object-Oriented
+  Programming Systems, Languages, and Applications</EM>, pages 397--413, 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Object-oriented
+  models are a popular basis for supporting uniform sharing of data and
+  services in operating systems, distributed programming systems, and database
+  systems. One terms systems that use objects for these purposes: object
+  sharing systems. Operating systems in common use have nonuniform addressing
+  models, making the uniform object naming required by object sharing systems
+  expensive and difficult to implement. It is argued that emerging 64-bit
+  architectures make it practical to support uniform naming at the virtual
+  addressing level, eliminating a key implementation problem for object sharing
+  systems. The authors describe facilities for object-based sharing of
+  persistent data and services in Opal, an operating system been developed for
+  paged 64-bit architectures. The distinctive feature of Opal is that object
+  sharing is supported in a runtime library, above a single virtual address
+  space that maps all primary and secondary storage in a l<! truncated text></QUOTE></P>
+</DD>
+
+<DT><A NAME="chase:objects"
+  HREF="ftp://cs.washington.edu/tr/1992/03/UW-CSE-92-03-09.PS.Z">
+  chase:objects:</A></DT>
+<DD>
+Jeffrey S. Chase, Henry M. Levy, Edward D. Lazowska, and Miche Baker-Harvey.
+<!-- newblock --> <STRONG>Lightweight shared objects in a 64-bit operating
+  system</STRONG>.
+<!-- newblock --> Technical Report 92-03-09, University of Washington, March
+  1992.
+</DD>
+
+<DT><A NAME="chase:opal"
+  HREF="ftp://cs.washington.edu/tr/1992/03/UW-CSE-92-03-02.PS.Z">
+  chase:opal:</A></DT>
+<DD>
+Jeffrey S. Chase, Henry M. Levy, Miche Baker-Harvey, and Edward D. Lazowska.
+<!-- newblock --> <STRONG>How to use a 64-bit virtual address space</STRONG>.
+<!-- newblock --> Technical Report 92-03-02, University of Washington, March
+  1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Most operating
+  systems execute programs in private address spaces communicating through
+  messages or files. The traditional private address space model was developed
+  for 16- and 32-bit architectures, on which virtual addresses are a scarce
+  resource. The recent appearance of architectures with flat 64-bit virtual
+  addressing opens an opportunity to reconsider our use of virtual address
+  spaces. In this paper we argue for an alternative addressing model, in which
+  all programs and data reside in a single global virtual address space shared
+  by multiple protection domains. Hardware-base memory protection exists within
+  the single address space, providing firewalls as strong as in conventional
+  systems. We explore the tradeoffs in the use of a global virtual address
+  space relative to the private address space model. We contend that a shared
+  address space can eliminate obstacles to efficient sharing and exchange of
+  data structures that are inherent in privat<! truncated text></QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> shared memory,
+  operating system, mapped files, large address space, Opal </QUOTE></P>
+</DD>
+
+<DT> <A NAME="chase:opal2"> chase:opal2: </DT>
+<DD>
+Jeff Chase, Hank Levy, Miche Baker-Harvey, and Ed Lazowska.
+<!-- newblock --> <STRONG>Opal: A single address space system for 64-bit
+  architectures</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 80--85, 1993.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> single address space
+  operating system </QUOTE></P>
+</DD>
+
+<DT> <A NAME="chase:tocs"> chase:tocs: </DT>
+<DD>
+Jeffrey S. Chase, Henry M. Levy, Michael J. Feeley, and Edward D. Lazowska.
+<!-- newblock --> <STRONG>Sharing and protection in a single address space
+  operating system</STRONG>.
+<!-- newblock --> <EM>ACM Transactions on Computer Systems</EM>, May 1994.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> verify, SASOS, large
+  address space, virtual memory, operating system, shared memory </QUOTE></P>
+</DD>
+
+<DT><A NAME="chew:database"
+  HREF="file://cs.utexas.edu/pub/techreports/tr92-05.ps.Z">
+  chew:database:</A></DT>
+<DD>
+Khien-Mien Chew and Avi Silberschatz.
+<!-- newblock --> <STRONG>Toward operating system support for
+  recoverable-persistent main memory database systems</STRONG>.
+<!-- newblock --> Technical Report TR--92--05, University of Texas at Austin,
+  February 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The availability of
+  large main memories and the emergence of new application domains make current
+  techniques of database buffer management inadequate. To overcome this, we
+  propose the use of the Virtual Memory Database (VMDB) approach for building
+  large database systems. The VMDB paradigm is based on the principle of
+  directly mapping a database into a vir- tual memory address space and
+  exploiting the buffer management facilities of the underlying virtual memory
+  system. We argue that for many application domains, the VMDB approach is
+  preferable to traditional techniques. However, the lack of appropriate and
+  efficient operating system support for recovery must first be addressed in
+  order to make the VMDB approach attrac- tive. To this end, we propose a
+  simple Recoverable- Persistent Updates model and develop a scheme for
+  ensuring that database pages in a VMDB system are propagated in an order and
+  manner that preserves recoverability and ensures per<! truncated text></QUOTE></P>
+</DD>
+
+<DT> <A NAME="chew:kernelvm"> chew:kernelvm: </DT>
+<DD>
+Khien-Mien Chew, A. Jyothy Reddy, Theodore H. Romer, and Abraham Silberschatz.
+<!-- newblock --> <STRONG>Kernel support for recoverable-persistent virtual
+  memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Usenix {Mach III} Symposium</EM>,
+  pages 215--234, 1993.
+</DD>
+
+<DT><A NAME="chew:persistent"
+  HREF="file://cs.utexas.edu/pub/techreports/tr93-06.ps.Z">
+  chew:persistent:</A></DT>
+<DD>
+Khien-Mien Chew, A. Jyothy Reddy, Theodore H. Romer, and Avi Silberschatz.
+<!-- newblock --> <STRONG>Capability-based protection in a persistent global
+  virtual memory system</STRONG>.
+<!-- newblock --> Technical Report TR--93--06, University of Texas at Austin,
+  February 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The buffering
+  facilities typically provided by operating systems are not powerful enough to
+  support the performance and consistency requirements of database systems. As
+  a result, most database systems are structured as Buffer Pool Database (BPDB)
+  systems, providing their own buffering facilities, with their own paging
+  policies and recovery schemes. The emergence of operating systems with very
+  large address spaces and flexible memory management makes Virtual Memory
+  Database (VMDB) systems feasible. In such systems, the database is mapped
+  into virtual memory and the buffering facilities of the underlying virtual
+  memory system are used. VMDB systems do not experience many of the problems
+  faced by BPDB systems. To support the consistency and recoverability
+  requirements of VMDB systems, we have proposed that the virtual memory system
+  be extended to support the Recoverable-Persistent Updates (RPU) model. This
+  model is powerful and general enough to sup<! truncated text></QUOTE></P>
+</DD>
+
+<DT><A NAME="chew:recoverable"
+  HREF="file://cs.utexas.edu/pub/techreports/tr93-08.ps.Z">
+  chew:recoverable:</A></DT>
+<DD>
+Khien-Mien Chew and Abraham Silberschatz.
+<!-- newblock --> <STRONG>The recoverable-persistent virtual memory
+  paradigm</STRONG>.
+<!-- newblock --> Technical Report TR--93--08, University of Texas at Austin,
+  March 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The lack of suitable
+  buffering support in most operating systems for ensuring the performance and
+  consistency requirements of database applications has resulted in most
+  database systems providing their own buffering facilities. With the recent
+  emergence of new technologies and application domains that place new
+  requirements on buffering techniques, this approach is no longer adequate. An
+  attractive alternative is to improve the file memory-mapping facilities of
+  operating systems in order to allow database systems to exploit them by
+  directly map their databases into virtual memory [5,10] without compromising
+  performance and consistency requirements. In particular, to fully realize all
+  the benefits of this memory-mapped buffering approach, support for the
+  consistency and recoverability requirements of database systems needs to be
+  provided. In this paper, we propose that operating systems be extended to
+  support Recoverable-Persistent Virtual Memory<! truncated text></QUOTE></P>
+</DD>
+
+<DT> <A NAME="cockshot:management"> cockshot:management: </DT>
+<DD>
+W. P. Cockshot, M. P. Atkinson, and K. J. Chisholm.
+<!-- newblock --> <STRONG>Persistent object management system</STRONG>.
+<!-- newblock --> <EM>Software: Practice and Experience</EM>, 14(1):49--71,
+  January 1984.
+</DD>
+
+<DT> <A NAME="cockshott:persistent"> cockshott:persistent: </DT>
+<DD>
+W. P. Cockshott and P. W. Foulk.
+<!-- newblock --> <STRONG>Implementing 128 bit persistent addresses on 80x86
+  processors</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architectures to Support Security and Persistance of Information</EM>, pages
+  123--136, 1990.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The Intel
+  architecture for the 80*86 series machines lends itself well to the
+  implementation of persistent object oriented languages. They are also by a
+  wide margin the most commonly used CPUs in the world. Mass production has
+  driven down the costs of machines using these processors and they thus make
+  an appealing platform for experimentation. They have a model of store which
+  corresponds well to the 7 layer model of persistent memory proposed by the
+  authors: with physical, paged and segmented memory interfaces. One could map
+  persistent objects directly onto Intel segments, but this would suffer from
+  the small size of the segment identifier which only permits 16K of objects.
+  For a distributed object oriented system one needs a much larger number of
+  objects. The paper examines software and hardware techniques that can be used
+  to map dynamically from network wide object identifiers to hardware supported
+  segments. Four techniques are presented, two s<! truncated text></QUOTE></P>
+</DD>
+
+<DT> <A NAME="cohn:dsm"> cohn:dsm: </DT>
+<DD>
+D. L. Cohn, A. Banerji, P. M. Greenawalt, M. R. Casey, and D. C. Kulkarni.
+<!-- newblock --> <STRONG>Workstation cooperation through a typed distributed
+  shared memory abstraction</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 80--85, 1993.
+</DD>
+
+<DT> <A NAME="cunha:oommu"> cunha:oommu: </DT>
+<DD>
+A. R. Cunha, C. N. Ribeiro, and J. A. Marques.
+<!-- newblock --> <STRONG>The architecture of a memory management unit for
+  object-oriented systems</STRONG>.
+<!-- newblock --> <EM>Computer Architecture News</EM>, 19(4):109--116, June
+  1991.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Describes the
+  rationale for the design and the architecture of a Memory Management Unit
+  (MMU) for object-oriented systems. The CAMOES MMU supports arbitrary size
+  protected objects mapped on a single virtual address space. Support for
+  object invocations is provided in the form of an operations cache closely
+  coupled with the addressing hardware. The MMU only executes in hardware those
+  functions crucial for performance; other functions, namely the management of
+  internal buffers and associative memories, and object management policies,
+  are handled in software. This functional organisation is suitable for current
+  generation processors based on RISC principles and is able to support open
+  multi-lingual environments.  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="daley:multics"> daley:multics: </DT>
+<DD>
+Robert C. Daley and Jack B. Dennis.
+<!-- newblock --> <STRONG>Virtual memory, processes, and sharing in
+  MULTICS</STRONG>.
+<!-- newblock --> <EM>Communications of the ACM</EM>, 11(5):306--312, May 1968.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> MULTICS </QUOTE></P>
+</DD>
+
+<DT> <A NAME="dearle:browsing"> dearle:browsing: </DT>
+<DD>
+A. Dearle, Q. Cutts, and G. Kirby.
+<!-- newblock --> <STRONG>Browsing, grazing and nibbling persistent data
+  structures</STRONG>.
+<!-- newblock --> In <EM>Proceedings 3rd International Workshop on Persistent
+  Object Systems</EM>, pages 56--69, 1989.
+</DD>
+
+<DT> <A NAME="dearle:persistence"> dearle:persistence: </DT>
+<DD>
+Alan Dearle, John Rosenberg, Frans Henskens, Francis Vaughan, and Kevin
+  Maciunas.
+<!-- newblock --> <STRONG>An examination of operating system support for
+  persistent object systems</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, pages 779--789, 1992.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> persistence,
+  addressing, stability, resilience, protection </QUOTE></P>
+</DD>
+
+<DT> <A NAME="dobosiewicz:mess"> dobosiewicz:mess: </DT>
+<DD>
+W. Dobosiewicz, M. Ra\csit Eskicio\vglu, P. Gburzynski, and A. Mutiso.
+<!-- newblock --> <STRONG>MESS---a distributed operating system for the
+  universe</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Second IEEE Workshop on Future
+  Trends of Distributed Computing Systems</EM>, pages 208--214, 1990.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The authors describe
+  the basic design principles of a distributed operating system, MESS, which is
+  hardware independent in nature. MESS is based on the paradigm of global
+  address space, which replaces all the devices, including those reachable by
+  networks. The system, which runs on an arbitrarily large cluster of virtual
+  machines, will turn this cluster into a single processing server. Flexible
+  process migration, implemented as part of the virtual memory management
+  across the network, will hide completely the distributed nature of the
+  underlying hardware. The global virtual memory will be the primary means of
+  communication. The user will perceive the system as a single-machine
+  multitasking environment.  </QUOTE></P>
+</DD>
+
+<DT><A NAME="elphinstone:mungi"
+  HREF="file://ftp.vast.unsw.edu.au/pub/Mungi/9312.ps.Z">
+  elphinstone:mungi:</A></DT>
+<DD>
+Kevin Elphinstone.
+<!-- newblock --> <STRONG>Address space management issues in the Mungi
+  operating system</STRONG>.
+<!-- newblock --> Technical Report SCS\&E Report 9312, University of New South
+  Wales, Australia, November 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The Mungi operating
+  system features a single 64 bit persistent address space encompassing all
+  data in the system. This differs dramatically from current generation
+  operating systems in which each process has its own address space and
+  persistent data is stored in a filesystem. This report is a preliminary
+  investigation of address space management issues raised by adopting a single
+  persistent address space model. Issues examined are internal and external
+  fragmentation of the address space, reuse versus no-reuse allocation
+  policies, and page table structures used to support the address space.
+  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="ferreira:heterogeneous"> ferreira:heterogeneous: </DT>
+<DD>
+Paulo Ferreira and Marc Shapiro.
+<!-- newblock --> <STRONG>Distribution and persistence in multiple and
+  heterogeneous address spaces</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 83--93, 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> We present the design
+  of a flexible architectural model that supports clustering, storing, naming,
+  and accessing objects in a large scale distributed system. The system is
+  logically divided in zones, i.e., groups of machines with an homogeneous
+  address space organization. Both uniform (64-bit) zone-wide and partitioned
+  (32 or 64-bit) address space organizations are supported. For Clustering
+  purpos objects are allocated within segments. Segments are logically grouped
+  into bunches. Each bunch has a usser-level bunch manager implementing the
+  policies related to persistence and distribution specific to the bunch's
+  data: allocation, garbage collection, mapping and un-mapping, function
+  shipping or data shipping, shared data consistency, migration, etc. Objects
+  are referenced by maillons and {SSP} (stub-scion pair) chains. THese
+  mechanisms are scalable and are well adapted to support distributed garbage
+  collection, migration and compaction.</QUOTE></P>
+</DD>
+
+<DT><A NAME="garrett:linking"
+  HREF="ftp://cs.rochester.edu/pub/papers/systems/93.Linking_shared_segments.ps.Z"> garrett:linking:</A></DT>
+<DD>
+W. E. Garrett, M. L. Scott, R. Bianchini, L. I. Kontothanassis, R. A. McCallum,
+  J. A. Thomas, R. Wisniewski, and S. Luk.
+<!-- newblock --> <STRONG>Linking shared segments</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1993 Winter USENIX Conference</EM>,
+  pages 13--27, 1993.
+</DD>
+
+<DT><A NAME="garrett:sharing"
+  HREF="ftp://cs.rochester.edu/pub/papers/systems/92.sharing.ps.Z">
+  garrett:sharing:</A></DT>
+<DD>
+William E. Garrett, Ricardo Bianchini, Leonidas Kontothanassis, R. Andrew
+  McCallum, Jeffery Thomas, Robert Wisniewski, and Michael L. Scott.
+<!-- newblock --> <STRONG>Dynamic sharing and backward compatibility on 64-bit
+  machines</STRONG>.
+<!-- newblock --> Technical Report 418, Univ. of Rochester Computer Science
+  Department, April 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> As an alternative to
+  communication via messages or files, shared memory has the potential to be
+  simpler, faster, and less wasteful of space. Unfortunately, the mechanisms
+  available for sharing in most multi-user operating systems are difficult to
+  use. As a result, shared memory tends to appear primarily in self-contained
+  parallel applications, where library or compiler support can take care of the
+  messy details. We see a tremendous opportunity to extend the advantages of
+  sharing across application boundaries. We believe that these advantages can
+  be realized without introducing major changes to the Unix programming model.
+  In particular, we believe that it is both possible and desirable to
+  incorporate shared memory segments into the hierarchical file system name
+  space. Our approach has two components: First, we use dynamic linking to
+  allow programs to access shared data and code in the same way they access
+  ordinary (private) variables and function<! truncated text></QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> shared memory,
+  operating system, mapped files, large address space </QUOTE></P>
+</DD>
+
+<DT> <A NAME="guedes:objectmemory"> guedes:objectmemory: </DT>
+<DD>
+Paulo Guedes and Miguel Castro.
+<!-- newblock --> <STRONG>Distributed shared object memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 142--149, 1993.
+</DD>
+
+<DT><A NAME="gull:cherub"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-12.ps.Z">
+  gull:cherub:</A></DT>
+<DD>
+Aarron Gull.
+<!-- newblock --> <STRONG>Cherub: A Hardware Distributed Single Shared Address
+  Space Memory Architecture</STRONG>.
+<!-- newblock --> PhD thesis, Systems Architecture Research Centre, City
+  University, March 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Increased computer
+  throughput can be achieved through the use of parallel processing. The
+  granularity of a parallel program is the average number of instructions
+  performed by the tasks constituting it. Coarse-grained programs typically
+  execute huge numbers of instructions per task (~1,000,000). The tasks in
+  fine-grained programs are typically short (~10,000). In general, the finer
+  the program grain, the greater the potential for exploiting parallelism.
+  Amdahl's Law shows that in the absence of overheads, the more potential
+  parallelism that is realised in an algorith, the faster it will be. The
+  economical granularity of tasks is determined by the intertask communications
+  overhead. Break-even occurs when processing is approximately equally divided
+  between useful work and overhead. The two common parallel programming
+  paradigms are shared variable and message passing. Shared variable is, in
+  general, the more natural of the two as it allows implicit c<! truncated text></QUOTE></P>
+</DD>
+
+<DT><A NAME="heiser:mungi"
+  HREF="file://ftp.vast.unsw.edu.au/pub/Mungi/9314.ps.Z">
+  heiser:mungi:</A></DT>
+<DD>
+Gernot Heiser, Kevin Elphinstone, Stephen Russell, and Jerry Vochteloo.
+<!-- newblock --> <STRONG>Mungi: A distributed single address-space operating
+  system</STRONG>.
+<!-- newblock --> Technical Report SCS\&E Report 9314, University of New South
+  Wales, Australia, November 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> With the development
+  of 64-bit microprocessors, it is now possible to combine local, secondary and
+  remote storage into a large single address-space. This results in a uniform
+  method for naming and accessing objects regardless of their location, removes
+  the distinction between persistent and transient data, and simplifies the
+  migration of data and processes. This paper describes the Mungi single
+  address-space operating system. Mungi provides a distributed single level
+  address-space, which is protected using password capabilities. The protection
+  system performs efficiently on conventional architectures, and is simple
+  enough that most programs do not need to be aware of its operation.
+  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> shared memory,
+  distributed system, operating system, virtual memory, persistence, large
+  address space </QUOTE></P>
+</DD>
+
+<DT><A NAME="heiser:persistence"
+  HREF="ftp://ftp.vast.unsw.edu.au/pub/Mungi/9302.ps.Z">
+  heiser:persistence:</A></DT>
+<DD>
+Gernot Heiser, Kevin Elphinstone, Stephen Russell, and Graham R. Hellestrand.
+<!-- newblock --> <STRONG>A distributed single address-space operating system
+  supporting persistence</STRONG>.
+<!-- newblock --> Technical Report SCS\&E Report 9302, University of New South
+  Wales, Australia, March 1993.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> shared memory,
+  distributed system, operating system, virtual memory, persistence, large
+  address space </QUOTE></P>
+</DD>
+
+<DT> <A NAME="henskens:capability"> henskens:capability: </DT>
+<DD>
+Frans A. Henskens.
+<!-- newblock --> <STRONG>Addressing moved modules in a capability-based
+  distributed shared memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, volume~1, pages 769--778,
+  1992.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> persistence,
+  addressing, stability, resilience, protection </QUOTE></P>
+</DD>
+
+<DT> <A NAME="henskens:objects"> henskens:objects: </DT>
+<DD>
+Frans A. Henskens, Peter Br\"ossler, J. Leslie Keedy, and John Rosenberg.
+<!-- newblock --> <STRONG>Coarse and fine grain objects in a distributed
+  persistent store</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 116--123, 1993.
+</DD>
+
+<DT> <A NAME="henskens:stability"> henskens:stability: </DT>
+<DD>
+Frans Henskens, John Rosenberg, and Michael Hannaford.
+<!-- newblock --> <STRONG>Stability in a network of MONADS-PC
+  computers</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architecture to Support Security and Persistence of Information</EM>, pages
+  246--256, 1990.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The MONADS-PC
+  computer system implements an architecture supporting a very large persistent
+  store based on a uniform virtual memory. The authors have previously shown
+  how this virtual memory scheme can be extended to encompass a local area
+  network of MONADS-PC computers. In this paper they examine the question of
+  the integrity of the store in such a network. A modification to the MONADS
+  architecture to implement stability is reviewed and extended to guarantee
+  stability of a network-wide persistent store. The stability scheme allows for
+  temporary interruption to the physical network without affecting the validity
+  of exported pages owned by a node.  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> MONADS, stability
+  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="hollins:garbage"> hollins:garbage: </DT>
+<DD>
+Michael Hollins and John Rosenberg.
+<!-- newblock --> <STRONG>Operating system management of large partially
+  allocated objects</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 42--50, 1993.
+</DD>
+
+<DT> <A NAME="hornick:database"> hornick:database: </DT>
+<DD>
+Mark F. Hornick and Stanley B. Zdonik.
+<!-- newblock --> <STRONG>A shared, segmented memory system for an
+  object-oriented database</STRONG>.
+<!-- newblock --> <EM>ACM Transactions on Office Information Systems</EM>,
+  5(1):70--95, January 1987.
+</DD>
+
+<DT> <A NAME="hurst:capability"> hurst:capability: </DT>
+<DD>
+A. J. Hurst and A. S. M. Sajeev.
+<!-- newblock --> <STRONG>A capability based language for persistent
+  programming: Implementation issues</STRONG>.
+<!-- newblock --> In <EM>Proceedings 3rd International Workshop on Persistent
+  Object Systems</EM>, pages 109--125, 1989.
+</DD>
+
+<DT><A NAME="inohara:persistent"
+  HREF="file://kelly.is.s.u-tokyo.ac.jp/pub/tech-reports/lucas.ps.Z">
+  inohara:persistent:</A></DT>
+<DD>
+Shigekazu Inohara, Keitaro Uehara, Hajime Miyazawa, and Takashi Masuda.
+<!-- newblock --> <STRONG>Sharing persistent data structures on wide address
+  spaces in the Lucas operating system</STRONG>.
+<!-- newblock --> Technical report, University of Tokyo, Japan, July 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Persistent
+  programming in conventional systems indispensably involves pointer
+  conversion, which requires language-level support and causes heavy run-time
+  overheads. This paper presents the design of language-independent persistent
+  programming layer of the Lucas operating system, which enables user processes
+  to share, transfer, and copy persistent data structures, possibly containing
+  hardware-supported pointers, without pointer conversion. Assuming wide
+  address spaces of 64-bit processors, Lucas introduces regions and
+  inter-region references as two fundamental abstractions to manage
+  location-dependent persistent data structures. Lucas has been implementing on
+  DECstations running Mach 3.0 microkernels, and fundamental services have
+  already been functional.  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="jones:capability"> jones:capability: </DT>
+<DD>
+Anita K. Jones.
+<!-- newblock --> <STRONG>Capability architecture revisited</STRONG>.
+<!-- newblock --> <EM>ACM Operating Systems Review</EM>, 14(3):33--35,
+  September 1980.
+</DD>
+
+<DT> <A NAME="keedy:modules"> keedy:modules: </DT>
+<DD>
+J. Leslie Keedy and Karin Vosseberg.
+<!-- newblock --> <STRONG>Persistent protected modules and persistent processes
+  as the basis for a more secure operating system</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, volume~1, pages 747--756,
+  1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The MONADS computer
+  architecture is based on a very large persistent virtual memory which
+  eliminates the need for a conventional file store and filing system, thus
+  providing a suitable basis for persistent programming. The architecture also
+  provides direct support for persistent objects (modules), which are protected
+  by capabilities, and for processes which persist not only between login
+  sessions but also over system shutdowns. The authors briefly outline these
+  aspects of the architecture and describe how they are used in the design of
+  the MONADS operating system. They then show how these features naturally give
+  rise to a wide range of security advantages which would be very difficult to
+  achieve in conventional systems. They first discuss the security advantages
+  of persistent protected modules and then they consider how persistent
+  processes are organised, how they relate to modules and how they contribute
+  to stronger security. Next they describe<! truncated text></QUOTE></P>
+</DD>
+
+<DT> <A NAME="koch:persistence"> koch:persistence: </DT>
+<DD>
+David Koch and John Rosenberg.
+<!-- newblock --> <STRONG>A secure RISC-based architecture supporting data
+  persistence</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architectures to Support Security and Persistence of Information</EM>, pages
+  188--201, 1990.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> MONADS </QUOTE></P>
+</DD>
+
+<DT> <A NAME="koldinger:plb"> koldinger:plb: </DT>
+<DD>
+Eric J. Koldinger, Henry M. Levy, Jeffrey S. Chase, and Susan J. Eggers.
+<!-- newblock --> <STRONG>The Protection Lookaside Buffer: Efficient protection
+  for single-address space computers</STRONG>.
+<!-- newblock --> Technical Report 91--11--05, Univ. of Washington, 1991.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> virtual memory,
+  architecture, operating system, large address space </QUOTE></P>
+</DD>
+
+<DT> <A NAME="koldinger:sasos"> koldinger:sasos: </DT>
+<DD>
+Eric J. Koldinger, Jeffrey S. Chase, and Susan J. Eggers.
+<!-- newblock --> <STRONG>Architectural support for single address space
+  operating systems</STRONG>.
+<!-- newblock --> In <EM>Fifth International Conference on Architectural
+  Support for Programming Languages and Operating Systems</EM>, pages 175--186,
+  1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Focuses on the
+  architectural implications of single address space operating systems,
+  specifically the interaction between the memory system architecture and the
+  operating system's use of addressing and protection. The purpose is to
+  explore certain architectural opportunities created by single address space
+  systems by evaluating two protection models that support them. The first
+  provides protection on a per-page, per-domain basis; the paper defines the
+  protection lookaside buffer, a hardware structure that implements this model.
+  The second provides protection on a page-group basis; this model is
+  implemented in the Hewlett-Packard PA-RISC architecture.  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> single address space,
+  protection </QUOTE></P>
+</DD>
+
+<DT> <A NAME="kotz:addrtrace"> kotz:addrtrace: </DT>
+<DD>
+David Kotz and Preston Crow.
+<!-- newblock --> <STRONG>The expected lifetime of ``single-address-space''
+  operating systems</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1994 ACM Sigmetrics Conference on
+  Measurement and Modeling of Computer Systems</EM>, pages 161--170, May 1994.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Trends toward
+  shared-memory programming paradigms, large (64-bit) address spaces, and
+  memory-mapped files have led some to propose the use of a single
+  virtual-address space, shared by all processes and processors. Typical
+  proposals require the single address space to contain all process-private
+  data, shared data, and stored files. To simplify management of an address
+  space where stale pointers make it difficult to re-use addresses, some have
+  claimed that a 64-bit address space is sufficiently large that there is no
+  need to ever re-use addresses. Unfortunately, there has been no data to
+  either support or refute these claims, or to aid in the design of appropriate
+  address-space management policies. In this paper, we present the results of
+  extensive kernel-level tracing of the workstations in our department, and
+  discuss the implications for single-address-space operating systems. We found
+  that single-address-space systems will not outgrow the availa<! truncated text></QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> operating system, wide
+  address space, virtual memory, memory management, dfk </QUOTE></P>
+</DD>
+
+<DT> <A NAME="kotz:addrtrace-tr"> kotz:addrtrace-tr: </DT>
+<DD>
+David Kotz and Preston Crow.
+<!-- newblock --> <STRONG>The expected lifetime of ``single-address-space''
+  operating systems</STRONG>.
+<!-- newblock --> Technical Report PCS-TR93-198, Dept. of Math and Computer
+  Science, Dartmouth College, October 1993.
+<!-- newblock --> Appeared in SIGMETRICS '94.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Trends toward
+  shared-memory programming paradigms, large (64-bit) address spaces, and
+  memory-mapped files have led some to propose the use of a single
+  virtual-address space, shared by all processes and processors. Typical
+  proposals require the single address space to contain all process-private
+  data, shared data, and stored files. To simplify management of an address
+  space where stale pointers make it difficult to re-use addresses, some have
+  claimed that a 64-bit address space is sufficiently large that there is no
+  need to ever re-use addresses. Unfortunately, there has been no data to
+  either support or refute these claims, or to aid in the design of appropriate
+  address-space management policies. In this paper, we present the results of
+  extensive kernel-level tracing of the workstations in our department, and
+  discuss the implications for single-address-space operating systems. We found
+  that single-address-space systems will not outgrow the availa<! truncated text></QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> operating system, wide
+  address space, virtual memory, memory management, dfk </QUOTE></P>
+</DD>
+
+<DT> <A NAME="lazowska:multiprocessing"> lazowska:multiprocessing: </DT>
+<DD>
+Edward D. Lazowska.
+<!-- newblock --> <STRONG>System support for high performance
+  multiprocessing</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the USENIX Symposium on Experiences
+  with Distributed and Multiprocessor Systems</EM>, pages 1--11, 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Surveys recent and
+  ongoing work at the University of Washington concerned with system support
+  for high performance multiprocessing. Three principal areas are addressed.
+  The first is the appropriate division of labor between the kernel and the
+  user-level on shared memory multiprocessors. The thesis is that significant
+  improvements in performance and flexibility can be achieved by moving
+  functionality out of the kernel. The second is support for sharing on
+  wide-address machines. Here the thesis is that addressability and protection
+  are orthogonal, and that with enough addressing bits and the right operating
+  system design, it is possible to have an efficient and safe single-address
+  space system that encourages flexible sharing. The third are addressed is
+  parallel/distributed computing. The goal is to build scalable high
+  performance systems out of 'commodity parts'. The obstacles include devising
+  a suitable programming model, and achieving low latenc<! truncated text></QUOTE></P>
+</DD>
+
+<DT> <A NAME="lieberman:garbage"> lieberman:garbage: </DT>
+<DD>
+Henry Lieberman and Carl Hewitt.
+<!-- newblock --> <STRONG>A real-time garbage collector based on the lifetimes
+  of objects</STRONG>.
+<!-- newblock --> <EM>Communications of the ACM</EM>, 26(6):419--429, June
+  1983.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> garbage collection
+  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="malhorta:persistent"> malhorta:persistent: </DT>
+<DD>
+Ashok Malhorta and Steven J. Munroe.
+<!-- newblock --> <STRONG>Support for persistent objects: Two
+  architectures</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, volume~1, pages 737--746,
+  1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> This paper describes
+  the architecture of the {IBM} {RISC} System/6000 and the {IBM} {AS/400} from
+  the standpoint of their suitability for implementing Persistent Object
+  Systems. Both systems provide facilities in their hardware, microcode and
+  operating system that, carefully used, can simplify the implementation of
+  Persistent Object Systems and improve their performance. The facilities
+  provided are not, however, perfectly matched to the requirements of
+  Persistent Object Systems. We discuss design trade-offs and identify
+  recommended extensions.  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="mashey:64bit"> mashey:64bit: </DT>
+<DD>
+John R. Mashey.
+<!-- newblock --> <STRONG>64-bit computing</STRONG>.
+<!-- newblock --> <EM>Byte Magazine</EM>, pages 135--142, September 1991.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Today's most popular
+  computers are built around 32-bit microprocessors. The next generation of
+  chips-64-bit microprocessors-will bring even more power to the desktop. There
+  are two reasons for the prediction: 64-bit integer processing and convenient
+  use of more than 32 bits of address space. The first reason is a
+  straightforward performance issue; the second has more widespread
+  implications. Applications for 64-bit microprocessors exist for both servers
+  and desktops.  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> architecture, large
+  address space </QUOTE></P>
+</DD>
+
+<DT> <A NAME="murray:angel"> murray:angel: </DT>
+<DD>
+Kevin Murray, Tim Wilkinson, Peter Osmon, Ashley Saulsbury, Tom Stiemerling,
+  and Paul Kelly.
+<!-- newblock --> <STRONG>Design and implementation of an object-orientated
+  64-bit single address space microkernel</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the USENIX Symposium on Microkernels
+  and Other Kernel Architectures</EM>, pages 31--43, 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> In the mid eighties,
+  the System Architecture Research Centre at City University developed a
+  message-passing, UNIX compliant micro kernel (Meshix) for our own scalable
+  distributed memory architecture (Topsy). Over the last two years we have been
+  engaged in a research programme aimed at learning from this experience, and
+  developing a new operating system based on these lessons. The result is the
+  Angel microkernel. This paper sets out the lessons we have learnt from
+  Meshix, how this has influenced the design of Angel and outlines our current
+  design of Angel and its C++ implementation. We will also describe our hopes
+  for Angel, and the lessons that we have learnt from the design and
+  implementation process.  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> microkernels, large
+  address spaces, object oriented, operating system, shared memory </QUOTE></P>
+</DD>
+
+<DT><A NAME="murray:experiences"
+  HREF="file://ftp.cs.city.ac.uk/papers/92/sarc93-3.ps.Z">
+  murray:experiences:</A></DT>
+<DD>
+K. Murray, P. Osmon, A. Valsamidis, A. Whitcroft, and T. Wilkinson.
+<!-- newblock --> <STRONG>Experiences with distributed shared memory</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1993/3, Systems Architecture
+  Research Centre, City University, London, March 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> A major problem with
+  programming systems such as distributed memory multicomputers or networks of
+  workstations has been the necessity for explicit, time-consuming and
+  expensive message passing. Distributed shared memory enables such systems to
+  appear to have a common memory though they may not physically share it. The
+  Systems Architecture Research Centre at City University has worked on
+  implementations of these kinds of systems and is experienced in the kinds of
+  benefits they can offer. These are outlined for applications to fault
+  tolerance. A DSM server implementation and its use are described. A method
+  for using hardware to assist distributed shared memory is also described.
+  Finally, a new architecture the Centre is studying is detailed.  </QUOTE></P>
+</DD>
+
+<DT><A NAME="murray:resource"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-4.ps.Z">
+  murray:resource:</A></DT>
+<DD>
+K. Murray, T. Stiemerling, T. Wilkinson, and P. Kelly.
+<!-- newblock --> <STRONG>Angel: Resource unification in a 64-bit
+  micro-kernel</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1993/4, Systems Architecture
+  Research Centre, City University, London, June 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The appearance of
+  64-bit processors allows a new approach to microkernel design --- a single
+  unified address space. This paper describes this kind of approach as adopted
+  in Angel. [...]  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="myers:capability"> myers:capability: </DT>
+<DD>
+G. J. Myers and B. R. S. Buckingham.
+<!-- newblock --> <STRONG>A hardware implementation of capability-based
+  addressing</STRONG>.
+<!-- newblock --> <EM>ACM Operating Systems Review</EM>, 14(4):13--25, October
+  1980.
+</DD>
+
+<DT> <A NAME="okamoto:kernel"> okamoto:kernel: </DT>
+<DD>
+T. Okamoto, H. Segawa, S. H. Shin, H. Nozue, K. Maeda, and M. Saito.
+<!-- newblock --> <STRONG>A micro kernel architecture for next generation
+  processors</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the USENIX Symposium on Microkernels
+  and Other Kernel Architectures</EM>, pages 83--94, 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The authors made the
+  best use of the huge address space provided by a 64-bit next generation
+  architecture. A new micro kernel was designed with two outstanding features;
+  single virtual space and one level storage. Three major benefits from the
+  proposed kernel are fast context switching, fast function call, and fast data
+  access. This micro kernel manages only two abstractions to simplify the
+  concept; the thread and the memory section. The problem regarding how to
+  prevent access by unauthorized threads or programs which first occurred due
+  to the single virtual space has been finally solved with newly designed
+  rich-functioned MMU hardware.  </QUOTE></P>
+</DD>
+
+<DT><A NAME="osmon:network"
+  HREF="file://ftp.cs.city.ac.uk/papers/92/sarc92-3.ps.Z">
+  osmon:network:</A></DT>
+<DD>
+P.E. Osmon, K. Murray, A. Whitcroft, T. Wilkinson, and N. Williams.
+<!-- newblock --> <STRONG>Network shared memory</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1992/3, Systems Architecture
+  Research Centre, City University, London, October 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> As the bandwidth
+  available via local, national and international networks increases, the uses
+  to which it can be put are also increasing. The current communications model,
+  where data is treated as a serial stream, makes poor use of these networks
+  because it assumes the delay due to limited bandwidth dominates the transfer
+  time. This is no longer the case. A different communications model is
+  therefore required to better utilise high -bandwidth networks. Network shared
+  memory provide two distinct benefits. Firstly, it provides a simpler, more
+  flexible communications model. Secondly, it allows the use of intelligent
+  caching to hide the latency of data access from the application. The research
+  programme described in this paper is aimed at developing the principles of
+  Network Shared Memory and realising a system which provides the benefits
+  noted above. In doing so, it uses a model of data exchange and sharing based
+  on random access rather than serial<! truncated text></QUOTE></P>
+</DD>
+
+<DT><A NAME="ozden:shared"
+  HREF="file://cs.utexas.edu/pub/techreports/tr92-37.ps.Z">
+  ozden:shared:</A></DT>
+<DD>
+Banu Ozden and Avi Silberschatz.
+<!-- newblock --> <STRONG>The shared virtual address space model</STRONG>.
+<!-- newblock --> Technical Report TR--92--37, University of Texas at Austin,
+  October 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The availability of
+  64-bit processors enables the use of the shared address space (SAS) model
+  where all processes execute in the same address space. This is in contrast to
+  most existing operating systems that use the private address space (PAS)
+  model where each process views the entire space as dedicated to itself. The
+  PAS model can only support a restricted number of computational paradigms,
+  whereas the SAS model can provide general, efficient, flexible and simple
+  mechanisms to support various computational paradigms. Furthermore, the use
+  of the SAS model results in increased system performance. The SAS paradigm
+  can be classified into various models, which differ in the way the address
+  space and protection domain are managed. The different models yield different
+  computation domains and different performances. In this paper, we define a
+  new SAS model---the shared virtual address space (SVAS) model, and argue that
+  it is preferable over other exist<! truncated text></QUOTE></P>
+</DD>
+
+<DT><A NAME="ozden:taxonomy"
+  HREF="file://cs.utexas.edu/pub/techreports/tr92-33.ps.Z">
+  ozden:taxonomy:</A></DT>
+<DD>
+Banu Ozden and Avi Silberschatz.
+<!-- newblock --> <STRONG>A taxonomy of shared address space systems</STRONG>.
+<!-- newblock --> Technical Report TR--92--33, University of Texas at Austin,
+  July 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> The availability of
+  64-bit processors enables operating systems the use of the shared address
+  space (SAS) paradigm where all processes execute in the same address space.
+  This is in contrast to most existing operating systems that use the private
+  address space (PAS) paradigm where each process views the entire space as
+  dedicated to itself. The PAS paradigm yields high overhead for interprocess
+  communication and sharing, whereas the SAS paradigm can reduce the cost of
+  communication and provide simple abstractions to the application level to
+  build variety of communication schemes. Furthermore, the use of the SAS
+  paradigm results in increased system performance. The SAS paradigm can be
+  classified into various models, which differ in the way the address space and
+  protection domain are managed. In this paper, we provide a taxonomy of the
+  SAS models and discuss the tradeoffs between these models.  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> large address space
+  system, shared address space paradigm, private address space paradigm, 64-bit
+  processors, address space management, protection domain management
+  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="pose:hardware"> pose:hardware: </DT>
+<DD>
+Ronald D. Pose.
+<!-- newblock --> <STRONG>Capability based, tightly coupled multiprocessor
+  hardware to support a persistent global virtual memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Second Annual Hawaii
+  International Conference on System Sciences</EM>, volume II: Software Track,
+  pages 36--45, 1989.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> A capability-based
+  tightly coupled multiprocessor has been designed and constructed. The system
+  supports a persistent global virtual memory in which objects representing
+  processes, data and mechanisms for input/output reside. The hardware
+  architecture of the machine and its addressing mechanisms are described.
+  Addressing mechanisms that allow the persistent, global virtual memory to
+  span multiprocessor boundaries and the support required for operation over
+  wide area networks are discussed. The utility of uniform virtual addressing
+  is emphasized, and its implementation in the Monash multiprocessor is
+  described. The concept of an intermediate address space is introduced and its
+  applicability to the implementation of a persistent, global virtual-memory
+  architecture in a multiprocessor environment is demonstrated.  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="ramamohanarao:translation"> ramamohanarao:translation: </DT>
+<DD>
+K. Ramamohonarao and R. Sacks-Davis.
+<!-- newblock --> <STRONG>Hardware address translation for machines with a
+  large virtual memory</STRONG>.
+<!-- newblock --> <EM>Information Processing Letters</EM>, 13(1):23--29,
+  October 1981.
+</DD>
+
+<DT> <A NAME="redell:pilot"> redell:pilot: </DT>
+<DD>
+David Redell, Yogen Dalal, Thomas Horsley, Hugh Lauer, William Lynch, Paul
+  McJones, Hal Murray, and Stephen Purcell.
+<!-- newblock --> <STRONG>Pilot: An operating system for a personal
+  computer</STRONG>.
+<!-- newblock --> <EM>Communications of the ACM</EM>, 23(2):81--92, February
+  1980.
+</DD>
+
+<DT> <A NAME="rosenberg:intro"> rosenberg:intro: </DT>
+<DD>
+John Rosenberg.
+<!-- newblock --> <STRONG>Architectural and operating system support for
+  persistent object systems: Introduction to minitrack</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, volume~1, pages 718--719,
+  1992.
+</DD>
+
+<DT> <A NAME="rosenberg:largevm"> rosenberg:largevm: </DT>
+<DD>
+J. Rosenberg, J. L. Reedy, and D. Abramson.
+<!-- newblock --> <STRONG>Addressing mechanisms for large virtual
+  memories</STRONG>.
+<!-- newblock --> <EM>The Computer Journal</EM>, 35(4):24--374, 1992.
+<!-- newblock --> Australia.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Systems supporting
+  orthogonal persistence require a persistent store in which to maintain the
+  persistent objects. Such a persistent store can be implemented via an
+  extended virtual memory with addresses large enough to address all objects.
+  Superimposing structure and a protection scheme on these addresses may well
+  result in them being sparsely distributed. An additional incentive for
+  supporting large virtual addresses is an interest in exploiting the potential
+  of very large main memories to achieve supercomputer speed. The paper
+  presents hardware and software mechanisms to implement a paged virtual memory
+  which can be efficiently accessed by large addresses. An implementation of
+  these techniques for a capability-based computer, MONADS-PC, is described.
+  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> virtual memory, large
+  address space </QUOTE></P>
+</DD>
+
+<DT> <A NAME="rosenberg:massive"> rosenberg:massive: </DT>
+<DD>
+John Rosenberg, David Koch, and J. Leslie Keedy.
+<!-- newblock --> <STRONG>A massive memory supercomputer</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Second Annual Hawaii
+  International Conference on System Sciences</EM>, pages 338--345, 1989.
+</DD>
+
+<DT> <A NAME="rosenberg:persistence"> rosenberg:persistence: </DT>
+<DD>
+John Rosenberg.
+<!-- newblock --> <STRONG>Architectural and operating system support for
+  orthogonal persistence</STRONG>.
+<!-- newblock --> <EM>Computing Systems</EM>, 5(3):305--335, Summer 1992.
+</DD>
+
+<DT> <A NAME="rosenberg:stability"> rosenberg:stability: </DT>
+<DD>
+John Rosenberg and Frans Henskens.
+<!-- newblock --> <STRONG>Stability in a persistent store based on a large
+  virtual memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architecture to Support Security and Persistence of Information</EM>, pages
+  229--245, 1990.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Persistent systems
+  support mechanisms which allow programs to create and manipulate arbitrary
+  data structures which outlive the execution of the program which created
+  them. A persistent store supports mechanisms for the storage and retrieval of
+  objects in a uniform manner regardless of their lifetime. Since all data of
+  the system is in this repository it is important that it always be in a
+  consistent state. This property is called integrity. The integrity of the
+  persistent store depends in part on the store being resilient to failures.
+  That is, when an error occurs the store can recover to a previously recorded
+  consistent state. The mechanism for recording this state and performing
+  recovery is called stability. This paper considers an implementation of a
+  persistent store based on a large virtual memory and shows how stability is
+  achieved.  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="russell:gvm"> russell:gvm: </DT>
+<DD>
+Stephen Russell, Alan Skea, Kevin Elphinstone, Gernot Heiser, Keith Burston,
+  Ian Gorton, and Graham Hellestrand.
+<!-- newblock --> <STRONG>Distribution + persistence = global virtual memory
+  (position paper)</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third Workshop on Workstation
+  Operating Systems</EM>, pages 96--99, 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> ...Our GVM system
+  uses conventional computing nodes conected to specialised network interfaces.
+  A fault-tolerant migration and replication protocol keeps the system
+  operational and consistent in case of network errors or node crashes.
+  Password capabilities are used to control access to the GVM.  </QUOTE></P>
+</DD>
+
+<DT><A NAME="scott:memory"
+  HREF="file://cs.rochester.edu/pub/systems_papers/92.WWOS.commonplace_shared_memor% y.ps.Z"> scott:memory:</A></DT>
+<DD>
+Michael L. Scott and William Garrett.
+<!-- newblock --> <STRONG>Shared memory ought to be commonplace (position
+  paper)</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third Workshop on Workstation
+  Operating Systems</EM>, pages 86--90, 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Shared memory as a
+  programming abstraction is widely used within parallel applications. It is
+  not widely used between applications, but we argue that it should be.
+  Specifically, we suggest that shared memory is both faster and more intuitive
+  than the principal alternatives in many cases, and that the general disuse of
+  shared memory facilities in systems such as Unix is due in large part to a
+  lack of appropriate tools. We are pursuing a series of measures to make
+  shared memory more convenient. We use dynamic linking to allow programs to
+  access shared or persistent data the same way they access ordinary variables
+  and functions. We also unify memory and files into a single-level store that
+  facilitates the sharing of pointers and capitalizes on emerging 64-bit
+  architectures. We exploit existing interfaces and tools wherever possible, to
+  remain backward-compatible with Unix.  </QUOTE></P>
+</DD>
+
+<DT><A NAME="scott:psyche"
+  HREF="ftp://cs.rochester.edu/pub/papers/systems/88.ICPP.Psyche_Rationale.ps.Z"> scott:psyche:</A></DT>
+<DD>
+Michael L. Scott, Thomas J. LeBlanc, and Brian D. Marsh.
+<!-- newblock --> <STRONG>Design rationale for Psyche, a general-purpose
+  multiprocessor operating system</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1988 International Conference on
+  Parallel Processing</EM>, pages 255--262, 1988.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> operating system,
+  virtual memory, NUMA </QUOTE></P>
+</DD>
+
+<DT> <A NAME="scott:psyche-impl"> scott:psyche-impl: </DT>
+<DD>
+Michael L. Scott, Thomas J. LeBlanc, and Brian D. Marsh.
+<!-- newblock --> <STRONG>Implementation issues for the Psyche multiprocessor
+  operating system</STRONG>.
+<!-- newblock --> Unpublished, September 1989.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> operating system,
+  virtual memory, NUMA </QUOTE></P>
+</DD>
+
+<DT> <A NAME="scott:psyche-prog"> scott:psyche-prog: </DT>
+<DD>
+Michael L. Scott, Thomas J. LeBlanc, and Brian D. Marsh.
+<!-- newblock --> <STRONG>Multi-model parallel programming in Psyche</STRONG>.
+<!-- newblock --> Unpublished, September 1989.
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> operating system,
+  virtual memory, NUMA </QUOTE></P>
+</DD>
+
+<DT> <A NAME="shapiro:storage"> shapiro:storage: </DT>
+<DD>
+Marc Shapiro and Laurence Mosseri.
+<!-- newblock --> <STRONG>A simple object storage system</STRONG>.
+<!-- newblock --> In <EM>Proceedings 3rd International Workshop on Persistent
+  Object Systems</EM>, pages 272--276, 1989.
+</DD>
+
+<DT> <A NAME="sims:compromise"> sims:compromise: </DT>
+<DD>
+David L. Sims.
+<!-- newblock --> <STRONG>Multiple and single address spaces: Towards a middle
+  ground (position paper)</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 191--193, 1993.
+</DD>
+
+<DT> <A NAME="thatte:database"> thatte:database: </DT>
+<DD>
+S. M. Thatte.
+<!-- newblock --> <STRONG>Persistent memory: a storage architecture for
+  object-oriented database systems</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1986 International Workshop on
+  Object-Oriented Database Systems</EM>, pages 148--159.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> A persistent memory
+  system provides a storage architecture for long-term, reliable retention of
+  objects with rich types and structures in the virtual memory itself. It is
+  based on a uniform memory abstraction, which eliminates the distinction
+  between transient objects (data structures) and persistent objects (files and
+  databases) and therefore allows the same set of powerful and flexible
+  operations to be applied with equal efficiency on both transient and
+  persistent objects from a programming language such as Lisp or Prolog.
+  Because no separate file system is assumed for long-term, reliable storage of
+  objects, the system requires a crash recovery scheme at the level of the
+  virtual memory. The author provides this and feels that it is a major
+  contribution.  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="vaughan:casper"> vaughan:casper: </DT>
+<DD>
+Francis Vaughan, Tracy Lo Basso, Alan Dearle, Chris Marlin, and Chris Barter.
+<!-- newblock --> <STRONG>Casper: A cached architecture supporting
+  persistence</STRONG>.
+<!-- newblock --> <EM>Computing Systems</EM>, 5(3):337--359, Summer 1992.
+</DD>
+
+<DT><A NAME="vochteloo:capability"
+  HREF="ftp://cs.utexas.edu/pub/techreports/tr93-06.ps.Z">
+  vochteloo:capability:</A></DT>
+<DD>
+Jerry Vochteloo, Stephen Russell, and Gernot Heiser.
+<!-- newblock --> <STRONG>Capability-based protection in the Mungi operating
+  system</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 108--115, 1993.
+</DD>
+
+<DT><A NAME="vochteloo:protection"
+  HREF="ftp://ftp.vast.unsw.edu.au/pub/Mungi/9303.ps.Z">
+  vochteloo:protection:</A></DT>
+<DD>
+Jerry Vochteloo, Stephen Russell, and Gernot Heiser.
+<!-- newblock --> <STRONG>Capability-based protection in a persistent global
+  virtual memory system</STRONG>.
+<!-- newblock --> Technical Report SCS\&E Report 9303, University of New South
+  Wales, Australia, March 1993.
+</DD>
+
+<DT><A NAME="whitcroft:space"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-6.ps.Z">
+  whitcroft:space:</A></DT>
+<DD>
+A. Whitcroft, N. Williams, and P. E. Osmon.
+<!-- newblock --> <STRONG>The wide area data space</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1993/6, Systems Architecture
+  Research Centre, City University, London, June 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Sharing global remote
+  data over large networks poses two major problems: firstly, the data must be
+  discovered; and secondly, the data must be made accessible to the
+  application. Our aim is to provide a single unified interface to both local
+  and remote data, removing location dependence and improving performance. Our
+  solution incorporates shared memory and caching techniques. A location server
+  provides a location transparent addressing scheme which is used to provide
+  failure tolerant retrieval. Access is provided via the ``native'' system
+  interfaces.  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="wilkes:plb"
+  HREF="ftp://ftp.hpl.hp.com/wilkes/HPL-92-55.ps.Z"> wilkes:plb: </A></DT>
+<DD>
+John Wilkes and Bart Sears.
+<!-- newblock --> <STRONG>A comparison of protection lookaside buffers and the
+  PA-RISC protection architecture</STRONG>.
+<!-- newblock --> Technical Report HPL-92-55, HP Labs, March 1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Eric Koldinger and
+  others at the University of Washington Department of Computer Science have
+  proposed a new model for memory protection in single-address-space
+  architectures. The paper compares the Washington proposal with what already
+  exists in PA-RISC, and suggests some incremental improvements to the latter
+  that would provide most of the benefits of the former.  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> protection, memory
+  management, large address spaces, architecture </QUOTE></P>
+</DD>
+
+<DT> <A NAME="wilkinson:angel"> wilkinson:angel: </DT>
+<DD>
+Tim Wilkinson, Tom Stiemerling, Peter Osmon, Ashley Saulsbury, and Paul Kelly.
+<!-- newblock --> <STRONG>Angel: A proposed multiprocessor operating system
+  kernel</STRONG>.
+<!-- newblock --> In <EM>European Workshop on Parallel Computing</EM>, March
+  1992.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> We describe an
+  operating system design for multiprocessor systems called ANGEL, based on a
+  single, coherent, uniform virtual address space. This unifies naming and
+  interprocess communication in both shared and distributed memory
+  multiprocessors by using distributed shared memory techniques when shared
+  memory is not provided by the hardware. The design is motivated by analysis
+  of our earlier operating system implementation, based on message passing, and
+  we show how the uniform address space attempts to solve problems with that
+  approach. In particular, we consider the use of client-server cross-mapping
+  to optimise interprocess communications, as used in Bershad et al.'s
+  lightweight RPC. This document describes initial motivations for ANGEL and
+  subsequent detailed design---we will review and may modify many of the
+  details described as the design progresses.  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> microkernels, large
+  address spaces, object oriented, operating system, shared memory </QUOTE></P>
+</DD>
+
+<DT><A NAME="wilkinson:compiling"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-1.ps.Z">
+  wilkinson:compiling:</A></DT>
+<DD>
+T. Wilkinson, K. Murray, A. Saulsbury, and T. Stiemerling.
+<!-- newblock --> <STRONG>Compiling for a 64-bit single address space
+  architecture</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1993/1, Systems Architecture
+  Research Centre, City University, London, March 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> This paper examines
+  techniques to enable standard UNIX applications to be executed on a new
+  single address space operating system, \Angel. This is achieved using
+  advanced compiler techniques which allows multiple execution of the same
+  program without conflicts and will also produce forkable code. The operating
+  system is briefly examined and the compiler changes described in detail.
+  Results are then presented which demonstate such techniques do not adversly
+  effect application performance.  </QUOTE></P>
+</DD>
+
+<DT><A NAME="wilkinson:fault"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-11.ps.Z">
+  wilkinson:fault:</A></DT>
+<DD>
+Timothy James Wilkinson.
+<!-- newblock --> <STRONG>Implementing Fault Tolerance in a 64-bit Distributed
+  Operating System</STRONG>.
+<!-- newblock --> PhD thesis, Systems Architecture Research Centre, City
+  University, London, July 1993.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> This thesis explores
+  the potential of 64-bit processors for providing a different style of
+  distributed operating system. Rather than providing another reworking of the
+  UNIX model, the use of the large address space for unifying volatile memory
+  (virtual memory), persistent memory (file systems) and distributed network
+  access is examined and a novel operating system, Arius, is proposed. The
+  concepts behind the design of Arius are briefly reviewed, and then the
+  reliability of such a system is examined in detail. The unified nature of the
+  architecture makes it possible to use a reliable single address space to
+  provide a completely reliable system without the addition of other
+  mechanisms. Protocols are proposed to provide locally scalable distributed
+  shared memory and these are then augmented to handle machine failures
+  transparently though the use of distributed checkpoints and rollback. The
+  checkpointing system makes use of the caching mechanism in D<! truncated text></QUOTE></P>
+</DD>
+
+<DT> <A NAME="wilson:swizzling"> wilson:swizzling: </DT>
+<DD>
+Paul R. Wilson.
+<!-- newblock --> <STRONG>Pointer swizzling at page fault time: Efficiently
+  supporting huge address spaces on standard hardware</STRONG>.
+<!-- newblock --> Technical Report UIC-EECS-90-6, University of Illinois at
+  Chicago, December 1990.
+<!-- newblock --> <P><QUOTE>  <strong> Abstract:</strong> Describes a scheme
+  for supporting huge address spaces without the need for long addresses
+  implemented in hardware. Pointers are translated ('swizzled') from a long
+  format to a shorter format (directly supported by normal hardware) at page
+  fault time. No extra hardware is required beyond that normally used by
+  virtual memory systems, and no continual software cost is incurred by
+  presence checks or indirection of pointers. This scheme could be used to
+  fault pages into a normal memory from a persistent store, or simply to avoid
+  extra hardware requirements when supporting large address spaces. It exploits
+  temporal and spatial locality in much the same way as a normal virtual
+  memory, so its performance should be quite good.  </QUOTE></P>
+<!-- newblock --> <P><QUOTE> <strong> Keyword:</strong> pointer swizzling
+  </QUOTE></P>
+</DD>
+
+<DT> <A NAME="yarvin:rpc64"> yarvin:rpc64: </DT>
+<DD>
+Curtis Yarvin, Richard Bukowski, and Thomas Anderson.
+<!-- newblock --> <STRONG>Anonymous RPC: Low-latency protection in a 64-bit
+  address space</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1993 Summer USENIX Conference</EM>,
+  pages 175--186, 1993.
+</DD>
+
+</DL>
+</BODY>
+</HTML>

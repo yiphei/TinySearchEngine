@@ -1,0 +1,54 @@
+http://old-www.cs.dartmouth.edu/~dfk/nils/papers/gfsperf.html
+4
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> 
+<HTML>
+<HEAD><TITLE>Galley Performance</TITLE></HEAD>
+<BODY>
+<H1>Performance of the Galley Parallel File System</H1>
+
+<H2>
+<a href="/~nils/">Nils Nieuwejaar</a> and <a href="/~dfk/">David
+Kotz</a> <BR>
+</h2>
+
+<H3>
+<EM>1996 Fourth Annual Workshop on I/O in Parallel and Distributed
+Systems</EM>
+</H3>
+<P>
+<B>
+Abstract:
+</B>
+ <P>
+
+As the I/O needs of parallel scientific applications increase, file
+systems for multiprocessors are being designed to provide applications
+with parallel access to multiple disks.  Many parallel file systems
+present applications with a conventional Unix-like interface that
+allows the application to access multiple disks transparently.  This
+interface conceals the parallelism within the file system, which
+increases the ease of programmability, but makes it difficult or
+impossible for sophisticated programmers and libraries to use knowledge
+about their I/O needs to exploit that parallelism.  Furthermore, most
+current parallel file systems are optimized for a different workload
+than they are being asked to support.  We introduce Galley, a new
+parallel file system that is intended to efficiently support realistic
+parallel workloads. Initial experiments, reported in this paper,
+indicate that Galley is capable of providing high-performance I/O to
+applications that access data in patterns that have been observed to be
+common.
+</P><P>
+
+(Note: You should probably get 
+<EM><a href="galley.html">The Galley Parallel File System</A></EM>,
+which will appear in <EM> Parallel Computing</EM>, instead of this older
+paper.)
+</P><P>
+
+<A HREF="../papers/perf.ps.Z"> Full paper</A>
+	(Postscript, 146313 bytes compressed)<BR>
+	(<a href="/copyright-acm.html">Copyright</a> (c) 1996 by ACM)
+	<P>
+
+</BODY>
+</HTML>

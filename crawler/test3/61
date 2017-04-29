@@ -1,0 +1,29 @@
+http://old-www.cs.dartmouth.edu/~dfk/sasos/project.html
+4
+<TITLE>SASOS Projects</TITLE>
+<H1>SASOS Projects</H1>
+
+The following single-address-space operating system projects have provided us with summaries of their work
+<UL>
+<LI>
+	<A HREF="projects/Angel">Angel</A>
+<LI>
+	<A HREF="projects/BMX">BMX</A>
+<LI>
+	<A HREF="projects/Mungi-manifesto">Mungi</A>
+<LI>
+	<A HREF="projects/Texas">Texas</A>
+</UL>
+
+The following SASOS projects have their own WWW pages:
+<UL>
+<LI>
+	<A HREF="http://www.cl.cam.ac.uk/Research/SRG/pegasus/">Nemesis</A>
+<LI>
+	<A HREF="http://www.cs.washington.edu/homes/levy/opal/">Opal</A>
+<LI>
+	<A HREF="http://www.eas.asu.edu/~sasos/">Sombrero</A>
+<LI>
+	<A HREF="http://www.ertos.nicta.com.au/research/old/mungi/">Mungi</A>
+</UL>
+

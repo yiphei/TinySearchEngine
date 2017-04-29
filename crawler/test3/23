@@ -1,0 +1,452 @@
+http://old-www.cs.dartmouth.edu/~tjp/cs10/index.php
+4
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>CS 10 | Problem solving | Winter 2017</title>
+<link rel="stylesheet" type="text/css" media="screen" href="cs10.css" />
+<link rel="stylesheet" type="text/css" media="print" href="cs10print.css" />
+</head>
+
+<body>
+<div id="page">
+<div id="header">
+  <div id="title">CS 10, Winter 2017</div>
+  <div id="subtitle">Problem Solving via Object Oriented Programming</div>
+</div>
+
+<div id="navigation">
+  <a href="index.php" class="navhere">About</a>
+  <a href="schedule.php" class="navthere">Schedule</a>
+  <a href="software.php" class="navthere">Software</a>
+</div>
+
+<div id="content">
+
+<h3>Problem solving in the age of social media...</h3>
+<img src="wisdom_of_the_ancients.png" alt="the evolution of problem solving..." title="Problem solving in the age of social media..."/> 
+
+
+<h2>Course description</h2> 
+
+<p><strong>ORC</strong>. Motivated by problems that arise in a variety
+of disciplines, this course examines concepts and develops skills in
+solving computational problems. Topics covered
+include <em>abstraction</em> (how to hide
+details), <em>modularity</em> (how to decompose problems), <em>data
+structures</em> (how to efficiently organize data),
+and <em>algorithms</em> (procedures for solving problems). Laboratory
+assignments are implemented using object-oriented programming
+techniques.</p>
+
+<p><strong>Prerequisite</strong>.
+CS 1, CS 5, or Engineering Sciences 20, or placement through AP or local placement exam.</p>
+
+<a name="admin"></a>
+<h2>Who, when, where</h2>
+
+<dl>
+<dt>Instructor</dt>
+<dd><a href="http://www.cs.dartmouth.edu/~tjp/">Tim Pierson</a> | 260 (or 255) Sudikoff<br/>office hours: Tue. x-hour, Wed. 3:30-4:30 pm, Thu. 9:00-10:00 am, and by appointment</dd>
+
+<dt>Lead teaching assistants</dt>
+<dd>Vasanta Lakshmi Kommineni and Keith Carlson<br/>office hours: maintained on Canvas</dd>
+
+<dt>Section leaders</dt>
+<dd>Sungil Ahn, Joshua Gutow, Stephanie Her, Emma Kennelly, Brendan Krimsky, Brandon Mader, Christine Qi, Ellen Smalley, Ruoni Wang, Shirley Zhang<br/>
+office hours: maintained on Canvas</dd>
+
+<dt>Lectures</dt>
+<dd>11-hour | MWF 11:30-12:35; x-hour Tu 12:15-1:05 | LSC 100
+
+<p>We will use the x-hour after MLK Day (Jan 17), but otherwise it will primarily be used as an optional, informal,
+interactive session of working through examples together. It may
+sometimes be used to make up for missed classes.</p>
+
+<p>One of the primary benefits of lectures, as opposed to books and
+videos, is the opportunity to interact. We will all enjoy the
+experience more, and everyone will learn more, if you do ask
+questions. It can of course be intimidating, but chances are that if
+you have a question, then at least one other student &mdash; and
+possibly many more &mdash; has the same question. You're doing the
+other students a favor by asking!</p>
+
+<p>Laptops and phones are distracting, not just to you, but to everyone
+  around you (it's human nature to wonder what's up over there). There is recent research that
+  attests to
+  the <a href="http://www.creativitypost.com/psychology/why_learning_and_multitasking_dont_mix">negative
+  impacts of learning and retention when multitasking</a>. It has also
+  been shown
+  that <a href="http://pss.sagepub.com/content/25/6/1159">writing
+  notes by hand rather than on a laptop</a> engages different
+  cognitive processes and has direct (positive) consequences for
+  learning. Since class notes are made available anyway, there's
+  really no need to type. I recognize that there can be some value in
+  following along with the examples right in front of you, so I won't
+  ban laptops entirely, but I will strongly encourage you to try to
+  abstain for those 3 hours a week.</p>
+<p>I will ask laptop-using students to quarantine themselves in a separate section of the classroom.</p>
+</dd>
+
+<dt>Section meetings</dt>
+<dd>These are <em>required</em> weekly small-group meetings
+  with section leaders to review lecture material, discuss questions,
+  go over homeworks, etc. They also provide an opportunity,
+  "programming drills", to practice the concepts. <em>Bring your
+  laptop</em> so you can do the drills. Groups and times
+  will be posted on Canvas. If due to a hard conflict you have to
+  miss a section meeting, find an alternate and arrange in advance with both
+  section leaders to do that as a make-up.</dd>
+
+<dt>Section leader office hours</dt> 
+<dd>Each section leader will hold a total of 3 office hours per week (times and locations maintained on Canvas). These will be spread out to encourage you to start early and ask conceptual questions as you dive in, while still providing some help with debugging closer to the due date. Plan to attend your own section leader's office hours for in-person help. If that is not possible, you may visit another section leader's hours, but may receive lower priority. Piazza (below) is the way to get help any time.</dd>
+
+<dt>Help: Piazza</dt>
+  <dd>In addition to office hours (instructor, grad TA, and section leaders), help is available via Piazza
+  (accessed
+  through <a href="https://canvas.dartmouth.edu">Canvas</a>). See
+  postings on Piazza for more info. I <strong>strongly</strong> encourage
+  you to ask and answer questions there. See comments below about
+  commonality of questions. See also the extra credit potential.</dd>
+
+<dt>Lab</dt> 
+
+<dd>Computers are available in 003 Sudikoff if you want to work there. It will not be staffed, unless a TA happens to hold office hours there.
+Students enrolled in CS 10 should have automatic access via ID card to Sudikoff and the
+instructional labs; for assistance see Sandy in the Sudikoff Office.</dd>
+
+<dt>Announcements</dt>
+<dd>Monitor <a href="https://canvas.dartmouth.edu">Canvas</a> for periodic course-wide announcements.</dd>
+
+<dt>Textbook</dt> 
+<dd><em>Data Structures and Algorithms in Java</em>, 6th edition, by
+  Michael T. Goodrich, Roberto Tamassia, and Michael
+  H. Goldwasser. Available in paperback or as an <a href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-EHEP002900.html">e-book</a>
+  (the e-book is much cheaper).</dl>
+
+<a name="coursework"></a>
+<h2>Coursework</h2>
+
+<p>All homeworks (short assignments and problem sets) for this class
+ are to be submitted electronically via <a
+ href="https://canvas.dartmouth.edu">Canvas</a> <em>before
+ class</em>. Even when an assignment has some written
+ exercises, you are required to either type in a file or scan your
+ written work and submit it electronically. To submit output from your
+ program, submit a copy-pasted file in plain text format and/or a
+ screenshot, as appropriate. For plain text, you can use a program
+ like TextEdit, NotePad, or Emacs, or even Word, but be sure to save
+ as plain text. For a screen shot, you can use Preview on Mac (under
+ the "File" menu) or the PrntScrn button on Windows.</p>
+
+<p>Requirements for code submissions:</p>
+<ul>
+  <li>Use the default package (i.e., leave the package name blank when creating the file; make sure there's no "package" declaration in the java file)</li>
+  <li>Use only relative pathnames for files (e.g., "pictures/smiley.png"), with files in a folder specified in the assignment write-up.</li>
+  <li>Include your name and your partner's, or if you worked alone, state "no partner" in an <code>@author</code> comment.</li>
+  <li>If you worked with a partner and ended up with a single shared code, indicate that in a comment in the code and on the submission. Both of you should submit the same code. The code will then be graded once with the same grade assigned to both of you.</li>
+  <li>If you worked with a partner but wrote separate code, indicate the collaboration but that you have different submissions.  Indicate this in both the code and on the submission. Each of you should upload your own code, and each of you will get a separate grade.</li>
+  <li>Collect all your code files into a single zipfile and upload that, rather than a bunch of separate files. (Doesn't apply to short assignments with a single file.)</li>
+</ul>
+
+<p>Sample solutions will be made available on Canvas.</p>
+
+<dl>
+ <dt>Programming drills (5%)</dt>
+ <dd>
+  Practice and feedback to aid your understanding of the basic course
+  material.
+  <dl>
+   <dt>Late policy</dt><dd>Only available at the section meeting;
+   bring your laptop.</dd>
+   <dt>Grading</dt><dd>2 (correct and good), 1 (needs work), or 0
+   (nothing of substance). <br/>Lowest grade will be dropped.</dd>
+  </dl>
+ </dd>
+ 
+ <dt>Short assignments (10%)</dt>
+ <dd>
+  One or two short programming or written exercises to practice the
+  concepts from one class before the next class.
+  <dl>
+   <dt>Late policy</dt><dd>Due via Canvas by the start of class. No credit for late submissions.</dd>
+   <dt>Grading</dt><dd>2 (correct and good), 1 (needs work), or 0 (nothing of substance). <br/>
+	A solution receiving a 1 may be revised and
+	resubmitted <em>once</em>, before the next regular class
+	period after it is returned, for a possible upgrade to 2.</dd>
+  </dl>
+ </dd>
+
+ <dt>Problem sets (30%)</dt>
+ <dd>
+  A mixture of written and in-depth programming exercises,
+  challenging you to use the ideas we study in class to solve new
+  problems.
+  <dl>
+   <dt>Late policy</dt><dd>Due via Canvas by the start of class.
+	Penalties: &lt; 8 hours: 10%; &lt; 24 hours: 20%; &lt; 48
+	hours: 40%; more: no credit. <br/> 
+	You are allowed at most one late submission (up to 48 hours)
+	with no penalty; no excuse required. Indicate in your
+	submission that you are electing to use your free pass; no
+	undoing the choice. This cannot be combined with a penalty (e.g., you can't take an 8-hour penalty on top of the 48-hour free pass). If you are working with a partner, this
+	counts as the free pass for both of you.</dd>
+   <dt>Grading</dt><dd>Specific grading rubrics will be provided
+	for each problem set, covering <em>correctness</em> (solving the
+	assigned problem), <em>structure</em> (organization, use of
+	techniques covered, efficiency), <em>style</em> (readability of
+	code, clarity of documentation), and <em>testing</em> (your
+	demonstration of correctness).</dd>
+   </dl>
+  </dd>
+
+ <dt>Exams (55%)</dt>
+  <dd>There will be two midterms (15 6.922224e-310ach) and a final exam (25%). The midterms will be in the evening, to allow more time than the hour scheduled for class. If you have an academic conflict and need to schedule a make-up midterm, you must let me know at least a week in advance. The final exam is scheduled by the registrar so that there will be no conflicts; thus an alternate schedule is possible only in the case of a documented illness.</dd>
+
+ <dt>Extra credit</dt>
+ <dd>Some homeworks have specific extra-credit problems; you may
+ suggest other extensions for possible extra credit; any
+ exceptionally clever, creative, or insightful work may likewise be
+ awarded extra credit points. As its name suggests, extra credit is
+ always optional, and you should never feel that you have to do extra
+ credit problems. Extra credit points are recorded separately from
+ other grades, and may be used to help make borderline letter grade
+ assignments at the end of the term (those with <i>substantial</i>
+ extra credit would get the higher grade if their grade is on the
+ borderline). Extra credit points can only help, never hurt, your
+ final grade, regardless how much or how little extra credit you or
+ your classmates choose to do. However, you should not view extra
+ credit as a substitute for doing good and thorough work on your
+   assignments, and should not attempt it until you have completed the
+ main assignment, as it will only be used in rounding borderline
+ letter grades.
+<p>Extra credit will also be given to frequent good contributors to Piazza
+ (both asking and answering questions).</p></dd>
+</dl>
+
+<dt>Letter grades</dt>
+<dd>There is not a fixed scale, as it is impossible to pre-calibrate exam difficulty that precisely. The course median tends to be a B to B+, but that is not guaranteed.</dd>
+
+<a name="collab"></a>
+<h2>Collaboration</h2>
+
+<p>Much of the learning in this course comes from doing the
+programming exercises. Sometimes learning can happen more effectively when you can
+hash things out with someone else, so working with a partner will be
+allowed on some problem sets, when so stated. In such cases, you may
+work jointly with <em>one</em> other person. No more than two people
+may work together on a given problem set. If you choose to work with
+someone else, you and your partner must submit a single joint
+assignment with both names on it, and you must work with the same
+person for the entire assignment (you cannot work with one person for
+some parts of an assignment and a different person for other
+parts).</p>
+
+<p>If you work with a partner, you are still responsible for
+understanding the entire assignment. That means that splitting the
+coding into two halves, doing your half, and never looking at your
+partner's half is not a good idea. You can learn a lot by reading your
+partner's code and figuring out how it works, whether it is correct,
+and how it might be improved. You can also catch things like poor or
+missing comments that could cost you style points when the assignment
+is graded.</p>
+
+<p>When working with a partner, I suggest that you borrow a practice from
+Extreme Programming, a method of writing code that many businesses
+find quite effective. One person (the
+driver) sits at the keyboard. The other person (the navigator) looks
+at the screen as the driver types, asking questions, making
+suggestions, and catching errors. Both of you will understand the code
+better if you discuss it as it is written than if you just write it
+(or read it) by yourself. Regularly trade off who is driver and who is
+navigator.</p>
+
+<p>The usual reaction to this idea is, "that will take twice as long!"
+In practice it is usually faster than each person programming
+alone. The reason is that errors are caught earlier, and the amount of
+time are saved when debugging more than makes up for the lack of
+parallelism in code writing. Also, the code tends to be better
+written. These are the reasons that this idea has been adopted in
+industry.</p>
+
+<a name="honor"></a>
+<h2>Honor code</h2>
+
+<p>Dartmouth's honor code applies to this course, and academic misconduct policies
+will be strictly enforced. I will report suspected cases of cheating
+to the Undergraduate Judicial Affairs Officer. I also reserve the
+right to assign a failing grade for an assignment or an exam if I
+conclude that the honor principle has been violated, regardless of the
+finding from the Committee on Standards. If you have questions,
+ask!</p>
+
+<p>Elaboration (thanks to many CS 1 and 10 instructors over the years)</p>
+
+<ol>
+<li>On exams, all work must be your own.</li>
+
+<li>You may work on short assignments individually or in
+groups of two. Programs that you turn in, however, should be created, typed,
+and documented, and the output generated, by you yourself.</li>
+
+<li>For the problem sets, you may work with a partner as
+discussed <a href="#collab">above</a>.  You may also consult freely
+with other classmates during the phase of designing solutions, but you
+should then work individually (or with your partner) when creating your
+programs&mdash;typing, documenting, and generating output. During the
+debugging stage you may discuss your problems with others in the
+class, but you should not copy code to "fix" bugs. To do otherwise is
+a violation of the Academic Honor Principle. </li>
+
+<li>We will use Piazza as a shared help
+system. Your public posts (questions and replies) must not reveal
+solutions (or even partial solutions) to the problems. As illustrated
+below, asking and answering questions in English is generally
+acceptable, while using Java as your language of communication is
+not. This might seem to make it harder to debug, but the act of
+phrasing a good question without just dumping your code can actually
+be very helpful to you. </li>
+
+<li>If you are working on a computer that is not
+yours&mdash;especially a Mac in Sudikoff&mdash;or that someone else in
+the course might use, you should be very careful to remove your code
+from the computer when you are all done. You should probably email
+your code to yourself before you remove the code. Why do we tell you
+to do this? Because if you leave your code on a computer, and someone
+else can see it, then they can copy it and hand it in. If that
+happens, then we have a bad situation involving you (the copy-ee) and
+the other person (the copy-er), and it's difficult, if not impossible,
+to tell who was the copy-ee and who was the copy-er. By removing your
+code from the computer when you're done, you can avoid getting
+yourself into that situation.</li>
+
+<li>You should attribute the proper source in any code that you submit
+that you did not write yourself. This includes code that you take from
+outside references, for example a book other than the course text. It
+even includes code that you take from the class examples, textbook, or
+assignments, other than the code given for that particular
+assignment. (I agree that may be tedious to attribute the source in
+code that we have given you, but we want you to be in the habit of
+attributing your sources.) Note also that proper respect for
+copyright laws as it applies to printed and software products is part
+of the Computing Code of Ethics.</li>
+
+<li>Whenever we ask you to turn in sample runs of your program, the
+runs you turn in must be the result of actually running your
+program. It is a violation of the Academic Honor Principle to falsely
+represent output as coming from your program if it did not. If you
+change your program, make sure to generate output from the version of
+the program that you hand in. It's amazing how a seemingly minor
+change to the code can cause a big change to the output of a
+program. Also, make sure that when you are running a program, that it
+is your program; it is easier than you might think on a public Mac to
+run a program that someone else had left on the machine.</li>
+
+<li>In the past, we have had a few incidents in which students turned
+in output that did not come from the program handed in. In each case,
+it turned out that the student had made a foolish mistake (in not
+rerunning the program or handing in an old version of the program or
+the output) and had not intended to misrepresent the work. Yet it
+caused many an uncomfortable moment for the student and also for the
+student's section leader and for the instructor as well. So please
+endeavor to verify that you're handing in output that comes from the
+very program you're handing in.</li>
+
+<li>It is not easy to come up with good homework problems that help
+you learn a concept, are interesting, and require an appropriate
+amount of work. Over the years we have developed and refined a number
+of homework problems, and I plan to reuse, with modification, some of
+them for this class. You should not look at any solutions to homeworks
+assigned in previous terms, including sample solutions, or solutions
+written by other students.</li>
+
+<li>We will be running powerful software tools that detect suspicious
+similarities in software. These tools are quite sensitive, even to the
+obvious tricks that are often used such as changing variable names,
+spacing, comments, orders of code fragments, etc. It could take much
+more work to fool the software than it would just to do the
+assignment.</li>
+
+<li>We have had some uncomfortable situations occur in the past, and I
+want to make it clear what the policy is. Two students, Alice and
+Ralph, who are not working as formal partners, discuss an assignment
+and design their basic approach together. That is fine. But then they decide
+that since their programs would be so similar, they might as well have
+Alice type in the code, have Ralph make his own copy of the file
+containing the code, and then have Ralph make his own minor
+changes. This is a violation of the Academic Honor Principle. Although
+you may discuss and design with others, the code you hand in must be
+entirely your own.</li>
+
+<li>Here's another situation that occurred. Trixie and Ed start
+working independently on a program. Trixie finishes and has a working
+version. Ed has trouble with his. Trixie helps Ed debug. That is
+fine. But then Trixie realizes that Ed has a section of code that is
+all wrong and the program she wrote has just the right code for that
+section. She shows Ed her program. That is a violation of the Academic Honor
+Principle. Or worse, she gives Ed an
+electronic copy of her program so that he can just paste in the
+correct code. That is also a violation.</li>
+
+<li>Another unfortunate situation involved Elsa looking at Ebenezer's code (not partners) to see how he'd gotten it working, in order to better understand the approach and figure out where she'd gone wrong. Similarly, Ziggy found a former student's code on-line and thought that by studying that code, he'd learn how things should really work, beyond just the descriptions and pseudocode in the assignment write-up and in the textbook. These are violations of the Academic Honor Principle. They undercut your own learning, as a key part of problem solving with computer science is being able to start with high-level descriptions (as provided) and figure out how to correctly implement them using suitable data structures and programming constructs.</li>
+
+<li>I realize that it can be hard to decide when you might be
+violating the Academic Honor Principle, so here is a good rule of
+thumb. If you are talking in normal English (or Chinese or German or
+some other natural language) you are probably OK. If you find yourself
+talking in Java code, you have crossed the line. So saying, "Your
+program runs forever because you have the wrong condition in the while
+loop" is OK. But saying, "Change while (x == 0) to while (x &gt; 0)" is
+not.</li>
+
+<li>If you have any questions about whether what you're doing is
+within the Academic Honor Principle, do not hesitate to check with
+me. If it's late and you can't get hold of me, you're better off
+erring on the side of caution.</li>
+
+<li>Most violations of the Academic Honor Principle come down to
+failure to cite work that is not yours. If your code benefited
+from your friend Elvira's code, but you did not indicated that and represented it as your work alone,
+then you either intended to deceive or were careless about
+citing. Either case is a violation of the Academic Honor Principle. If
+you copy your entire program from Elvira but include the comment,
+"This code was copied in its entirety from Elvira," then you cited
+properly, though you didn't actually do the work. In this latter case,
+I would not report a violation of the Academic Honor Principle, though
+your grade on the assignment would be 0. But that would be far
+preferable to a COS hearing.</li>
+
+<li>The same goes for code that you find in some other book or on the
+Internet. You are in violation of the Academic Honor Principle if you
+fail to attribute your sources.</li>
+</ol>
+
+<a name="access"></a>
+<h2>Disabilities</h2>
+
+<p>Students with disabilities enrolled in this course and who may need
+disability-related classroom accommodations are encouraged to make an
+appointment to see the instructor before the end of the second week of
+the term. All discussions will remain confidential, although the <a
+href="http://www.dartmouth.edu/~accessibility/">Student Accessibility
+Services</a> office may be consulted to discuss appropriate
+implementation of any accommodation requested.</p>
+
+<a name="religious"></a>
+<h2>Religious Observances</h2>
+
+<p>Some students may wish to take part in religious observances that
+occur during this academic term. If you have a religious observance
+that conflicts with your participation in the course, please meet with
+me before the end of the second week of the term to discuss
+appropriate accommodations.</p>
+
+</div>
+
+<div id="pagedecorationafter"></div>
+
+</div>
+
+</body>
+</html>

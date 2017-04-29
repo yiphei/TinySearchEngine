@@ -1,0 +1,38 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/knowles-amulet-bt.html
+3
+<HTML>
+<HEAD>
+ <TITLE>knowles:amulet-bt</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+Anna J. Knowles.
+<b>Integrating Bluetooth Low Energy Peripherals with the Amulet</b>.
+Technical Report
+TR2016-807,
+Dartmouth Computer Science,
+May 
+2016.
+Senior Honors Thesis.
+<p><b>Abstract:</b> The Amulet is a health monitor, similar in size and shape to a
+smartwatch but specifically designed to have a longer battery life and handle
+data securely. It is equipped with a Bluetooth Low Energy (BLE) radio in
+order to receive data from BLE-enabled sensors and transmit data to
+smartphones, but the full implementation of BLE communication on the Amulet
+is still a work in progress. This thesis describes architectural changes that
+improve the Amulet's ability to receive data from a variety of BLE-enabled
+sensors and make it easier for developers to integrate new BLE-enabled
+sensors with the Amulet by introducing support for connecting to multiple
+sensors at the same time, rewriting the radio code to be more generic, and
+exposing BLE functionality to the AmuletOS. We discuss the relevant parts of
+the AmuletOS and the BLE protocol as background, describe the current
+structure of BLE communications on the Amulet, and document the proposed
+changes to create a system for easily integrating new BLE-enabled sensors and
+handling connections to multiple sensors simultaneously.</p>
+<p><b>Keywords:</b> mhealth, wireless, mobile, wearable</p>
+<p><a href="bibtex/knowles-amulet-bt.bib">BibTeX</a></p>
+<p><a target=_top href = "././knowles-amulet-bt.pdf">PDF</a> (599K)</p>
+<p><b>Copyright &#169;&nbsp;2016 by the author.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

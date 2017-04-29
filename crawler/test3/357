@@ -1,0 +1,46 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/wang-auth.html
+3
+<HTML>
+<HEAD>
+ <TITLE>wang:auth</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+Bingyue Wang.
+<b>Learning Device Usage in Context: A Continuous and Hierarchical
+Smartphone Authentication Scheme</b>.
+Technical Report
+TR2016-790,
+Dartmouth Computer Science,
+March 
+2016.
+Senior Honors Thesis.
+<p><b>Abstract:</b> Popular smartphone authentication schemes, such as PIN-based or
+biometrics-based authentication methods, require only an initial login at the
+start of a usage session to authorize the user to use all the apps on the
+phone during the entire session. Those schemes fail to provide continuous
+protection of the smartphone after the initial login. They also fail to meet
+the hierarchy of security requirements for different apps under different
+contexts. In this study, we propose a continuous and hierarchical
+authentication scheme. We believe that a user's app-usage patterns depend on
+his location context. As such, our scheme relies on app-usage patterns in
+different location context to continuously establish the log probability
+density (LPD) of the authenticity of the current user. Based on different LPD
+thresholds corresponding to different security requirements, the current user
+either has a LPD higher than the threshold, which grants him continuous
+access to the phone or the app, or he has a LPD lower than the threshold,
+which locks him out of the phone or the app immediately. We test our scheme
+on 4,600 subjects from the Device Analyzer Dataset. We found that our scheme
+could correctly identify the authenticity of the majority of the subjects.
+However, app-usage patterns with or without location context yielded similar
+performances, indicating that user contexts did not contribute further
+information to establish user behavioral patterns. Based on our scheme, we
+propose a hypothetical Android app which would provide continuous and
+hierarchical authentication for the smartphone users.</p>
+<p><b>Keywords:</b> mhealth, wireless, mobile, security</p>
+<p><a href="bibtex/wang-auth.bib">BibTeX</a></p>
+<p><a target=_top href = "././wang-auth.pdf">PDF</a> (1231K)</p>
+<p><b>Copyright &#169;&nbsp;2016 by the author.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

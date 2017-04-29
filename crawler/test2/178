@@ -1,0 +1,31 @@
+http://old-www.cs.dartmouth.edu/~dfk/papers/abstracts/rawassizadeh-datasets.html
+3
+<HTML>
+<HEAD>
+ <TITLE>rawassizadeh:datasets</TITLE>
+  <BASE href="http://www.cs.dartmouth.edu/~dfk/papers/index-t.html">
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#ffffff">
+Reza Rawassizadeh and David Kotz.
+<b>Datasets for Mobile, Wearable and IOT Research</b>.
+<i>GetMobile: Mobile Computing and Communications</i>,
+20(4):5-7,
+April 
+2017.
+DOI <a href="http://dx.doi.org/10.1145/3081016.3081018">10.1145/3081016.3081018</a>.
+<p><b>Abstract:</b> The advent of affordable devices with sensors and communication
+capabilities has led to the proliferation of computing paradigms, such as the
+Internet of Things (IoT), mobile devices, and wearable technologies. For the
+sake of simplicity, we use the umbrella term "small devices" for these
+technologies. At the same time, in the past decade, the increasing
+availability of large datasets has shifted scientists' attention toward data
+science, and defined new trends in computation. Even some scientists call it
+an evolutionary shift that has changed the pace of scientific progress, i.e.,
+the "fourth paradigm".</p>
+<p><b>Keywords:</b> wireless, measurement, mobile, IOT</p>
+<p><a href="bibtex/rawassizadeh-datasets.bib">BibTeX</a></p>
+<p><a target=_top href = "././rawassizadeh-datasets.pdf">PDF</a> (1421K)</p>
+<p><b>Copyright &#169;&nbsp;2017 by ACM.</b></p>
+The copy made available here is the authors' version; for a definitive copy see the publisher's version described above.
+</BODY>
+</HTML>

@@ -1,0 +1,598 @@
+http://old-www.cs.dartmouth.edu/~dfk/STARFISH/papers/
+4
+<HTML>
+<HEAD>
+<TITLE>STARFISH Papers</TITLE>
+</HEAD>
+<BODY background="" TEXT="#000000" BGCOLOR="#FFFFFF">
+
+<H3><a href=..>STARFISH</a> Papers</H3>
+<P></P>
+<P>
+This page lists all of the papers  that are relevant to the STARFISH project.
+The papers are listed <b>alphabetically</b>.
+<P>
+<p>
+The last update to this paper list was on Sun Mar  1 00:47:11 EST 2009.
+
+<P>
+<HR size="1">
+<P>
+
+
+<UL>
+<LI>
+<b><a name="ap:enwrich">ap:enwrich</a></b>
+(<a href="smallbib/ap:enwrich.bib">BibTeX entry</a>)<br>
+Apratim Purakayastha and Carla Schlatter Ellis and David Kotz.
+<b>ENWRICH: A Compute-Processor Write Caching Scheme for Parallel
+File Systems</b>.
+In
+<i>Proceedings of the Fourth Workshop on Input/Output in Parallel
+and Distributed Systems (IOPADS)</i>,
+pages 55-68,
+Philadelphia,
+May,
+1996.
+ACM Press.
+<P>
+<b>Abstract:</b> Many parallel scientific applications need high-performance I/O.
+Unfortunately, end-to-end parallel-I/O performance has not been able to keep
+up with substantial improvements in parallel-I/O hardware because of poor
+parallel file-system software. Many radical changes, both at the interface
+level and the implementation level, have recently been proposed. One such
+proposed interface is  collective I/O, which allows parallel jobs to
+request transfer of large contiguous objects in a single request, thereby
+preserving useful semantic information that would otherwise be lost if the
+transfer were expressed as per-processor non-contiguous requests. Kotz has
+proposed  disk-directed I/O as an efficient implementation technique for
+collective-I/O operations, where the compute processors make a single
+collective data-transfer request, and the I/O processors thereafter take full
+control of the actual data transfer, exploiting their detailed knowledge of
+the disk-layout to attain substantially improved performance. <P> Recent
+parallel file-system usage studies show that writes to write-only files are a
+dominant part of the workload. Therefore, optimizing writes could have a
+significant impact on overall performance. In this paper, we propose ENWRICH,
+a compute-processor write-caching scheme for write-only files in parallel
+file systems. ENWRICH combines low-overhead write caching at the compute
+processors with high performance disk-directed I/O at the I/O processors to
+achieve both low latency and high bandwidth. This combination facilitates the
+use of the powerful disk-directed I/O technique independent of any particular
+choice of interface. By collecting writes over many files and applications,
+ENWRICH lets the I/O processors optimize disk I/O over a large pool of
+requests. We evaluate our design via simulated implementation and show that
+ENWRICH achieves high performance for various configurations and workloads.
+<P>
+<b>Copyright &#169; 1996 by ACM.</b>
+<br>
+<a target=_top href = "http://www.cs.dartmouth.edu/~dfk/papers/ap:enwrich.ps.gz">gzipped Postscript</a>
+<a target=_top href = "./ap:enwrich.pdf">PDF</a>
+ (388K)
+<p>
+See also earlier version <b><a href="#ap:enwrich-tr">ap:enwrich-tr</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="ap:enwrich-tr">ap:enwrich-tr</a></b>
+(<a href="smallbib/ap:enwrich-tr.bib">BibTeX entry</a>)<br>
+Apratim Purakayastha and Carla Schlatter Ellis and David Kotz.
+<b>ENWRICH: A Compute-Processor Write Caching Scheme for Parallel
+File Systems</b>.
+Technical Report
+CS-1995-22,
+Dept. of Computer Science, Duke University,
+October,
+1995.
+<P>
+<b>Abstract:</b> Many parallel scientific applications need high-performance I/O.
+Unfortunately, end-to-end parallel-I/O performance has not been able to keep
+up with substantial improvements in parallel-I/O hardware because of poor
+parallel file-system software. Many radical changes, both at the interface
+level and the implementation level, have recently been proposed. One such
+proposed interface is  collective I/O, which allows parallel jobs to
+request transfer of large contiguous objects in a single request, thereby
+preserving useful semantic information that would otherwise be lost if the
+transfer were expressed as per-processor non-contiguous requests. Kotz has
+proposed  disk-directed I/O as an efficient implementation technique for
+collective-I/O operations, where the compute processors make a single
+collective data-transfer request, and the I/O processors thereafter take full
+control of the actual data transfer, exploiting their detailed knowledge of
+the disk-layout to attain substantially improved performance. <P> Recent
+parallel file-system usage studies show that writes to write-only files are a
+dominant part of the workload. Therefore, optimizing writes could have a
+significant impact on overall performance. In this paper, we propose ENWRICH,
+a compute-processor write-caching scheme for write-only files in parallel
+file systems. ENWRICH combines low-overhead write caching at the compute
+processors with high performance disk-directed I/O at the I/O processors to
+achieve both low latency and high bandwidth. This combination facilitates the
+use of the powerful disk-directed I/O technique independent of any particular
+choice of interface. By collecting writes over many files and applications,
+ENWRICH lets the I/O processors optimize disk I/O over a large pool of
+requests. We evaluate our design via simulated implementation and show that
+ENWRICH achieves high performance for various configurations and workloads.
+<P>
+<b>Copyright &#169; 1995 by the authors.</b>
+<br>
+<a target=_top href = "ftp://ftp.cs.duke.edu/dist/techreport/1995/1995-22.ps.Z">compressed Postscript</a>
+<a target=_top href = "./ap:enwrich-tr.pdf">PDF</a>
+ (399K)
+<p>
+See also later version <b><a href="#ap:enwrich">ap:enwrich</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:diskdir">kotz:diskdir</a></b>
+(<a href="smallbib/kotz:diskdir.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Disk-directed I/O for MIMD Multiprocessors</b>.
+In
+<i>Proceedings of the 1994 Symposium on Operating Systems Design
+and Implementation (OSDI) (OSDI)</i>,
+pages 61-74,
+November,
+1994.
+USENIX Association.
+Updated as Dartmouth TR PCS-TR94-226 on November 8, 1994.
+<P>
+<b>Abstract:</b> Many scientific applications that run on today's multiprocessors
+are bottlenecked by their file I/O needs. Even if the multiprocessor is
+configured with sufficient I/O hardware, the file-system software often fails
+to provide the available bandwidth to the application. Although libraries and
+improved file-system interfaces can make a significant improvement, we
+believe that fundamental changes are needed in the file-server software. We
+propose a new technique,  disk-directed I/O, that flips the usual
+relationship between server and client to allow the disks (actually, disk
+servers) to determine the flow of data for maximum performance. Our
+simulations show that tremendous performance gains are possible. Indeed,
+disk-directed I/O provided consistent high performance that was largely
+independent of data distribution, and close to the maximum disk bandwidth.
+<P>
+<b>Copyright &#169; 1994 by David Kotz.</b>
+<br>
+<a target=_top href = "http://www.cs.dartmouth.edu/~dfk/papers/kotz:diskdir.ps.gz">gzipped Postscript</a>
+<a target=_top href = "./kotz:diskdir.pdf">PDF</a>
+ (485K)
+<p>
+See also later version <b><a href="#kotz:diskdir-tr">kotz:diskdir-tr</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:diskdir-tr">kotz:diskdir-tr</a></b>
+(<a href="smallbib/kotz:diskdir-tr.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Disk-directed I/O for MIMD Multiprocessors</b>.
+Technical Report
+PCS-TR94-226,
+Dept. of Computer Science, Dartmouth College,
+July,
+1994.
+Revised November 8, 1994.
+<P>
+<b>Abstract:</b> Many scientific applications that run on today's multiprocessors
+are bottlenecked by their file I/O needs. Even if the multiprocessor is
+configured with sufficient I/O hardware, the file-system software often fails
+to provide the available bandwidth to the application. Although libraries and
+improved file-system interfaces can make a significant improvement, we
+believe that fundamental changes are needed in the file-server software. We
+propose a new technique,  disk-directed I/O, that flips the usual
+relationship between server and client to allow the disks (actually, disk
+servers) to determine the flow of data for maximum performance. Our
+simulations show that tremendous performance gains are possible. Indeed,
+disk-directed I/O provided consistent high performance that was largely
+independent of data distribution, and close to the maximum disk bandwidth.
+<P>
+<b>Copyright &#169; 1994 by David Kotz.</b>
+<br>
+<a target=_top href = "./kotz:diskdir-tr.pdf">PDF</a>
+ (479K)
+<p>URL: <a target=_top href="http://www.cs.dartmouth.edu/reports/abstracts/TR94-226/">http://www.cs.dartmouth.edu/reports/abstracts/TR94-226/</a>
+<p>
+See also earlier version <b><a href="#kotz:diskdir">kotz:diskdir</a></b>.<br>
+See also later version <b><a href="#kotz:jdiskdir">kotz:jdiskdir</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:diskdir2">kotz:diskdir2</a></b>
+(<a href="smallbib/kotz:diskdir2.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Disk-directed I/O for MIMD Multiprocessors</b>.
+<i>Bulletin of the IEEE Technical Committee on Operating Systems and
+Application Environments</i>,
+29-42,
+Autumn,
+1994.
+<P>
+<b>Abstract:</b> Many scientific applications that run on today's multiprocessors
+are bottlenecked by their file I/O needs. Even if the multiprocessor is
+configured with sufficient I/O hardware, the file-system software often fails
+to provide the available bandwidth to the application. Although libraries and
+improved file-system interfaces can make a significant improvement, we
+believe that fundamental changes are needed in the file-server software. We
+propose a new technique,  disk-directed I/O, that flips the usual
+relationship between server and client to allow the disks (actually, disk
+servers) to determine the flow of data for maximum performance. Our
+simulations show that tremendous performance gains are possible. Indeed,
+disk-directed I/O provided consistent high performance that was largely
+independent of data distribution, and close to the maximum disk bandwidth.
+<P>
+<b>Copyright &#169; 1994 by David Kotz.</b>
+<br>
+<a target=_top href = "http://tcos.org/Bulletin/autumn94/diskdirected.ps">Postscript</a>
+<p>
+See also later version <b><a href="#kotz:diskdir-tr">kotz:diskdir-tr</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:diskmodel">kotz:diskmodel</a></b>
+(<a href="smallbib/kotz:diskmodel.bib">BibTeX entry</a>)<br>
+David Kotz and Song Bac Toh and Sriram Radhakrishnan.
+<b>A Detailed Simulation Model of the HP&nbsp;97560 Disk Drive</b>.
+Technical Report
+PCS-TR94-220,
+Dept. of Computer Science, Dartmouth College,
+July,
+1994.
+<P>
+<b>Abstract:</b> We implemented a detailed model of the HP&nbsp;97560 disk drive, to
+replicate a model devised by Ruemmler and Wilkes (both of Hewlett-Packard,
+HP). Our model simulates one or more disk drives attached to one or more SCSI
+buses, using a small discrete-event simulation module included in our
+implementation. The design is broken into three components: a test driver,
+the disk model itself, and the discrete-event simulation support. Thus, the
+disk model can be easily extracted and used in other simulation environments.
+We validated our model using traces obtained from HP, using the same
+``demerit'' measure as Ruemmler and Wilkes. We obtained a demerit figure of
+3.9\%, indicating that our model was extremely accurate. This paper describes
+our implementation, and is meant for those wishing to understand our model or
+to implement their own.
+<P>
+<b>Copyright &#169; 1994 by the authors.</b>
+<br>
+<a target=_top href = "./kotz:diskmodel.pdf">PDF</a>
+ (293K)
+<p>URL: <a target=_top href="http://www.cs.dartmouth.edu/reports/abstracts/TR94-220/">http://www.cs.dartmouth.edu/reports/abstracts/TR94-220/</a>
+<p>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:expand">kotz:expand</a></b>
+(<a href="smallbib/kotz:expand.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Expanding the Potential for Disk-Directed I/O</b>.
+In
+<i>Proceedings of the 1995 IEEE Symposium on Parallel and
+Distributed Processing (SPDP)</i>,
+pages 490-495,
+San Antonio, TX,
+October,
+1995.
+IEEE Computer Society Press.
+<P>
+<b>Abstract:</b> As parallel computers are increasingly used to run scientific
+applications with large data sets, and as processor speeds continue to
+increase, it becomes more important to provide fast, effective parallel file
+systems for data storage and for temporary files. In an earlier work we
+demonstrated that a technique we call disk-directed I/O has the potential to
+provide consistent high performance for large, collective, structured I/O
+requests. In this paper we expand on this potential by demonstrating the
+ability of a disk-directed I/O system to read irregular subsets of data from
+a file, and to filter and distribute incoming data according to
+data-dependent functions.
+<P>
+<b>Copyright &#169; 1995 by IEEE.</b>
+<br>
+<a target=_top href = "http://www.cs.dartmouth.edu/~dfk/papers/kotz:expand.ps.gz">gzipped Postscript</a>
+<a target=_top href = "./kotz:expand.pdf">PDF</a>
+ (393K)
+<p>
+See also earlier version <b><a href="#kotz:expand-tr">kotz:expand-tr</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:expand-tr">kotz:expand-tr</a></b>
+(<a href="smallbib/kotz:expand-tr.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Expanding the Potential for Disk-Directed I/O</b>.
+Technical Report
+PCS-TR95-254,
+Dept. of Computer Science, Dartmouth College,
+March,
+1995.
+<P>
+<b>Abstract:</b> As parallel computers are increasingly used to run scientific
+applications with large data sets, and as processor speeds continue to
+increase, it becomes more important to provide fast, effective parallel file
+systems for data storage and for temporary files. In an earlier work we
+demonstrated that a technique we call disk-directed I/O has the potential to
+provide consistent high performance for large, collective, structured I/O
+requests. In this paper we expand on this potential by demonstrating the
+ability of a disk-directed I/O system to read irregular subsets of data from
+a file, and to filter and distribute incoming data according to
+data-dependent functions.
+<P>
+<b>Copyright &#169; 1995 by David Kotz.</b>
+<br>
+<a target=_top href = "./kotz:expand-tr.pdf">PDF</a>
+ (245K)
+<p>URL: <a target=_top href="http://www.cs.dartmouth.edu/reports/abstracts/TR95-254/">http://www.cs.dartmouth.edu/reports/abstracts/TR95-254/</a>
+<p>
+See also later version <b><a href="#kotz:expand">kotz:expand</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:explore">kotz:explore</a></b>
+(<a href="smallbib/kotz:explore.bib">BibTeX entry</a>)<br>
+David Kotz and Ting Cai.
+<b>Exploring the use of I/O Nodes for Computation in a MIMD
+Multiprocessor</b>.
+In
+<i>Proceedings of the IPPS&nbsp;'95 Workshop on Input/Output in Parallel
+and Distributed Systems (IOPADS)</i>,
+pages 78-89,
+April,
+1995.
+<P>
+<b>Abstract:</b> As parallel systems move into the production scientific-computing
+world, the emphasis will be on cost-effective solutions that provide high
+throughput for a mix of applications. Cost-effective solutions demand that a
+system make effective use of all of its resources. Many MIMD multiprocessors
+today, however, distinguish between ``compute'' and ``I/O'' nodes, the latter
+having attached disks and being dedicated to running the file-system server.
+This static division of responsibilities simplifies system management but
+does not necessarily lead to the best performance in workloads that need a
+different balance of computation and I/O. <P> Of course, computational
+processes sharing a node with a file-system service may receive less CPU
+time, network bandwidth, and memory bandwidth than they would on a
+computation-only node. In this paper we begin to examine this issue
+experimentally. We found that high-performance I/O does not necessarily
+require substantial CPU time, leaving plenty of time for application
+computation. There were some complex file-system requests, however, which
+left little CPU time available to the application. (The impact on network and
+memory bandwidth still needs to be determined.) For applications (or users)
+that cannot tolerate an occasional interruption, we recommend that they
+continue to use only compute nodes. For tolerant applications needing more
+cycles than those provided by the compute nodes, we recommend that they take
+full advantage of  both compute and I/O nodes for computation, and
+that operating systems should make this possible.
+<P>
+<b>Copyright &#169; 1995 by the authors.</b>
+<br>
+<a target=_top href = "http://www.cs.dartmouth.edu/~dfk/papers/kotz:explore.ps.gz">gzipped Postscript</a>
+<a target=_top href = "./kotz:explore.pdf">PDF</a>
+ (291K)
+<p>
+See also earlier version <b><a href="#kotz:explore-tr">kotz:explore-tr</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:explore-tr">kotz:explore-tr</a></b>
+(<a href="smallbib/kotz:explore-tr.bib">BibTeX entry</a>)<br>
+David Kotz and Ting Cai.
+<b>Exploring the use of I/O Nodes for Computation in a MIMD
+Multiprocessor</b>.
+Technical Report
+PCS-TR94-232,
+Dept. of Computer Science, Dartmouth College,
+October,
+1994.
+Revised 2/20/95.
+<P>
+<b>Abstract:</b> Most MIMD multiprocessors today are configured with two distinct
+types of processor nodes: those that have disks attached, which are dedicated
+to file I/O, and those that do not have disks attached, which are used for
+running applications. Several architectural trends have led some to propose
+configuring systems so that all processors are used for application
+processing, even those with disks attached. We examine this idea
+experimentally, focusing on the impact of remote I/O requests on local
+computational processes. We found that in an efficient file system the I/O
+processors can transfer data at near peak speeds with little CPU overhead,
+leaving substantial CPU power for running applications. On the other hand, we
+found that some complex file-system features could require substantial CPU
+overhead. Thus, for a multiprocessor system to obtain good I/O and
+computational performance on a mix of applications, the file system (both
+operating system and libraries) must be prepared to adapt their policies to
+changing conditions.
+<P>
+<b>Copyright &#169; 1994 by the authors.</b>
+<br>
+<a target=_top href = "./kotz:explore-tr.pdf">PDF</a>
+ (293K)
+<p>URL: <a target=_top href="http://www.cs.dartmouth.edu/reports/abstracts/TR94-232/">http://www.cs.dartmouth.edu/reports/abstracts/TR94-232/</a>
+<p>
+See also later version <b><a href="#kotz:explore">kotz:explore</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:int-ddio">kotz:int-ddio</a></b>
+(<a href="smallbib/kotz:int-ddio.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Interfaces for Disk-Directed I/O</b>.
+Technical Report
+PCS-TR95-270,
+Dept. of Computer Science, Dartmouth College,
+September,
+1995.
+<P>
+<b>Abstract:</b> In other papers I propose the idea of disk-directed I/O for
+multiprocessor file systems. Those papers focus on the performance advantages
+and capabilities of disk-directed I/O, but say little about the
+application-programmer's interface or about the interface between the compute
+processors and I/O processors. In this short note I discuss the requirements
+for these interfaces, and look at many existing interfaces for parallel file
+systems. I conclude that many of the existing interfaces could be adapted for
+use in a disk-directed I/O system.
+<P>
+<b>Copyright &#169; 1995 by David Kotz.</b>
+<br>
+<a target=_top href = "./kotz:int-ddio.pdf">PDF</a>
+ (187K)
+<p>URL: <a target=_top href="http://www.cs.dartmouth.edu/reports/abstracts/TR95-270/">http://www.cs.dartmouth.edu/reports/abstracts/TR95-270/</a>
+<p>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:jdiskdir">kotz:jdiskdir</a></b>
+(<a href="smallbib/kotz:jdiskdir.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Disk-directed I/O for MIMD Multiprocessors</b>.
+<i>ACM Transactions on Computer Systems</i>,
+15(1):41-74,
+February,
+1997.
+<P>
+<b>Abstract:</b> Many scientific applications that run on today's multiprocessors,
+such as weather forecasting and seismic analysis, are bottlenecked by their
+file-I/O needs. Even if the multiprocessor is configured with sufficient I/O
+hardware, the file-system software often fails to provide the available
+bandwidth to the application. Although libraries and enhanced file-system
+interfaces can make a significant improvement, we believe that fundamental
+changes are needed in the file-server software. We propose a new technique,
+disk-directed I/O, to allow the disk servers to determine the flow of data
+for maximum performance. Our simulations show that tremendous performance
+gains are possible both for simple reads and writes and for an out-of-core
+application. Indeed, our disk-directed I/O technique provided consistent high
+performance that was largely independent of data distribution, obtained up to
+93\33127400f peak disk bandwidth, and was as much as 18 times faster than the
+traditional technique.
+<P>
+<b>Copyright &#169; 1997 by ACM.</b>
+<br>
+<a target=_top href = "http://www.cs.dartmouth.edu/~dfk/papers/kotz:jdiskdir.ps.gz">gzipped Postscript</a>
+<a target=_top href = "./kotz:jdiskdir.pdf">PDF</a>
+ (467K)
+<p>
+Identical to <b><a href="#kotz:bdiskdir">kotz:bdiskdir</a></b>.<br>
+See also earlier version <b><a href="#kotz:diskdir-tr">kotz:diskdir-tr</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:lu">kotz:lu</a></b>
+(<a href="smallbib/kotz:lu.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Disk-directed I/O for an Out-of-core Computation</b>.
+In
+<i>Proceedings of the Fourth IEEE International Symposium on High
+Performance Distributed Computing (HPDC)</i>,
+pages 159-166,
+August,
+1995.
+IEEE Computer Society Press.
+<P>
+<b>Abstract:</b> New file systems are critical to obtain good I/O performance on
+large multiprocessors. Several researchers have suggested the use of 
+collective file-system operations, in which all processes in an
+application cooperate in each I/O request. Others have suggested that the
+traditional low-level interface (\tt read, write, seek) be augmented with
+various higher-level requests (e.g.,  read matrix). Collective,
+high-level requests permit a technique called  disk-directed I/O to
+significantly improve performance over traditional file systems and
+interfaces, at least on simple I/O benchmarks. In this paper, we present the
+results of experiments with an ``out-of-core'' LU-decomposition program.
+Although its collective interface was awkward in some places, and forced
+additional synchronization, disk-directed I/O was able to obtain much better
+overall performance than the traditional system.
+<P>
+<b>Copyright &#169; 1995 by IEEE.</b>
+<br>
+<a target=_top href = "http://www.cs.dartmouth.edu/~dfk/papers/kotz:lu.ps.gz">gzipped Postscript</a>
+<a target=_top href = "./kotz:lu.pdf">PDF</a>
+ (394K)
+<p>
+See also earlier version <b><a href="#kotz:lu-tr">kotz:lu-tr</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:lu-tr">kotz:lu-tr</a></b>
+(<a href="smallbib/kotz:lu-tr.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Disk-directed I/O for an Out-of-core Computation</b>.
+Technical Report
+PCS-TR95-251,
+Dept. of Computer Science, Dartmouth College,
+January,
+1995.
+<P>
+<b>Abstract:</b> New file systems are critical to obtain good I/O performance on
+large multiprocessors. Several researchers have suggested the use of 
+collective file-system operations, in which all processes in an
+application cooperate in each I/O request. Others have suggested that the
+traditional low-level interface (\tt read, write, seek) be augmented with
+various higher-level requests (e.g.,  read matrix), allowing the
+programmer to express a complex transfer in a single (perhaps collective)
+request. Collective, high-level requests permit techniques like 
+two-phase I/O and  disk-directed I/O to significantly improve
+performance over traditional file systems and interfaces. Neither of these
+techniques have been tested on anything other than simple benchmarks that
+read or write matrices. Many applications, however, intersperse computation
+and I/O to work with data sets that cannot fit in main memory. In this paper,
+we present the results of experiments with an ``out-of-core''
+LU-decomposition program, comparing a traditional interface and file system
+with a system that has a high-level, collective interface and disk-directed
+I/O. We found that a collective interface was awkward in some places, and
+forced additional synchronization. Nonetheless, disk-directed I/O was able to
+obtain much better performance than the traditional system.
+<P>
+<b>Copyright &#169; 1995 by David Kotz.</b>
+<br>
+<a target=_top href = "./kotz:lu-tr.pdf">PDF</a>
+ (390K)
+<p>URL: <a target=_top href="http://www.cs.dartmouth.edu/reports/abstracts/TR95-251/">http://www.cs.dartmouth.edu/reports/abstracts/TR95-251/</a>
+<p>
+See also later version <b><a href="#kotz:lu">kotz:lu</a></b>.<br>
+<p>
+</LI>
+
+<LI>
+<b><a name="kotz:tuning">kotz:tuning</a></b>
+(<a href="smallbib/kotz:tuning.bib">BibTeX entry</a>)<br>
+David Kotz.
+<b>Tuning STARFISH</b>.
+Technical Report
+PCS-TR96-296,
+Dept. of Computer Science, Dartmouth College,
+October,
+1996.
+<P>
+<b>Abstract:</b> STARFISH is a parallel file-system simulator we built for our
+research into the concept of disk-directed I/O. In this report, we detail
+steps taken to tune the file systems supported by STARFISH, which include a
+traditional parallel file system (with caching) and a disk-directed I/O
+system. In particular, we now support two-phase I/O, use smarter disk
+scheduling, increased the maximum number of outstanding requests that a
+compute processor may make to each disk, and added gather/scatter block
+transfer. We also present results of the experiments driving the tuning
+effort.
+<P>
+<b>Copyright &#169; 1996 by David Kotz.</b>
+<br>
+<a target=_top href = "./kotz:tuning.pdf">PDF</a>
+ (305K)
+<p>URL: <a target=_top href="http://www.cs.dartmouth.edu/reports/abstracts/TR96-296/">http://www.cs.dartmouth.edu/reports/abstracts/TR96-296/</a>
+<p>
+<p>
+</LI>
+
+</UL>
+
+<P></P>
+<HR size="1">
+<ADDRESS>
+Maintained by <a href="mailto:dfk AT cs.dartmouth.edu">dfk AT cs.dartmouth.edu</A>.<br>
+Generated automatically on Sun Mar  1 00:47:11 EST 2009.
+</ADDRESS>
+<p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p><p>
+</BODY>
+</HTML>

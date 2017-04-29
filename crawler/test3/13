@@ -1,0 +1,46 @@
+http://old-www.cs.dartmouth.edu/~dfk/nils/papers/galley.html
+4
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"> 
+<HTML>
+<HEAD><TITLE>Galley Parallel File System</TITLE></HEAD>
+<BODY>
+<H1>The Galley Parallel File System</H1>
+
+<H2>
+<a href="/~nils/">Nils Nieuwejaar</a> and <a href="/~dfk/">David
+Kotz</a> <BR>
+</h2>
+
+<H3>
+<EM> Parallel Computing Special Issue on I/O </EM>
+</H3>
+<P>
+<B>
+Abstract:
+</B>
+ <P>
+
+Most current multiprocessor file systems are designed to use multiple
+disks in parallel, using the high aggregate bandwidth to meet the growing
+I/O requirements of parallel scientific applications. Many multiprocessor
+file systems provide applications with a conventional Unix-like
+interface, allowing the application to access multiple disks
+transparently.  This interface conceals the parallelism within the file
+system, increasing the ease of programmability, but making it difficult
+or impossible for sophisticated programmers and libraries to use
+knowledge about their I/O needs to exploit that parallelism.  In addition
+to providing an insufficient interface, most current multiprocessor file
+systems are optimized for a different workload than they are being asked
+to support.  We introduce Galley, a new parallel file system that is
+intended to efficiently support realistic scientific multiprocessor
+workloads. We discuss Galley's file structure and application interface,
+as well as the performance advantages offered by that interface.
+
+</P><P>
+
+<A HREF="galley.ps.Z"> Full paper</A>
+	(Postscript, 181691 bytes compressed) Copyright 1996 Elsevier<BR>
+	<P>
+
+</BODY>
+</HTML>

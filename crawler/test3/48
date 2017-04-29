@@ -1,0 +1,26 @@
+http://old-www.cs.dartmouth.edu/~dfk/ILI/dapple/examples/cs15.html
+4
+<HTML>
+<HEAD><TITLE>Example DAPPLE programs </TITLE></HEAD>
+<BODY>
+<H1> Example DAPPLE programs for CS15  </H1>
+
+<P>
+Here is a list of existing examples, in alphabetical order:
+<UL>
+<LI> <A HREF="grades.html"> grades</A>:	compute grades
+<LI> <A HREF="pascal.html"> pascal</A>:	Pascal's triangle
+<LI> <A HREF="prime.html"> prime</A>:		finding prime numbers
+<LI> <A HREF="pi.html"> pi</A>:		estimating pi with numerical integration
+<LI> <A HREF="canny.html"> canny</A>:		Canny's algorithm for edge-finding in images
+<LI> <A HREF="qsort.html"> qsort</A>:		quicksort, again
+</UL>
+ </P>
+
+<HR>
+<UL>
+<LI> <A HREF="../overview.html">Back to DAPPLE top level</A>
+</UL>
+
+</BODY>
+</HTML>

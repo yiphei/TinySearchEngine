@@ -1,0 +1,811 @@
+http://old-www.cs.dartmouth.edu/~dfk/sasos/sasos_bib_short.html
+4
+<HTML>
+<HEAD><TITLE> Bibliography </TITLE></HEAD>
+<BODY>
+<DL>
+
+<DT> <A NAME="anderson:arch-os"> [ALBL91] </DT>
+<DD>
+Thomas E. Anderson, Henry M. Levy, Brian N. Bershad, and Edward D. Lazowska.
+<!-- newblock --> <STRONG>The interaction of architecture and operating system
+  design</STRONG>.
+<!-- newblock --> In <EM>Fourth International Conference on Architectural
+  Support for Programming Languages and Operating Systems</EM>, pages 108--120,
+  1991.
+</DD>
+
+<DT> <A NAME="berrendorf:simulation"> [Ber92] </DT>
+<DD>
+R. Berrendorf.
+<!-- newblock --> <STRONG>Memory access in shared virtual memory</STRONG>.
+<!-- newblock --> In <EM>Parallel Processing: CONPAR 92-VAPP V. Second Joint
+  International Conference on Vector and Parallel Processing</EM>, pages
+  785--786, 1992.
+</DD>
+
+<DT> <A NAME="broessler:addressing"> [BHKR87] </DT>
+<DD>
+P. Broessler, F. A. Henskens, J. L. Keedy, and J. Rosenberg.
+<!-- newblock --> <STRONG>Addressing objects in a very large distributed
+  virtual memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the IFIP WWG 10.3 Working
+  Conference</EM>, pages 105--116, 1987.
+</DD>
+
+<DT><A NAME="bartoli:was"
+  HREF="ftp://ftp.pegasus.esprit.ec.org/pub/pegasus/paper3.ps.gz">
+  [BMvdV93]</A></DT>
+<DD>
+Alberto Bartoli, Sape J. Mullender, and Martijn van der Valk.
+<!-- newblock --> <STRONG>Wide-address spaces --- exploring the design
+  space</STRONG>.
+<!-- newblock --> <EM>ACM Operating Systems Review</EM>, 27(1):11--17, January
+  1993.
+</DD>
+
+<DT> <A NAME="broessler:transactions"> [BR90] </DT>
+<DD>
+P. Broessler and J. Rosenberg.
+<!-- newblock --> <STRONG>Transactions in a segmented single level store
+  architecture</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architectures to Support Security and Persistance of Information</EM>, pages
+  319--338, 1990.
+</DD>
+
+<DT> <A NAME="cockshot:management"> [CAC84] </DT>
+<DD>
+W. P. Cockshot, M. P. Atkinson, and K. J. Chisholm.
+<!-- newblock --> <STRONG>Persistent object management system</STRONG>.
+<!-- newblock --> <EM>Software: Practice and Experience</EM>, 14(1):49--71,
+  January 1984.
+</DD>
+
+<DT> <A NAME="cohn:dsm"> [CBG+93] </DT>
+<DD>
+D. L. Cohn, A. Banerji, P. M. Greenawalt, M. R. Casey, and D. C. Kulkarni.
+<!-- newblock --> <STRONG>Workstation cooperation through a typed distributed
+  shared memory abstraction</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 80--85, 1993.
+</DD>
+
+<DT><A NAME="carter:distributed"
+  HREF="file://cs.rice.edu/public/munin/wwos-iii.ps.Z"> [CCJZ92]</A></DT>
+<DD>
+John B. Carter, Alan L. Cox, David B. Johnson, and Willy Zwaenepoel.
+<!-- newblock --> <STRONG>Distributed operating systems based on a protected
+  global virtual address space</STRONG>.
+<!-- newblock --> In <EM>Third Workshop on Workstation Operating Systems</EM>,
+  1992.
+</DD>
+
+<DT> <A NAME="carter:global"> [CCJZ93] </DT>
+<DD>
+John B. Carter, Alan L. Cox, David B. Johnson, and Willy Zwaenepoel.
+<!-- newblock --> <STRONG>Distributed operating systems based on a protected
+  global virtual address space</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 75--79, 1993.
+</DD>
+
+<DT> <A NAME="cockshott:persistent"> [CF90] </DT>
+<DD>
+W. P. Cockshott and P. W. Foulk.
+<!-- newblock --> <STRONG>Implementing 128 bit persistent addresses on 80x86
+  processors</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architectures to Support Security and Persistance of Information</EM>, pages
+  123--136, 1990.
+</DD>
+
+<DT> <A NAME="chase:issues"> [CFL93] </DT>
+<DD>
+Jeff Chase, Mike Feeley, and Hank Levy.
+<!-- newblock --> <STRONG>Some issues for single address space
+  systems</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 150--154, 1993.
+</DD>
+
+<DT> <A NAME="chase:dist"> [CIL93] </DT>
+<DD>
+Jeffrey S. Chase, Val\'erie Issarny, and Henry M. Levy.
+<!-- newblock --> <STRONG>Distribution in a single address space operating
+  system</STRONG>.
+<!-- newblock --> <EM>ACM Operating Systems Review</EM>, 27(2):61--65, April
+  1993.
+</DD>
+
+<DT><A NAME="chase:opal"
+  HREF="ftp://cs.washington.edu/tr/1992/03/UW-CSE-92-03-02.PS.Z">
+  [CLBHL92]</A></DT>
+<DD>
+Jeffrey S. Chase, Henry M. Levy, Miche Baker-Harvey, and Edward D. Lazowska.
+<!-- newblock --> <STRONG>How to use a 64-bit virtual address space</STRONG>.
+<!-- newblock --> Technical Report 92-03-02, University of Washington, March
+  1992.
+</DD>
+
+<DT> <A NAME="chase:opal2"> [CLBHL93] </DT>
+<DD>
+Jeff Chase, Hank Levy, Miche Baker-Harvey, and Ed Lazowska.
+<!-- newblock --> <STRONG>Opal: A single address space system for 64-bit
+  architectures</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 80--85, 1993.
+</DD>
+
+<DT> <A NAME="chase:tocs"> [CLFL94] </DT>
+<DD>
+Jeffrey S. Chase, Henry M. Levy, Michael J. Feeley, and Edward D. Lazowska.
+<!-- newblock --> <STRONG>Sharing and protection in a single address space
+  operating system</STRONG>.
+<!-- newblock --> <EM>ACM Transactions on Computer Systems</EM>, May 1994.
+</DD>
+
+<DT> <A NAME="chase:lightweight"> [CLLBH92a] </DT>
+<DD>
+Jeffrey S. Chase, Henry M. Levy, Edward D. Lazowska, and Miche Baker-Harvey.
+<!-- newblock --> <STRONG>Lightweight shared objects in a 64-bit operating
+  system</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Conference on Object-Oriented
+  Programming Systems, Languages, and Applications</EM>, pages 397--413, 1992.
+</DD>
+
+<DT><A NAME="chase:objects"
+  HREF="ftp://cs.washington.edu/tr/1992/03/UW-CSE-92-03-09.PS.Z">
+  [CLLBH92b]</A></DT>
+<DD>
+Jeffrey S. Chase, Henry M. Levy, Edward D. Lazowska, and Miche Baker-Harvey.
+<!-- newblock --> <STRONG>Lightweight shared objects in a 64-bit operating
+  system</STRONG>.
+<!-- newblock --> Technical Report 92-03-09, University of Washington, March
+  1992.
+</DD>
+
+<DT> <A NAME="cunha:oommu"> [CRM91] </DT>
+<DD>
+A. R. Cunha, C. N. Ribeiro, and J. A. Marques.
+<!-- newblock --> <STRONG>The architecture of a memory management unit for
+  object-oriented systems</STRONG>.
+<!-- newblock --> <EM>Computer Architecture News</EM>, 19(4):109--116, June
+  1991.
+</DD>
+
+<DT> <A NAME="chew:kernelvm"> [CRRS93a] </DT>
+<DD>
+Khien-Mien Chew, A. Jyothy Reddy, Theodore H. Romer, and Abraham Silberschatz.
+<!-- newblock --> <STRONG>Kernel support for recoverable-persistent virtual
+  memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Usenix {Mach III} Symposium</EM>,
+  pages 215--234, 1993.
+</DD>
+
+<DT><A NAME="chew:persistent"
+  HREF="file://cs.utexas.edu/pub/techreports/tr93-06.ps.Z"> [CRRS93b]</A></DT>
+<DD>
+Khien-Mien Chew, A. Jyothy Reddy, Theodore H. Romer, and Avi Silberschatz.
+<!-- newblock --> <STRONG>Capability-based protection in a persistent global
+  virtual memory system</STRONG>.
+<!-- newblock --> Technical Report TR--93--06, University of Texas at Austin,
+  February 1993.
+</DD>
+
+<DT><A NAME="chew:database"
+  HREF="file://cs.utexas.edu/pub/techreports/tr92-05.ps.Z"> [CS92]</A></DT>
+<DD>
+Khien-Mien Chew and Avi Silberschatz.
+<!-- newblock --> <STRONG>Toward operating system support for
+  recoverable-persistent main memory database systems</STRONG>.
+<!-- newblock --> Technical Report TR--92--05, University of Texas at Austin,
+  February 1992.
+</DD>
+
+<DT><A NAME="chew:recoverable"
+  HREF="file://cs.utexas.edu/pub/techreports/tr93-08.ps.Z"> [CS93]</A></DT>
+<DD>
+Khien-Mien Chew and Abraham Silberschatz.
+<!-- newblock --> <STRONG>The recoverable-persistent virtual memory
+  paradigm</STRONG>.
+<!-- newblock --> Technical Report TR--93--08, University of Texas at Austin,
+  March 1993.
+</DD>
+
+<DT> <A NAME="dearle:browsing"> [DCK89] </DT>
+<DD>
+A. Dearle, Q. Cutts, and G. Kirby.
+<!-- newblock --> <STRONG>Browsing, grazing and nibbling persistent data
+  structures</STRONG>.
+<!-- newblock --> In <EM>Proceedings 3rd International Workshop on Persistent
+  Object Systems</EM>, pages 56--69, 1989.
+</DD>
+
+<DT> <A NAME="daley:multics"> [DD68] </DT>
+<DD>
+Robert C. Daley and Jack B. Dennis.
+<!-- newblock --> <STRONG>Virtual memory, processes, and sharing in
+  MULTICS</STRONG>.
+<!-- newblock --> <EM>Communications of the ACM</EM>, 11(5):306--312, May 1968.
+</DD>
+
+<DT> <A NAME="dobosiewicz:mess"> [DEGM90] </DT>
+<DD>
+W. Dobosiewicz, M. Ra\csit Eskicio\vglu, P. Gburzynski, and A. Mutiso.
+<!-- newblock --> <STRONG>MESS---a distributed operating system for the
+  universe</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Second IEEE Workshop on Future
+  Trends of Distributed Computing Systems</EM>, pages 208--214, 1990.
+</DD>
+
+<DT> <A NAME="dearle:persistence"> [DRH+92] </DT>
+<DD>
+Alan Dearle, John Rosenberg, Frans Henskens, Francis Vaughan, and Kevin
+  Maciunas.
+<!-- newblock --> <STRONG>An examination of operating system support for
+  persistent object systems</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, pages 779--789, 1992.
+</DD>
+
+<DT><A NAME="elphinstone:mungi"
+  HREF="file://ftp.vast.unsw.edu.au/pub/Mungi/9312.ps.Z"> [Elp93]</A></DT>
+<DD>
+Kevin Elphinstone.
+<!-- newblock --> <STRONG>Address space management issues in the Mungi
+  operating system</STRONG>.
+<!-- newblock --> Technical Report SCS\&E Report 9312, University of New South
+  Wales, Australia, November 1993.
+</DD>
+
+<DT> <A NAME="ferreira:heterogeneous"> [FS93] </DT>
+<DD>
+Paulo Ferreira and Marc Shapiro.
+<!-- newblock --> <STRONG>Distribution and persistence in multiple and
+  heterogeneous address spaces</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 83--93, 1993.
+</DD>
+
+<DT><A NAME="garrett:sharing"
+  HREF="ftp://cs.rochester.edu/pub/papers/systems/92.sharing.ps.Z">
+  [GBK+92]</A></DT>
+<DD>
+William E. Garrett, Ricardo Bianchini, Leonidas Kontothanassis, R. Andrew
+  McCallum, Jeffery Thomas, Robert Wisniewski, and Michael L. Scott.
+<!-- newblock --> <STRONG>Dynamic sharing and backward compatibility on 64-bit
+  machines</STRONG>.
+<!-- newblock --> Technical Report 418, Univ. of Rochester Computer Science
+  Department, April 1992.
+</DD>
+
+<DT> <A NAME="guedes:objectmemory"> [GC93] </DT>
+<DD>
+Paulo Guedes and Miguel Castro.
+<!-- newblock --> <STRONG>Distributed shared object memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Fourth Workshop on Workstation
+  Operating Systems</EM>, pages 142--149, 1993.
+</DD>
+
+<DT><A NAME="garrett:linking"
+  HREF="ftp://cs.rochester.edu/pub/papers/systems/93.Linking_shared_segments.ps.Z"> [GSB+93]</A></DT>
+<DD>
+W. E. Garrett, M. L. Scott, R. Bianchini, L. I. Kontothanassis, R. A. McCallum,
+  J. A. Thomas, R. Wisniewski, and S. Luk.
+<!-- newblock --> <STRONG>Linking shared segments</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1993 Winter USENIX Conference</EM>,
+  pages 13--27, 1993.
+</DD>
+
+<DT><A NAME="gull:cherub"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-12.ps.Z"> [Gul93]</A></DT>
+<DD>
+Aarron Gull.
+<!-- newblock --> <STRONG>Cherub: A Hardware Distributed Single Shared Address
+  Space Memory Architecture</STRONG>.
+<!-- newblock --> PhD thesis, Systems Architecture Research Centre, City
+  University, March 1993.
+</DD>
+
+<DT> <A NAME="henskens:objects"> [HBKR93] </DT>
+<DD>
+Frans A. Henskens, Peter Br\"ossler, J. Leslie Keedy, and John Rosenberg.
+<!-- newblock --> <STRONG>Coarse and fine grain objects in a distributed
+  persistent store</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 116--123, 1993.
+</DD>
+
+<DT> <A NAME="henskens:capability"> [Hen92] </DT>
+<DD>
+Frans A. Henskens.
+<!-- newblock --> <STRONG>Addressing moved modules in a capability-based
+  distributed shared memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, volume~1, pages 769--778,
+  1992.
+</DD>
+
+<DT><A NAME="heiser:persistence"
+  HREF="ftp://ftp.vast.unsw.edu.au/pub/Mungi/9302.ps.Z"> [HERH93]</A></DT>
+<DD>
+Gernot Heiser, Kevin Elphinstone, Stephen Russell, and Graham R. Hellestrand.
+<!-- newblock --> <STRONG>A distributed single address-space operating system
+  supporting persistence</STRONG>.
+<!-- newblock --> Technical Report SCS\&E Report 9302, University of New South
+  Wales, Australia, March 1993.
+</DD>
+
+<DT><A NAME="heiser:mungi"
+  HREF="file://ftp.vast.unsw.edu.au/pub/Mungi/9314.ps.Z"> [HERV93]</A></DT>
+<DD>
+Gernot Heiser, Kevin Elphinstone, Stephen Russell, and Jerry Vochteloo.
+<!-- newblock --> <STRONG>Mungi: A distributed single address-space operating
+  system</STRONG>.
+<!-- newblock --> Technical Report SCS\&E Report 9314, University of New South
+  Wales, Australia, November 1993.
+</DD>
+
+<DT> <A NAME="hollins:garbage"> [HR93] </DT>
+<DD>
+Michael Hollins and John Rosenberg.
+<!-- newblock --> <STRONG>Operating system management of large partially
+  allocated objects</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 42--50, 1993.
+</DD>
+
+<DT> <A NAME="henskens:stability"> [HRH90] </DT>
+<DD>
+Frans Henskens, John Rosenberg, and Michael Hannaford.
+<!-- newblock --> <STRONG>Stability in a network of MONADS-PC
+  computers</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architecture to Support Security and Persistence of Information</EM>, pages
+  246--256, 1990.
+</DD>
+
+<DT> <A NAME="hurst:capability"> [HS89] </DT>
+<DD>
+A. J. Hurst and A. S. M. Sajeev.
+<!-- newblock --> <STRONG>A capability based language for persistent
+  programming: Implementation issues</STRONG>.
+<!-- newblock --> In <EM>Proceedings 3rd International Workshop on Persistent
+  Object Systems</EM>, pages 109--125, 1989.
+</DD>
+
+<DT> <A NAME="hornick:database"> [HZ87] </DT>
+<DD>
+Mark F. Hornick and Stanley B. Zdonik.
+<!-- newblock --> <STRONG>A shared, segmented memory system for an
+  object-oriented database</STRONG>.
+<!-- newblock --> <EM>ACM Transactions on Office Information Systems</EM>,
+  5(1):70--95, January 1987.
+</DD>
+
+<DT><A NAME="inohara:persistent"
+  HREF="file://kelly.is.s.u-tokyo.ac.jp/pub/tech-reports/lucas.ps.Z">
+  [IUMM93]</A></DT>
+<DD>
+Shigekazu Inohara, Keitaro Uehara, Hajime Miyazawa, and Takashi Masuda.
+<!-- newblock --> <STRONG>Sharing persistent data structures on wide address
+  spaces in the Lucas operating system</STRONG>.
+<!-- newblock --> Technical report, University of Tokyo, Japan, July 1993.
+</DD>
+
+<DT> <A NAME="jones:capability"> [Jon80] </DT>
+<DD>
+Anita K. Jones.
+<!-- newblock --> <STRONG>Capability architecture revisited</STRONG>.
+<!-- newblock --> <EM>ACM Operating Systems Review</EM>, 14(3):33--35,
+  September 1980.
+</DD>
+
+<DT> <A NAME="kotz:addrtrace-tr"> [KC93] </DT>
+<DD>
+David Kotz and Preston Crow.
+<!-- newblock --> <STRONG>The expected lifetime of ``single-address-space''
+  operating systems</STRONG>.
+<!-- newblock --> Technical Report PCS-TR93-198, Dept. of Math and Computer
+  Science, Dartmouth College, October 1993.
+<!-- newblock --> Appeared in SIGMETRICS '94.
+</DD>
+
+<DT> <A NAME="kotz:addrtrace"> [KC94] </DT>
+<DD>
+David Kotz and Preston Crow.
+<!-- newblock --> <STRONG>The expected lifetime of ``single-address-space''
+  operating systems</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1994 ACM Sigmetrics Conference on
+  Measurement and Modeling of Computer Systems</EM>, pages 161--170, May 1994.
+</DD>
+
+<DT> <A NAME="koldinger:sasos"> [KCE92] </DT>
+<DD>
+Eric J. Koldinger, Jeffrey S. Chase, and Susan J. Eggers.
+<!-- newblock --> <STRONG>Architectural support for single address space
+  operating systems</STRONG>.
+<!-- newblock --> In <EM>Fifth International Conference on Architectural
+  Support for Programming Languages and Operating Systems</EM>, pages 175--186,
+  1992.
+</DD>
+
+<DT> <A NAME="koldinger:plb"> [KLCE91] </DT>
+<DD>
+Eric J. Koldinger, Henry M. Levy, Jeffrey S. Chase, and Susan J. Eggers.
+<!-- newblock --> <STRONG>The Protection Lookaside Buffer: Efficient protection
+  for single-address space computers</STRONG>.
+<!-- newblock --> Technical Report 91--11--05, Univ. of Washington, 1991.
+</DD>
+
+<DT> <A NAME="koch:persistence"> [KR90] </DT>
+<DD>
+David Koch and John Rosenberg.
+<!-- newblock --> <STRONG>A secure RISC-based architecture supporting data
+  persistence</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architectures to Support Security and Persistence of Information</EM>, pages
+  188--201, 1990.
+</DD>
+
+<DT> <A NAME="keedy:modules"> [KV92] </DT>
+<DD>
+J. Leslie Keedy and Karin Vosseberg.
+<!-- newblock --> <STRONG>Persistent protected modules and persistent processes
+  as the basis for a more secure operating system</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, volume~1, pages 747--756,
+  1992.
+</DD>
+
+<DT> <A NAME="lazowska:multiprocessing"> [Laz92] </DT>
+<DD>
+Edward D. Lazowska.
+<!-- newblock --> <STRONG>System support for high performance
+  multiprocessing</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the USENIX Symposium on Experiences
+  with Distributed and Multiprocessor Systems</EM>, pages 1--11, 1992.
+</DD>
+
+<DT> <A NAME="lieberman:garbage"> [LH83] </DT>
+<DD>
+Henry Lieberman and Carl Hewitt.
+<!-- newblock --> <STRONG>A real-time garbage collector based on the lifetimes
+  of objects</STRONG>.
+<!-- newblock --> <EM>Communications of the ACM</EM>, 26(6):419--429, June
+  1983.
+</DD>
+
+<DT> <A NAME="mashey:64bit"> [Mas91] </DT>
+<DD>
+John R. Mashey.
+<!-- newblock --> <STRONG>64-bit computing</STRONG>.
+<!-- newblock --> <EM>Byte Magazine</EM>, pages 135--142, September 1991.
+</DD>
+
+<DT> <A NAME="myers:capability"> [MB80] </DT>
+<DD>
+G. J. Myers and B. R. S. Buckingham.
+<!-- newblock --> <STRONG>A hardware implementation of capability-based
+  addressing</STRONG>.
+<!-- newblock --> <EM>ACM Operating Systems Review</EM>, 14(4):13--25, October
+  1980.
+</DD>
+
+<DT> <A NAME="malhorta:persistent"> [MM92] </DT>
+<DD>
+Ashok Malhorta and Steven J. Munroe.
+<!-- newblock --> <STRONG>Support for persistent objects: Two
+  architectures</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, volume~1, pages 737--746,
+  1992.
+</DD>
+
+<DT><A NAME="murray:experiences"
+  HREF="file://ftp.cs.city.ac.uk/papers/92/sarc93-3.ps.Z"> [MOV+93]</A></DT>
+<DD>
+K. Murray, P. Osmon, A. Valsamidis, A. Whitcroft, and T. Wilkinson.
+<!-- newblock --> <STRONG>Experiences with distributed shared memory</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1993/3, Systems Architecture
+  Research Centre, City University, London, March 1993.
+</DD>
+
+<DT><A NAME="murray:resource"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-4.ps.Z"> [MSWK93]</A></DT>
+<DD>
+K. Murray, T. Stiemerling, T. Wilkinson, and P. Kelly.
+<!-- newblock --> <STRONG>Angel: Resource unification in a 64-bit
+  micro-kernel</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1993/4, Systems Architecture
+  Research Centre, City University, London, June 1993.
+</DD>
+
+<DT> <A NAME="murray:angel"> [MWO+93] </DT>
+<DD>
+Kevin Murray, Tim Wilkinson, Peter Osmon, Ashley Saulsbury, Tom Stiemerling,
+  and Paul Kelly.
+<!-- newblock --> <STRONG>Design and implementation of an object-orientated
+  64-bit single address space microkernel</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the USENIX Symposium on Microkernels
+  and Other Kernel Architectures</EM>, pages 31--43, 1993.
+</DD>
+
+<DT><A NAME="osmon:network"
+  HREF="file://ftp.cs.city.ac.uk/papers/92/sarc92-3.ps.Z"> [OMW+92]</A></DT>
+<DD>
+P.E. Osmon, K. Murray, A. Whitcroft, T. Wilkinson, and N. Williams.
+<!-- newblock --> <STRONG>Network shared memory</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1992/3, Systems Architecture
+  Research Centre, City University, London, October 1992.
+</DD>
+
+<DT><A NAME="ozden:shared"
+  HREF="file://cs.utexas.edu/pub/techreports/tr92-37.ps.Z"> [OS92a]</A></DT>
+<DD>
+Banu Ozden and Avi Silberschatz.
+<!-- newblock --> <STRONG>The shared virtual address space model</STRONG>.
+<!-- newblock --> Technical Report TR--92--37, University of Texas at Austin,
+  October 1992.
+</DD>
+
+<DT><A NAME="ozden:taxonomy"
+  HREF="file://cs.utexas.edu/pub/techreports/tr92-33.ps.Z"> [OS92b]</A></DT>
+<DD>
+Banu Ozden and Avi Silberschatz.
+<!-- newblock --> <STRONG>A taxonomy of shared address space systems</STRONG>.
+<!-- newblock --> Technical Report TR--92--33, University of Texas at Austin,
+  July 1992.
+</DD>
+
+<DT> <A NAME="okamoto:kernel"> [OSS+92] </DT>
+<DD>
+T. Okamoto, H. Segawa, S. H. Shin, H. Nozue, K. Maeda, and M. Saito.
+<!-- newblock --> <STRONG>A micro kernel architecture for next generation
+  processors</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the USENIX Symposium on Microkernels
+  and Other Kernel Architectures</EM>, pages 83--94, 1992.
+</DD>
+
+<DT> <A NAME="pose:hardware"> [Pos89] </DT>
+<DD>
+Ronald D. Pose.
+<!-- newblock --> <STRONG>Capability based, tightly coupled multiprocessor
+  hardware to support a persistent global virtual memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Second Annual Hawaii
+  International Conference on System Sciences</EM>, volume II: Software Track,
+  pages 36--45, 1989.
+</DD>
+
+<DT> <A NAME="redell:pilot"> [RDH+80] </DT>
+<DD>
+David Redell, Yogen Dalal, Thomas Horsley, Hugh Lauer, William Lynch, Paul
+  McJones, Hal Murray, and Stephen Purcell.
+<!-- newblock --> <STRONG>Pilot: An operating system for a personal
+  computer</STRONG>.
+<!-- newblock --> <EM>Communications of the ACM</EM>, 23(2):81--92, February
+  1980.
+</DD>
+
+<DT> <A NAME="rosenberg:stability"> [RH90] </DT>
+<DD>
+John Rosenberg and Frans Henskens.
+<!-- newblock --> <STRONG>Stability in a persistent store based on a large
+  virtual memory</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the International Workshop on Computer
+  Architecture to Support Security and Persistence of Information</EM>, pages
+  229--245, 1990.
+</DD>
+
+<DT> <A NAME="rosenberg:massive"> [RKK89] </DT>
+<DD>
+John Rosenberg, David Koch, and J. Leslie Keedy.
+<!-- newblock --> <STRONG>A massive memory supercomputer</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Second Annual Hawaii
+  International Conference on System Sciences</EM>, pages 338--345, 1989.
+</DD>
+
+<DT> <A NAME="rosenberg:persistence"> [Ros92a] </DT>
+<DD>
+John Rosenberg.
+<!-- newblock --> <STRONG>Architectural and operating system support for
+  orthogonal persistence</STRONG>.
+<!-- newblock --> <EM>Computing Systems</EM>, 5(3):305--335, Summer 1992.
+</DD>
+
+<DT> <A NAME="rosenberg:intro"> [Ros92b] </DT>
+<DD>
+John Rosenberg.
+<!-- newblock --> <STRONG>Architectural and operating system support for
+  persistent object systems: Introduction to minitrack</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Twenty-Fifth Annual Hawaii
+  International Conference on System Sciences</EM>, volume~1, pages 718--719,
+  1992.
+</DD>
+
+<DT> <A NAME="rosenberg:largevm"> [RRA92] </DT>
+<DD>
+J. Rosenberg, J. L. Reedy, and D. Abramson.
+<!-- newblock --> <STRONG>Addressing mechanisms for large virtual
+  memories</STRONG>.
+<!-- newblock --> <EM>The Computer Journal</EM>, 35(4):24--374, 1992.
+<!-- newblock --> Australia.
+</DD>
+
+<DT> <A NAME="ramamohanarao:translation"> [RSD81] </DT>
+<DD>
+K. Ramamohonarao and R. Sacks-Davis.
+<!-- newblock --> <STRONG>Hardware address translation for machines with a
+  large virtual memory</STRONG>.
+<!-- newblock --> <EM>Information Processing Letters</EM>, 13(1):23--29,
+  October 1981.
+</DD>
+
+<DT> <A NAME="russell:gvm"> [RSE+92] </DT>
+<DD>
+Stephen Russell, Alan Skea, Kevin Elphinstone, Gernot Heiser, Keith Burston,
+  Ian Gorton, and Graham Hellestrand.
+<!-- newblock --> <STRONG>Distribution + persistence = global virtual memory
+  (position paper)</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third Workshop on Workstation
+  Operating Systems</EM>, pages 96--99, 1992.
+</DD>
+
+<DT><A NAME="scott:memory"
+  HREF="file://cs.rochester.edu/pub/systems_papers/92.WWOS.commonplace_shared_memor% y.ps.Z"> [SG92]</A></DT>
+<DD>
+Michael L. Scott and William Garrett.
+<!-- newblock --> <STRONG>Shared memory ought to be commonplace (position
+  paper)</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third Workshop on Workstation
+  Operating Systems</EM>, pages 86--90, 1992.
+</DD>
+
+<DT> <A NAME="sims:compromise"> [Sim93] </DT>
+<DD>
+David L. Sims.
+<!-- newblock --> <STRONG>Multiple and single address spaces: Towards a middle
+  ground (position paper)</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 191--193, 1993.
+</DD>
+
+<DT><A NAME="scott:psyche"
+  HREF="ftp://cs.rochester.edu/pub/papers/systems/88.ICPP.Psyche_Rationale.ps.Z"> [SLM88]</A></DT>
+<DD>
+Michael L. Scott, Thomas J. LeBlanc, and Brian D. Marsh.
+<!-- newblock --> <STRONG>Design rationale for Psyche, a general-purpose
+  multiprocessor operating system</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1988 International Conference on
+  Parallel Processing</EM>, pages 255--262, 1988.
+</DD>
+
+<DT> <A NAME="scott:psyche-impl"> [SLM89a] </DT>
+<DD>
+Michael L. Scott, Thomas J. LeBlanc, and Brian D. Marsh.
+<!-- newblock --> <STRONG>Implementation issues for the Psyche multiprocessor
+  operating system</STRONG>.
+<!-- newblock --> Unpublished, September 1989.
+</DD>
+
+<DT> <A NAME="scott:psyche-prog"> [SLM89b] </DT>
+<DD>
+Michael L. Scott, Thomas J. LeBlanc, and Brian D. Marsh.
+<!-- newblock --> <STRONG>Multi-model parallel programming in Psyche</STRONG>.
+<!-- newblock --> Unpublished, September 1989.
+</DD>
+
+<DT> <A NAME="shapiro:storage"> [SM89] </DT>
+<DD>
+Marc Shapiro and Laurence Mosseri.
+<!-- newblock --> <STRONG>A simple object storage system</STRONG>.
+<!-- newblock --> In <EM>Proceedings 3rd International Workshop on Persistent
+  Object Systems</EM>, pages 272--276, 1989.
+</DD>
+
+<DT> <A NAME="thatte:database"> [Tha] </DT>
+<DD>
+S. M. Thatte.
+<!-- newblock --> <STRONG>Persistent memory: a storage architecture for
+  object-oriented database systems</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1986 International Workshop on
+  Object-Oriented Database Systems</EM>, pages 148--159.
+</DD>
+
+<DT> <A NAME="vaughan:casper"> [VBD+92] </DT>
+<DD>
+Francis Vaughan, Tracy Lo Basso, Alan Dearle, Chris Marlin, and Chris Barter.
+<!-- newblock --> <STRONG>Casper: A cached architecture supporting
+  persistence</STRONG>.
+<!-- newblock --> <EM>Computing Systems</EM>, 5(3):337--359, Summer 1992.
+</DD>
+
+<DT><A NAME="vochteloo:capability"
+  HREF="ftp://cs.utexas.edu/pub/techreports/tr93-06.ps.Z"> [VRH93a]</A></DT>
+<DD>
+Jerry Vochteloo, Stephen Russell, and Gernot Heiser.
+<!-- newblock --> <STRONG>Capability-based protection in the Mungi operating
+  system</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the Third International Workshop on
+  Object Orientation in Operating Systems</EM>, pages 108--115, 1993.
+</DD>
+
+<DT><A NAME="vochteloo:protection"
+  HREF="ftp://ftp.vast.unsw.edu.au/pub/Mungi/9303.ps.Z"> [VRH93b]</A></DT>
+<DD>
+Jerry Vochteloo, Stephen Russell, and Gernot Heiser.
+<!-- newblock --> <STRONG>Capability-based protection in a persistent global
+  virtual memory system</STRONG>.
+<!-- newblock --> Technical Report SCS\&E Report 9303, University of New South
+  Wales, Australia, March 1993.
+</DD>
+
+<DT> <A NAME="wilson:swizzling"> [Wil90] </DT>
+<DD>
+Paul R. Wilson.
+<!-- newblock --> <STRONG>Pointer swizzling at page fault time: Efficiently
+  supporting huge address spaces on standard hardware</STRONG>.
+<!-- newblock --> Technical Report UIC-EECS-90-6, University of Illinois at
+  Chicago, December 1990.
+</DD>
+
+<DT><A NAME="wilkinson:fault"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-11.ps.Z"> [Wil93]</A></DT>
+<DD>
+Timothy James Wilkinson.
+<!-- newblock --> <STRONG>Implementing Fault Tolerance in a 64-bit Distributed
+  Operating System</STRONG>.
+<!-- newblock --> PhD thesis, Systems Architecture Research Centre, City
+  University, London, July 1993.
+</DD>
+
+<DT><A NAME="wilkinson:compiling"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-1.ps.Z"> [WMSS93]</A></DT>
+<DD>
+T. Wilkinson, K. Murray, A. Saulsbury, and T. Stiemerling.
+<!-- newblock --> <STRONG>Compiling for a 64-bit single address space
+  architecture</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1993/1, Systems Architecture
+  Research Centre, City University, London, March 1993.
+</DD>
+
+<DT> <A NAME="wilkes:plb"
+  HREF="ftp://ftp.hpl.hp.com/wilkes/HPL-92-55.ps.Z"> [WS92] </A></DT>
+<DD>
+John Wilkes and Bart Sears.
+<!-- newblock --> <STRONG>A comparison of protection lookaside buffers and the
+  PA-RISC protection architecture</STRONG>.
+<!-- newblock --> Technical Report HPL-92-55, HP Labs, March 1992.
+</DD>
+
+<DT> <A NAME="wilkinson:angel"> [WSO+92] </DT>
+<DD>
+Tim Wilkinson, Tom Stiemerling, Peter Osmon, Ashley Saulsbury, and Paul Kelly.
+<!-- newblock --> <STRONG>Angel: A proposed multiprocessor operating system
+  kernel</STRONG>.
+<!-- newblock --> In <EM>European Workshop on Parallel Computing</EM>, March
+  1992.
+</DD>
+
+<DT><A NAME="whitcroft:space"
+  HREF="file://ftp.cs.city.ac.uk/papers/93/sarc93-6.ps.Z"> [WWO93]</A></DT>
+<DD>
+A. Whitcroft, N. Williams, and P. E. Osmon.
+<!-- newblock --> <STRONG>The wide area data space</STRONG>.
+<!-- newblock --> Technical Report TCU/SARC/1993/6, Systems Architecture
+  Research Centre, City University, London, June 1993.
+</DD>
+
+<DT> <A NAME="yarvin:rpc64"> [YBA93] </DT>
+<DD>
+Curtis Yarvin, Richard Bukowski, and Thomas Anderson.
+<!-- newblock --> <STRONG>Anonymous RPC: Low-latency protection in a 64-bit
+  address space</STRONG>.
+<!-- newblock --> In <EM>Proceedings of the 1993 Summer USENIX Conference</EM>,
+  pages 175--186, 1993.
+</DD>
+
+</DL>
+</BODY>
+</HTML>

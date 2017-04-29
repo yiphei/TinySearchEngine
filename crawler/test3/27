@@ -1,0 +1,133 @@
+http://old-www.cs.dartmouth.edu/~reza/
+4
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="Reza Rawassizadeh, lifelogging, Human Computer Interaction, Ubiquitous Computing, Pervasive Application, Digital Forgetting, Personal Information, Data Mining, Information Retrieval, Reza Ravacizadeh, Digital Memory, Pervasive, Transport App, mHealth, Quantified self ">
+<title> Reza Rawassizadeh :: Homepage</title>
+ 
+
+<link href="styles/simplecss.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="styles/flippant.css"/>
+<script type="text/javascript" src="scripts/flippant.js"></script>
+
+<script type="text/javascript">
+ <!-- Google Analytics -->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78831120-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+<div id="box">
+	<div id="head">
+		 <h1>Reza Rawassizadeh</h1>
+	</div>
+	
+	<div id="main">	
+		<img height="180px" id="portrait" src="files/imgs/rr_portrait.jpg" alt="Portrait">
+		<h2>Contact</h2>
+		<table><tbody><tr><td>Email &emsp; &emsp;<span title="(replace {at} with an '@' sign)">reza{at}dartmouth.edu</span></td></tr>
+		<!--tr><td>Phone</td><td> +1 (951)827 2536 </td></tr>
+		<tr><td>Address</td><td>900 University Ave <br> 309 Winston Chung Hall </br> 
+		Riverside, CA 92521<br--> 
+		</td></tr>
+		<tr><td><a href="https://scholar.google.com/citations?user=MlmVx_UAAAAJ">[Google Scholar]   </a>   
+		&emsp; <a href="https://www.researchgate.net/profile/Reza_Rawassizadeh">[Research Gate]</a>
+		&emsp; <a href="http://dblp.uni-trier.de/pers/hd/r/Rawassizadeh:Reza">[DBLP]</a></td>
+		</tr>
+		</tbody></table>
+		
+		<h2>About Me</h2>
+			<BR>
+			I am a researcher in the Computer Science department of Dartmouth College. I did my Ph.D. in University of Vienna and my Master in Technical University of Vienna, Austria and Bachelor in IAUCTB, Iran. 
+			<br> <br>
+			My recent research focuses on creating data analytical tools to understand human behavior, by recording activities through mobile and wearable devices. In particular, we employ the sensing capabilities of small devices (e.g. wearables) to sense, record and analyze human behaviors. I am very keen to perform all analysis on-device and not on the cloud, i.e. NoCloud. Therefore, we are creating low-power algorithms that are able to run on small devices. 
+			<br/><br>
+			In addition to my academic life, I have worked for about six years, as a software developer and technical consultant in industry, such as Siemens (the largest engineering corporation in Europe) and UNIDO in U.N. I am Reza Rawassizadeh and not Reza Ravacizadeh :) <br/>
+			<br/>
+		
+		<!--h2>Research Interests</h2>
+		<BR>
+		<ul>
+			<li>Human-centric computing</li>
+			<li>Data mining and Information Retrieval with the focus on wearable and mobile devices</li>
+			<li>Wearable technologies and pervasive computing</li>
+			<!--li>Information Visualization and user interface design</li-->
+		</ul-->
+		
+		<h2>Publications</h2>
+		<BR>
+		<!--ul-->
+	<h3>Journal, Magazine and Book Chapter</h3>
+		 <ol>
+		 	<li> Rawassizadeh, R. Kotz, D. (2017) Datasets for Mobile, Wearable and IoT Research. GetMobile, 20(4) 
+		 	(to appear) </li>
+		 	<li> Dobbins, C., Rawassizadeh, R., Momeni, E. (2017) Detecting Physical Activity within Lifelogs towards Preventing Obesity and Aiding Ambient Assisted Living. Neurocomputing journal. 230 (C), 110-132.<a href=http://dx.doi.org/10.1016/j.neucom.2016.02.088> Link </a> 
+		 	 </li> 
+		 	<li> Rawassizadeh, R., Momeni, E. Dobbins, C., Gharibshah, G. & Pazzani, M. (2016) Scalable Daily Human Behavioral Pattern Mining from Multivariate Temporal Data. IEEE Transaction of Knowledge Engineering and Data Mining, 28(11), 3098-3112 <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7523395"> PDF </a>
+		 	</li>
+		 	<li>Rawassizadeh, R., Momeni, E., Dobbins, C., Mirza-babaei, P. & Rahnamoun, R. (2015) Lesson Learned from Collecting Quantified Self Information from Mobile and Wearable Devices. Journal of Sensor and Actuators Network. 4, 315-355.<a href="http://www.mdpi.com/2224-2708/4/4/315"> Link</a> </li>
+		 	<li>Rawassizadeh, R., Tomitsch, M., Nourizadeh, M., Momeni, E., Peery, A., Ulanova, L., &  Pazzani, M. (2015). Energy-Efficient Integration of Continuous Context Sensing and Prediction into Smartwatches. Sensors, 15(9), 22616-22645. <a href="http://www.mdpi.com/1424-8220/15/9/22616/htm"> Link </a> </li>
+			<li>Rawassizadeh, R., Price, B. A., & Petre, M. (2015). Wearables: has the age of smartwatches finally arrived?. Communications of the ACM, 58(1), 45-47.
+<a href="http://cacm.acm.org/magazines/2015/1/181635-wearables/fulltext">Link</a> </li>
+			<li>Rawassizadeh, R., Tomitsch, M., Wac, K., & Tjoa, A. M. (2013). UbiqLog: a generic mobile phone-based life-log framework. Personal and ubiquitous computing, 17(4), 621-637. <a href="http://rd.springer.com/article/10.1007/s00779-012-0511-8"> Link</a> </li>
+			<li>Rawassizadeh, R., Wac, K., & Tomitsch, M. (2013). Theme issue on electronic memories and life logging. Personal and Ubiquitous Computing, 17(4), 603-604.
+ <a href="http://rd.springer.com/article/10.1007/s00779-012-0509-2"> Link</a> </li>			
+			<li>Rawassizadeh, R. (2012). Towards sharing life-log information with society. Behaviour & Information Technology, 31(11), 1057-1067. <a href="files/papers/Towards Sharing Life-Log Information with Society.pdf"> PDF </a> </li>
+			<li>Rawassizadeh, R., Anjomshoaa, A., Tjoa. A.M. (2011). A Qualitative Resource Benchmarking Approach for Mobile Applications. Book chapter in "Innovations in Mobile Multimedia Communications and Applications: New Technologies." 149-160.<a href="http://www.irma-international.org/chapter/qualitative-resource-utilization-benchmarking-mobile/53176/"> Link</a></li>
+	   <li>Rawassizadeh, R. (2009). Mobile application benchmarking based on the resource usage monitoring. International Journal of Mobile Computing and Multimedia Communications (IJMCMC), 1(4), 64-75.<a href="files/papers/Mobile Application Benchmarking Based on the Resource Usage Monitoring.pdf"> PDF </a> </li>
+	</ol>
+
+<h3>Conference and Workshop</h3>
+	<ol> 
+		<li> Momeni, E., Rawassizadeh, R., Adar, E. (2017) Leveraging Semantic Facets for Adaptive Ranking of Social Comments. In Proceedings of ACM International Conference on Multimedia Retrieval (ICMR '17). (to appear) </li> 
+		<li> Visuri, A., Sarsenbayeva, Z., Berkel, N.V., Goncalves, J. Rawassizadeh, R., Kostakos, V., Ferreira, D. (2017) Quantifying Sources and Types of Smartwatch Usage Sessions. In Proceedings of the 35th Annual ACM Conference on Human Factors in Computing Systems (CHI '17). <a href=https://www.researchgate.net/publication/311824284_Quantifying_Sources_and_Types_of_Smartwatch_Usage_Sessions>PDF</a> </li>
+		    <li> Rawassizadeh, R., Dobbins, C., Nourizadeh, M., Ghamchili, Z., Pazzani, M. (2017) A Natural Language Query Interface for Searching Personal Information on Smartwatches. PerCom Workshops WristSense '17. <font color=#FF5733>Honorable Mention Award</font>. <a href=https://arxiv.org/pdf/1611.07139v1.pdf>PDF</a> </li>
+		<li>Dobbins, C., Rawassizadeh. R. (2015) Clustering of Physical Activities for Quantified Self and mHealth Applications. 14th IEEE International Conference on Ubiquitous Computing and Communications (IUCC-2015): First International Workshop on Mobile Technology for Healthcare (MT4H 2015). <a href="https://www.researchgate.net/publication 281550416_Clustering_of_Physical_Activities_for_Quantified_Self_and_mHealth_Applications"> Link </a>
+ </li>
+		<li>Momeni, E., Kalchgruber, P., Ramsauer, D., Rawassizadeh, R. (2015) Leveraging Social Affect for Identifying Individual Mood. In 1st Workshop of Data Science, Semantics Conference.  <a href="http://eprints.cs.univie.ac.at/4341/1/Mood_Detection_Paper.pdf"> PDF</a> </li> 
+		<li>Foell, S., Kortuem, G., Rawassizadeh, R., Handte, M., Iqbal, U., & Marron, P. (2014). Micro-navigation for urban bus passengers: using the internet of things to improve the public transport experience. In Proceedings of the First International Conference on IoT in Urban Space (pp. 1-6).
+ <a href="http://urbaniot.org/2014/show/program-preliminary"> Link </a></li> 
+		<li>Foell, S., Kortuem, G., Rawassizadeh, R., Phithakkitnukoon, S., Veloso, M., & Bento, C. (2013). Mining temporal patterns of transport behaviour for predicting future transport usage. In Proceedings of the 2013 ACM conference on Pervasive and ubiquitous computing adjunct publication (pp. 1239-1248). <a href="http://dl.acm.org/citation.cfm?id=2494091.2497354">Link</a> </li>
+		<li> Rawassizadeh, R., Heurix, J., & Khosravipour, S. (2011). LiDSec-A Lightweight Pseudonymization Approach for Privacy-Preserving Publishing of Textual Personal Information. In 2011 Sixth International IEEE Conference on Availability, Reliability and Security (ARES) (pp. 603-608)<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6046047"> Link</a></li>
+		<li> Rawassizadeh, R., Anjomshoaa, A., & Tomitsch, M. (2011). A framework for long-term archiving of pervasive device information. In Proceedings of the 9th International Conference on Advances in Mobile Computing and Multimedia (pp. 244-247). <a href="http://dl.acm.org/ft_gateway.cfm?id=2095747"> Link</a></li> 
+	    <li> Rawassizadeh, R., Khosravipour, S., Tjoa. A.M. (2011) A Persuasive Approach for Indoor Environment Tidiness. In the 6th International Conference on Persuasive Technology (Persuasive '11).  <a href="files/papers/A Persuasive Approach for Indoor Environment Tidiness.pdf"> PDF </a>   </li>
+	    <li> Rawassizadeh, R., Momeni, E., Tomitsch, M., Tjoa, A. M., & Wac, K. (2011) Supporting Forgetting and Semantic Enrichment of e-Memories through Annotation. In ACM 29th International Conference on Human Factors in Computing Systems, In workshop on Bridging Practices, Theories, and Technologies to Support Reminiscence.  <a href="http://www.cs.cornell.edu/~danco/remchiwork/papers/rawassizadeh-Forgetting-Semantic.pdf"> PDF</a></li>	
+		<li> Rawassizadeh, R. (2010). Securing shareable life-logs. In Social Computing (SocialCom), In 2010 IEEE Second International Conference on (pp. 1105-1110).
+ <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5590506">Link</a></li>
+		<li> Rawassizadeh, R. (2010). A holistic multipurpose life-log framework. In Proceedings of the 12th ACM international conference adjunct papers on Ubiquitous Computing-Adjunct (pp. 481-484). <a href="http://dl.acm.org/citation.cfm?id=1864492"> Link</a></li>
+		<li> Rawassizadeh, R., Tomitsch, M. (2010) Toward Preserving Pervasive Device Information. In ACM 28th International Conference on Human Factors in Computing Systems, In workshop on Know Thyself: Monitoring and Reflecting on Facets of One's Life.  <a href="http://personalinformatics.org/docs/chi2010/rawassizadeh_digital_preservation.pdf">PDF</a></li>
+	</ol>
+
+<h3>Technical Report & Not Peer-Reviewed Publications</h3>
+<ol>
+	<li> Rahnamoun, R., Rawassizadeh, R., Maskooki, A. (2016) Learning Mobile App Usage Routine through Learning Automata. arXiv:1608.03507 <a href=https://arxiv.org/pdf/1608.03507v2.pdf>PDF</a> </li>
+	<li> Rawassizadeh, R., Momeni, E., Shetty, P. (2014) Scalable mining of daily behavioral patterns in context sensing life-log data arXiv:1411.4726 <a href=https://arxiv.org/pdf/1411.4726v3.pdf> PDF </a>
+	<li>	
+	S. Foell, R. Rawassizadeh, G. Kortuem, W. Apolinarski, M. Handte. (2014) Intent-Aware User Interface Model. Technical report for GAMBAS project (http://www.gambas-ict.eu).<a href=http://www.gambas-ict.eu/news/gambasuserinterfacemodelavailable> Link</a>
+	</li>
+</ol>
+
+<h2>Software Artifacts and Datasets</h2>
+<br/>
+	<ul>
+		
+    <li> <a href="https://github.com/Rezar/ubiqlog">Ubiqlog </a> is an open source smartphone lifelogging tool that I did for my Ph.D. and now is available open-source. By running UbiqLog for about two months on 35 users, we have created a multivariate temporal dataset of smartphone sensors. The <a href="https://archive.ics.uci.edu/ml/datasets/UbiqLog+(smartphone+lifelogging)"> dataset</a> is available for public use. </li>
+    <li> "insight for Wear" is our smartwatch lifelogging app that includes a very light predictive analytic mechanism. It has received some positive <a href="http://www.androidheadlines.com/2016/01/top-10-android-wear-apps-and-faces-january-2016-edition.html"> media attention and it is available in <a href="https://play.google.com/store/apps/details?id=com.insight.insight"> Google Play</a>. </br> 
+      </a>With respect to users we collect some smartwatch data and we do believe it is the largest dataset of wearable information available yet. For more information please check its <a href="http://insight4wear.com"> home page</a>.</li> 
+	</ul>
+</div>
+
+<div id="footer">
+Last update: 4 Apr '17
+</div>
+
+	
+</body></html>
