@@ -37,7 +37,7 @@
 
 
 //global constants
-const int hashtableSize = 100;  //size of the hastable
+const int hashtableSize = 1000;  //size of the hastable
 int maxDepth;  //maximum crawl depth
 char *directory; //directory where downloaded webpages are written
 char* seedURL;  //initial URL

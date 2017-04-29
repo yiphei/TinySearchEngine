@@ -3,7 +3,7 @@
 
 Yifei Yan April 2017
 
-Crawler is a standalone program that crawls the web and retrieves webpages starting from a “seed” URL. It parses the seed webpage, extracts any embedded URLs, then retrieves each of those pages, recursively, but limiting its exploration to a given “depth”.
+Crawler is a standalone program that crawls the web and retrieves webpages starting from a “seed” URL. It parses the seed webpage, extracts any embedded URLs, then retrieves each of those pages, recursively, but limiting its exploration to a given “depth”. Crawler makes use of a **pagedir.h** module to save the html of the webpages.
 
 ## Usage
 Crawler follows the following **usage**:  
@@ -45,7 +45,7 @@ To test, simply `make test`.
 To clean up, simply `make clean`.
 ## Assumptions
 
-* assume 100 to be a good size for the hashtable
+* assume 1000 to be a good size for the hashtable
 
 ## "Non"-Assumptions
 NA
