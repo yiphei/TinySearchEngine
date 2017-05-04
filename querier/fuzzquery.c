@@ -27,12 +27,11 @@ typedef struct {
 
 /**************** local functions ****************/
 static void parse_args(const int argc, char *argv[], 
-           char **indexFilename, int *numQueries, int *randomSeed);
-static int parse_int(const char *arg, const char *what);
+		       char **indexFilename, int *numQueries, int *randomSeed);
 static wordlist_t *wordlist_load(const char *indexFilename);
 static void wordlist_delete(wordlist_t *words);
 static void generate_query(const wordlist_t *wordlist, 
-         const wordlist_t *dictionary);
+			   const wordlist_t *dictionary);
 
 /**************** main ****************/
 int
@@ -86,6 +85,8 @@ static void
 parse_args(const int argc, char *argv[], 
 	   char **indexFilename, int *numQueries, int *randomSeed)
 {
+  char extra;
+
   /**** usage ****/
   program = argv[0];
   if (argc != 4) {
@@ -97,30 +98,16 @@ parse_args(const int argc, char *argv[],
   *indexFilename = argv[1];
 
   /**** numQueries ****/
-  *numQueries = parse_int(argv[2], "numQueries");
-
-  /**** randomSeed ****/
-  *randomSeed = parse_int(argv[3], "randomSeed");
-}
-
-/**************** parse_int ****************/
-/* parse a positive integer argument.
- * if any error, print to stderr, and exit.
- */
-static int
-parse_int(const char *arg, const char *what)
-{
-  // verify that the argument string has only digits
-  for (const char *p = arg; *p != '\0'; p++) {
-    // the string must all be digits
-    if (!isdigit(*p)) {
-      fprintf(stderr, "usage: %s: invalid %s '%s'\n", program, what, arg);
-      exit (2);
-    }
+  if (sscanf(argv[2], "%d%c", numQueries, &extra) != 1 || *numQueries < 0) {
+    fprintf(stderr, "usage: %s: invalid numQueries '%s'\n", program, argv[2]);
+    exit (2);
   }
-
-  // convert to an integer, now that we know it's all digits
-  return atoi(arg);
+  
+  /**** randomSeed ****/
+  if (sscanf(argv[3], "%d%c", randomSeed, &extra) != 1 || *randomSeed < 0) {
+    fprintf(stderr, "usage: %s: invalid randomSeed '%s'\n", program, argv[3]);
+    exit (3);
+  }
 }
 
 /**************** wordlist_load ****************/
@@ -194,8 +181,9 @@ wordlist_delete(wordlist_t *wordlist)
 
   char **words = wordlist->words;
   int nwords = wordlist->nwords;
-  for (int w = 0; w < nwords; w++)
+  for (int w = 0; w < nwords; w++) {
     free(words[w]); // was allocated by readlinep()
+  }
 
   count_free(wordlist->words);
   count_free(wordlist);
