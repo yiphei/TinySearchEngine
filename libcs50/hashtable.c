@@ -55,7 +55,6 @@ hashtable_t *hashtable_new(const int num_slots){
 
 /**************** hashtable_insert() ****************/  
 bool hashtable_insert(hashtable_t *ht, const char *key, void *item){
-
   if (ht != NULL && item != NULL && key != NULL) {
     // allocate a new node to be added to the list
 

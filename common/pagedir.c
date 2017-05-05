@@ -14,6 +14,8 @@
 #include <math.h>
 #include "pagedir.h"
 #include "../libcs50/webpage.h"
+#include "../libcs50/file.h"
+
 
 /**************** file-local global variables ****************/
 /* none */
@@ -49,6 +51,20 @@
 
  	fclose(fp);
  	free(pathway);
+ }
+
+
+/*build a webpage*/
+ webpage_t * retrieve_page(FILE * fp){
+    char * URL = readlinep(fp);
+    char * depth = readlinep(fp);
+    char * html = readfilep(fp);
+    int pageDepth;
+    sscanf(depth, "%d", &pageDepth); //convert to int
+    webpage_t * page;
+    page = webpage_new(URL, pageDepth, html);
+    free(URL);
+    return page;
  }
 
 
