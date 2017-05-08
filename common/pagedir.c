@@ -54,7 +54,6 @@
  }
 
 
-/*build a webpage*/
  webpage_t * retrieve_page(FILE * fp){
     char * URL = readlinep(fp);
     char * depth = readlinep(fp);
@@ -63,8 +62,24 @@
     sscanf(depth, "%d", &pageDepth); //convert to int
     webpage_t * page;
     page = webpage_new(URL, pageDepth, html);
+    free(depth); 
     free(URL);
     return page;
+ }
+
+ bool isCrawlerDirectory(char *dir){
+
+ 	char *filename = malloc(strlen(dir)+10);  //name of the file to be created
+	sprintf(filename, "%s/.crawler", dir);
+ 	FILE *fp = fopen(filename, "r");
+ 	if(fp != NULL){
+ 		free(filename);
+ 		fclose(fp);
+ 		return true;
+ 	}
+ 	free(filename);
+ 	return false;
+
  }
 
 

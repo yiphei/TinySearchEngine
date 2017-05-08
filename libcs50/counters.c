@@ -37,6 +37,7 @@ typedef struct counters {
 /* not visible outside this file */
 static countersnode_t *countersnode_new(const int key);
 static countersnode_t * counters_getnode(counters_t * ctrs ,const int key);
+static countersnode_t *countersnode_newCount(const int key, int count);
 
 /******************* counters_new() ************/  //from bag.c module
 counters_t *counters_new(void){

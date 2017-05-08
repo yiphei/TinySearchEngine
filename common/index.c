@@ -1,7 +1,7 @@
 /* 
- * set.c - CS50 'set' module
+ * index.c - CS50 'index' module
  *
- * see set.h for more information.
+ * see index.h for more information.
  *
  * Yifei Yan
  */
@@ -37,15 +37,13 @@
 static void printWord(void *arg, const char *key, void *item);
 static void printCounter(void *arg, const int key, int count);
 static void NormalizeWord(char * word);
-static void stockprint(FILE *fp, const char *key, void *item);
 
 /**************** set_new() ****************/
 
-void index_build(hashtable_t * index, char * pageDirectory){
-  int MAX_DOC_ID_LENGTH = 64;
-  int docID = 1;
-  int wordCount = 0;
-  char *file = malloc(strlen(pageDirectory)+1+MAX_DOC_ID_LENGTH+1);
+void index_build(hashtable_t * index, const char * pageDirectory){
+  int MAX_DOC_ID_LENGTH = 64;   //assume that the document id will never exceed 64 bytes
+  int docID = 1;   //filename ID in which the HTML is stored
+  char *file = malloc(strlen(pageDirectory)+1+MAX_DOC_ID_LENGTH+1);  //name of the file
   sprintf(file, "%s/%d", pageDirectory, docID);   
 
   FILE *fp;
@@ -53,33 +51,22 @@ void index_build(hashtable_t * index, char * pageDirectory){
 
   while (fp != NULL){
 
-    webpage_t * page = retrieve_page(fp);
-    
+    webpage_t * page = retrieve_page(fp);  //retrieve the webpage from the file
     int pos = 0;
-    char *word;
+    char *word; 
 
     while ((pos = webpage_getNextWord(page, pos, &word)) > 0) {
+        //ignore words less than three characters
+        if (strlen(word) > 2){  
+          NormalizeWord(word);  //covert word to lower case
 
-        if (strlen(word) > 3){
-          NormalizeWord(word);
-          printf("Found word:  %s\n", word);
-          wordCount++;
-
-          if (hashtable_find(index, word) == NULL){
-            printf("initialize counter for %s\n", word);
-            counters_t * counter = counters_new();
-            bool success = hashtable_insert(index, word, counter);
-            if (!success) {
-              printf("the insert failed on key %s\n",word);
-            }
+          //initialize counter if word is never encountered
+          if (hashtable_find(index, word) == NULL){  
+            hashtable_insert(index, word, counters_new());
           }
 
+          //increment count
           counters_add(hashtable_find(index, word), docID);
-          printf("counter incremented\n");
-
-  //        hashtable_print(index, stdout, stockprint);
- //         printf("********\n");
-
         }
         free(word);
     }
@@ -88,43 +75,49 @@ void index_build(hashtable_t * index, char * pageDirectory){
     fclose(fp);
     docID ++;
 
-    sprintf(file, "%s/%d", pageDirectory, docID);
-    fp = fopen(file, "r");
+    sprintf(file, "%s/%d", pageDirectory, docID);  //next file
+    fp = fopen(file, "r");  //open next file
   }
   free(file);
 }
 
+
 void index_save(hashtable_t * index, const char * indexFilename){
 
   FILE *fp = fopen(indexFilename, "w");
-
-  hashtable_print(index, stdout, stockprint);
-  printf("---------------------\n");
-  hashtable_iterate(index,fp, printWord);
-
+  hashtable_iterate(index,fp, printWord);  
   fclose(fp);
 }
 
+/*
+* helper function that outputs the word to a given file. It then calls a helper fuction
+* to output the docID and frequency. Then, it prints a newline.
+*/
 static void printWord(void *arg, const char *key, void *item){
     if ((FILE * )arg != NULL && key != NULL && item != NULL){
       counters_t * counter = item;
-      fprintf((FILE * )arg,"%s", key);
-      printf("%s\n", key);
-      counters_iterate(counter, (FILE * )arg, printCounter);
-      fprintf((FILE * )arg,"\n");
+      fprintf((FILE * )arg,"%s", key);  //print the word
+      counters_iterate(counter, (FILE * )arg, printCounter);  //print the docID and frequency
+      fprintf((FILE * )arg,"\n");  //print newline for next word
   }
-
 }
 
-
+/*
+* helper function that outputs the docID and the frequency of a word into a given file
+*/ 
 static void printCounter(void *arg, const int key, int count){
 
   if ((FILE * )arg != NULL && key >= 0 && count >= 0){
-    fprintf((FILE * )arg, " %d %d", key, count);
+    fprintf((FILE * )arg, " %d %d", key, count); //print docID and frequency
   }
 }
 
-
+/*
+* Source: stackoverflow.com
+* Author: Earlz
+* This function takes a string as a parameters and converts all of its characters into lowercase
+*
+*/
 static void NormalizeWord(char * word){
   for(int i = 0; word[i]; i++){
     word[i] = tolower(word[i]);
@@ -132,12 +125,32 @@ static void NormalizeWord(char * word){
 }
 
 
+hashtable_t * load_index(const char * oldIndexFilename){
 
-static void 
-stockprint(FILE *fp, const char *key, void *item)
-{
-  fprintf(fp, "%s", key);
-  counters_t * counter = item;
-  counters_print(counter, fp);
+  FILE * fp = fopen(oldIndexFilename, "r");
+  int indexSize = lines_in_file(fp);  //size of the index
+  hashtable_t * index;
+  index = hashtable_new(indexSize);
+  char * word;  
+
+  //while it is not the end of the file
+  while ((!feof(fp))){ 
+
+    word = readwordp(fp);  //read the word
+    counters_t * counter = counters_new(); //create new counter
+    hashtable_insert(index, word, counter);  //insert word with new counter 
+    int docID;
+    int frequency;
+
+    //read the docID and frequency of the word and set counter accordingly
+    while (fscanf(fp, "%d %d ",&docID, &frequency) > 1){
+        counters_set(counter, docID, frequency);
+      }
+    free(word);
+  }
+
+  fclose(fp);
+  return index;
 }
+
 
