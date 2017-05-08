@@ -45,31 +45,31 @@ void webpage_delete(void *data);
 
 /***************** webpage_fetch ******************************/
 /* retrieve HTML from page->url, store into page->html
- * @page: the webpage struct containing the url to curl
+ * @page: the webpage struct containing the url to fetch
  *
- * Returns true if the curl was successful; otherwise, false. 
- * If the curl succeeded, page->html will contain the content retrieved. 
+ * Returns true if the fetch was successful; otherwise, false. 
+ * If the fetch succeeded, page->html will contain the content retrieved. 
  * Parameter page should have been allocated by the caller, 
  * but the page->html pointer is expected to be NULL. 
  * If this function is successful, a new, null-terminated character
  * buffer will be allocated as page->html. The caller must later free this
- * memory.
+ * memory, typically by calling webpage_delete().
  *
  * Assumptions:
  *     1. page has been allocated by caller
- *     2. page->url contains the url to curl
+ *     2. page->url contains the url to fetch
  *     3. page->html is NULL at call time
  *
  * Usage example:
- * webpage_t* page = webpage_new("http://www.example.com", 0, NULL);
- * if(webpage_fetch(page)) {
- *     char *html = webpage_getHTML(page);
- *     printf("Found html: %s\n", html);
- *     free(html);
- *     webpage_delete(page);
- * }
+ *  webpage_t* page = webpage_new("http://www.example.com", 0, NULL);
+ *  if(webpage_fetch(page)) {
+ *    char *html = webpage_getHTML(page);
+ *    printf("Found html: %s\n", html);
+ *  }
+ *  webpage_delete(page);
+ *
  * Returns:
- *     True: success; caller must later free(webpage_getHTML(page));
+ *     True: success; caller must later free html via webpage_delete(page).
  *     False: some error fetching page.
  */
 bool webpage_fetch(webpage_t *page);
