@@ -10,6 +10,7 @@ Page Indexer is a program that builds an index from a directory created by Web C
 
 Querier is standalone program that reads the index file produced by the Page Indexer, and page files produced by the Querier, and answers search queries submitted via stdin. Querier loads the index into memory (a data structure developed for the Page Indexer) and then prompts the user for queries. Queries are comprised of words, with optional and/or operators.
 
+### Instructions
 
 To build, run `make`.
 
